@@ -1,0 +1,393 @@
+********************************************************************************
+        IRAP FRAMEWORK: FULL SYSTEM TEST AND VERIFICATION REPORT                
+Execution Date: 2026-11-05 03:28:01
+Operating System: win32 | Python: 3.13.5
+********************************************************************************
+
+================================================================================
+STEP: Integration and Unit Test Suite
+Command: C:\Users\sree\AppData\Local\Programs\Python\Python313\python.exe -m unittest tests/test_pipeline.py
+Timestamp: 2026-11-05 03:28:01
+--------------------------------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 1.860s
+
+OK
+--------------------------------------------------------------------------------
+Result: SUCCESS (Code 0) | Duration: 5.48s
+================================================================================
+
+================================================================================
+STEP: IRAP Pipeline Execution: Realistic Sample Cohort (Synthetic Non-Linear)
+Command: C:\Users\sree\AppData\Local\Programs\Python\Python313\python.exe src/main.py --dataset datasets/realistic_sample.csv --target diabetes_target
+Timestamp: 2026-11-05 03:28:06
+--------------------------------------------------------------------------------
+2026-11-05 03:28:10,349 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:10,349 - IRAP_Main - INFO -       INTELLIGENT RELATIONSHIP-AWARE PREPROCESSING (IRAP)        
+2026-11-05 03:28:10,349 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:10,349 - IRAP_Main - INFO - Target Dataset: datasets/realistic_sample.csv
+2026-11-05 03:28:10,349 - IRAP_Main - INFO - Designated Target Column: diabetes_target
+2026-11-05 03:28:10,349 - IRAP_Main - INFO - 
+--- PHASE 1: Data Loading ---
+2026-11-05 03:28:10,390 - IRAP_Main - INFO - Ingested dataset shape: (200, 8)
+2026-11-05 03:28:10,390 - IRAP_Main - INFO - 
+--- PHASE 2: Dataset Profiling ---
+2026-11-05 03:28:10,390 - DatasetProfiler - INFO - Starting dataset profiling...
+2026-11-05 03:28:10,393 - DatasetProfiler - INFO - Dataset profiling completed.
+2026-11-05 03:28:10,394 - IRAP_Main - INFO - Dataset Profile: {'dataset_name': 'realistic_sample.csv', 'rows': 200, 'columns': 8, 'missing_percentage': 5.625, 'duplicate_rows': 0, 'quality_score': None, 'target_column': 'diabetes_target'}
+2026-11-05 03:28:10,394 - IRAP_Main - INFO - 
+--- PHASE 3: Feature Profiling ---
+2026-11-05 03:28:10,394 - FeatureProfiler - INFO - Starting feature profiling...
+2026-11-05 03:28:10,409 - FeatureProfiler - INFO - Feature profiling completed for 8 features.
+2026-11-05 03:28:10,409 - IRAP_Main - INFO - Profiled 8 individual features.
+2026-11-05 03:28:10,409 - IRAP_Main - INFO - 
+--- PHASE 4: Relationship Discovery & Knowledge Graph ---
+2026-11-05 03:28:10,409 - IRAP_RelationshipDiscovery - INFO - Starting Relationship Discovery Phase...
+2026-11-05 03:28:10,410 - IRAP_RelationshipDiscovery - INFO - Using sampled data shape (200, 8) for discovery.
+2026-11-05 03:28:12,576 - IRAP_RelationshipDiscovery - INFO - Relationship Discovery Complete. Knowledge Graph contains 49 dependent edges.
+2026-11-05 03:28:12,577 - IRAP_Main - INFO - Knowledge Graph: 8 Nodes, 49 Discovered Edges.
+2026-11-05 03:28:12,579 - IRAP_Main - INFO - 
+--- PHASE 5: Intelligent Decision Engine ---
+2026-11-05 03:28:12,580 - IRAP_DecisionEngine - INFO - Starting Intelligent Decision Engine Phase...
+2026-11-05 03:28:12,580 - IRAP_DecisionEngine - INFO - Intelligent Decision Engine generated plan for 8 features.
+2026-11-05 03:28:12,580 - IRAP_Main - INFO - Generated dynamic preprocessing plan for 8 features.
+2026-11-05 03:28:12,580 - IRAP_Main - INFO - 
+--- PHASE 6 & 7: Context-Aware Preprocessing Execution ---
+2026-11-05 03:28:12,705 - IRAP_ContextAwareImputer - INFO - Loaded 40778 biological guardrail rules.
+2026-11-05 03:28:12,705 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:12,705 - IRAP_Preprocessor - INFO - Starting Phase 6 & 7: IRAP Preprocessing Execution
+2026-11-05 03:28:12,705 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:12,706 - IRAP_Preprocessor - INFO - Step 1/3: Context-Aware Imputation & Guardrail Enforcement...
+2026-11-05 03:28:12,706 - IRAP_ContextAwareImputer - INFO - Starting Context-Aware Imputation...
+2026-11-05 03:28:12,707 - IRAP_ContextAwareImputer - INFO - Imputing 30 missing values in 'bmi' using ContextAwareKNN...
+2026-11-05 03:28:12,716 - IRAP_ContextAwareImputer - INFO - Imputing 40 missing values in 'blood_pressure' using ContextAwareKNN...
+2026-11-05 03:28:12,724 - IRAP_ContextAwareImputer - INFO - Imputing 20 missing values in 'blood_type' using ContextAwareKNN...
+2026-11-05 03:28:12,731 - IRAP_ContextAwareImputer - INFO - Context-Aware Imputation finished. Total imputed: 90, Guardrail interventions: 0, Dropped columns: []
+2026-11-05 03:28:12,732 - IRAP_Preprocessor - INFO - Step 2/3: Adaptive Categorical Encoding...
+2026-11-05 03:28:12,732 - IRAP_AdaptiveEncoder - INFO - Starting Adaptive Categorical Encoding...
+2026-11-05 03:28:12,732 - IRAP_AdaptiveEncoder - INFO - Encoding 'blood_type' using OneHotEncoding...
+2026-11-05 03:28:12,733 - IRAP_AdaptiveEncoder - INFO - Encoding 'medical_code' using TargetEncoding...
+2026-11-05 03:28:12,735 - IRAP_AdaptiveEncoder - INFO - Adaptive Encoding finished. Transformed 2 features.
+2026-11-05 03:28:12,735 - IRAP_Preprocessor - INFO - Step 3/3: Adaptive Numerical Scaling...
+2026-11-05 03:28:12,735 - IRAP_AdaptiveScaler - INFO - Starting Adaptive Numerical Scaling...
+2026-11-05 03:28:12,736 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'patient_id' using MinMaxScaler...
+2026-11-05 03:28:12,737 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'age' using MinMaxScaler...
+2026-11-05 03:28:12,738 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'bmi' using RobustScaler...
+2026-11-05 03:28:12,740 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'blood_pressure' using MinMaxScaler...
+2026-11-05 03:28:12,741 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'cholesterol' using RobustScaler...
+2026-11-05 03:28:12,742 - IRAP_AdaptiveScaler - INFO - Adaptive Scaling finished. Scaled 5 features.
+2026-11-05 03:28:12,743 - IRAP_Preprocessor - INFO - IRAP Preprocessing Complete. Processed shape: (200, 10), Residual missing values: 0.
+2026-11-05 03:28:12,743 - IRAP_Main - INFO - Processed DataFrame Shape: (200, 10)
+2026-11-05 03:28:12,743 - IRAP_Main - INFO - 
+--- PHASE 8: Pipeline Validation & Ablation Study ---
+2026-11-05 03:28:12,743 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:12,743 - IRAP_Validator - INFO - Starting Phase 8: Pipeline Validation & Ablation
+2026-11-05 03:28:12,743 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:12,743 - IRAP_Validator - INFO - Target column designated for validation: 'diabetes_target'
+2026-11-05 03:28:12,744 - IRAP_Validator - INFO - Executing Scikit-Learn Baseline Preprocessing...
+2026-11-05 03:28:13,037 - IRAP_Validator - INFO - Validation Results: Baseline Accuracy=0.7800, IRAP Accuracy=0.7800 (Gain = 0.0%)
+2026-11-05 03:28:13,037 - IRAP_Validator - INFO - Validation Results: Baseline F1=0.7723, IRAP F1=0.7723 (Gain = 0.0%)
+2026-11-05 03:28:13,045 - IRAP_Validator - INFO - Validation completed successfully.
+2026-11-05 03:28:13,045 - IRAP_Main - INFO - 
+--- PHASE 9: Explainability & Audit Engine ---
+2026-11-05 03:28:13,046 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:13,046 - IRAP_ExplainabilityEngine - INFO - Starting Phase 9: Explainability & Audit Engine
+2026-11-05 03:28:13,046 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:13,050 - IRAP_ExplainabilityEngine - INFO - Explainability Engine generated audit trails for 8 features.
+2026-11-05 03:28:13,050 - IRAP_Main - INFO - 
+--- PHASE 10: Final Report Generation ---
+2026-11-05 03:28:13,051 - IRAP_ReportGenerator - INFO - Generating final evaluation reports...
+2026-11-05 03:28:13,052 - IRAP_ReportGenerator - INFO - Saved Markdown report to: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:13,053 - IRAP_ReportGenerator - INFO - Saved HTML report to: outputs/reports\irap_execution_report.html
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:13,054 - IRAP_Main - INFO -               IRAP PIPELINE EXECUTION SUMMARY                    
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - Task Evaluated: CLASSIFICATION (Target: 'diabetes_target')
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - Baseline Accuracy:  0.78
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - IRAP Accuracy:      0.78  (Gain = +0.0%)
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - Baseline F1-Score:  0.7723
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - IRAP F1-Score:      0.7723  (Gain = +0.0%)
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - Imputation Error Reduction: 44.06% over Standard Mean Imputation
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - Markdown Report: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - HTML Report:     outputs/reports\irap_execution_report.html
+2026-11-05 03:28:13,054 - IRAP_Main - INFO - =================================================================
+--------------------------------------------------------------------------------
+Result: SUCCESS (Code 0) | Duration: 6.66s
+================================================================================
+
+================================================================================
+STEP: IRAP Pipeline Execution: Mendeley CBC Hematology Dataset
+Command: C:\Users\sree\AppData\Local\Programs\Python\Python313\python.exe src/main.py --dataset datasets/sample/CBC data_for_meandeley_csv.csv --target Sex  
+Timestamp: 2026-11-05 03:28:13
+--------------------------------------------------------------------------------
+2026-11-05 03:28:16,923 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:16,924 - IRAP_Main - INFO -       INTELLIGENT RELATIONSHIP-AWARE PREPROCESSING (IRAP)        
+2026-11-05 03:28:16,924 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:16,924 - IRAP_Main - INFO - Target Dataset: datasets/sample/CBC data_for_meandeley_csv.csv
+2026-11-05 03:28:16,924 - IRAP_Main - INFO - Designated Target Column: Sex  
+2026-11-05 03:28:16,924 - IRAP_Main - INFO - 
+--- PHASE 1: Data Loading ---
+2026-11-05 03:28:17,003 - IRAP_Main - INFO - Ingested dataset shape: (374, 12)
+2026-11-05 03:28:17,004 - IRAP_Main - INFO - 
+--- PHASE 2: Dataset Profiling ---
+2026-11-05 03:28:17,004 - DatasetProfiler - INFO - Starting dataset profiling...
+2026-11-05 03:28:17,011 - DatasetProfiler - INFO - Dataset profiling completed.
+2026-11-05 03:28:17,012 - IRAP_Main - INFO - Dataset Profile: {'dataset_name': 'CBC data_for_meandeley_csv.csv', 'rows': 374, 'columns': 12, 'missing_percentage': 2.4955436720142603, 'duplicate_rows': 8, 'quality_score': None, 'target_column': 'Sex  '}
+2026-11-05 03:28:17,012 - IRAP_Main - INFO - 
+--- PHASE 3: Feature Profiling ---
+2026-11-05 03:28:17,012 - FeatureProfiler - INFO - Starting feature profiling...
+2026-11-05 03:28:17,039 - FeatureProfiler - INFO - Feature profiling completed for 12 features.
+2026-11-05 03:28:17,040 - IRAP_Main - INFO - Profiled 12 individual features.
+2026-11-05 03:28:17,040 - IRAP_Main - INFO - 
+--- PHASE 4: Relationship Discovery & Knowledge Graph ---
+2026-11-05 03:28:17,040 - IRAP_RelationshipDiscovery - INFO - Starting Relationship Discovery Phase...
+2026-11-05 03:28:17,040 - IRAP_RelationshipDiscovery - INFO - Using sampled data shape (374, 12) for discovery.
+2026-11-05 03:28:20,451 - IRAP_RelationshipDiscovery - INFO - Relationship Discovery Complete. Knowledge Graph contains 116 dependent edges.
+2026-11-05 03:28:20,452 - IRAP_Main - INFO - Knowledge Graph: 12 Nodes, 116 Discovered Edges.
+2026-11-05 03:28:20,456 - IRAP_Main - INFO - 
+--- PHASE 5: Intelligent Decision Engine ---
+2026-11-05 03:28:20,456 - IRAP_DecisionEngine - INFO - Starting Intelligent Decision Engine Phase...
+2026-11-05 03:28:20,457 - IRAP_DecisionEngine - INFO - Intelligent Decision Engine generated plan for 12 features.
+2026-11-05 03:28:20,457 - IRAP_Main - INFO - Generated dynamic preprocessing plan for 12 features.
+2026-11-05 03:28:20,457 - IRAP_Main - INFO - 
+--- PHASE 6 & 7: Context-Aware Preprocessing Execution ---
+2026-11-05 03:28:20,574 - IRAP_ContextAwareImputer - INFO - Loaded 40778 biological guardrail rules.
+2026-11-05 03:28:20,574 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:20,574 - IRAP_Preprocessor - INFO - Starting Phase 6 & 7: IRAP Preprocessing Execution
+2026-11-05 03:28:20,574 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:20,574 - IRAP_Preprocessor - INFO - Step 1/3: Context-Aware Imputation & Guardrail Enforcement...
+2026-11-05 03:28:20,574 - IRAP_ContextAwareImputer - INFO - Starting Context-Aware Imputation...
+2026-11-05 03:28:20,575 - IRAP_ContextAwareImputer - INFO - Imputing 10 missing values in 'S. No.' using ContextAwareKNN...
+2026-11-05 03:28:20,586 - IRAP_ContextAwareImputer - INFO - Imputing 10 missing values in 'Age      ' using ContextAwareKNN...
+2026-11-05 03:28:20,595 - IRAP_ContextAwareImputer - INFO - Imputing 10 missing values in 'Sex  ' using ContextAwareKNN...
+2026-11-05 03:28:20,603 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in '  RBC    ' using ContextAwareKNN...
+2026-11-05 03:28:20,612 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in 'PCV' using ContextAwareKNN...
+2026-11-05 03:28:20,621 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in 'MCV  ' using ContextAwareKNN...
+2026-11-05 03:28:20,629 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in 'MCH' using ContextAwareKNN...
+2026-11-05 03:28:20,637 - IRAP_ContextAwareImputer - INFO - Imputing 10 missing values in ' MCHC  ' using ContextAwareKNN...
+2026-11-05 03:28:20,649 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in ' RDW    ' using ContextAwareKNN...
+2026-11-05 03:28:20,657 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in 'TLC' using ContextAwareKNN...
+2026-11-05 03:28:20,663 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in ' PLT /mm3' using ContextAwareKNN...
+2026-11-05 03:28:20,670 - IRAP_ContextAwareImputer - INFO - Imputing 9 missing values in ' HGB ' using ContextAwareKNN...
+2026-11-05 03:28:20,677 - IRAP_ContextAwareImputer - INFO - Context-Aware Imputation finished. Total imputed: 112, Guardrail interventions: 0, Dropped columns: []
+2026-11-05 03:28:20,677 - IRAP_Preprocessor - INFO - Step 2/3: Adaptive Categorical Encoding...
+2026-11-05 03:28:20,677 - IRAP_AdaptiveEncoder - INFO - Starting Adaptive Categorical Encoding...
+2026-11-05 03:28:20,677 - IRAP_AdaptiveEncoder - INFO - Encoding '  RBC    ' using TargetEncoding...
+2026-11-05 03:28:20,679 - IRAP_AdaptiveEncoder - INFO - Encoding 'PCV' using TargetEncoding...
+2026-11-05 03:28:20,681 - IRAP_AdaptiveEncoder - INFO - Encoding 'MCV  ' using TargetEncoding...
+2026-11-05 03:28:20,682 - IRAP_AdaptiveEncoder - INFO - Encoding 'MCH' using TargetEncoding...
+2026-11-05 03:28:20,683 - IRAP_AdaptiveEncoder - INFO - Encoding ' RDW    ' using TargetEncoding...
+2026-11-05 03:28:20,684 - IRAP_AdaptiveEncoder - INFO - Encoding 'TLC' using TargetEncoding...
+2026-11-05 03:28:20,686 - IRAP_AdaptiveEncoder - INFO - Encoding ' PLT /mm3' using TargetEncoding...
+2026-11-05 03:28:20,687 - IRAP_AdaptiveEncoder - INFO - Encoding ' HGB ' using TargetEncoding...
+2026-11-05 03:28:20,689 - IRAP_AdaptiveEncoder - INFO - Adaptive Encoding finished. Transformed 8 features.
+2026-11-05 03:28:20,689 - IRAP_Preprocessor - INFO - Step 3/3: Adaptive Numerical Scaling...
+2026-11-05 03:28:20,689 - IRAP_AdaptiveScaler - INFO - Starting Adaptive Numerical Scaling...
+2026-11-05 03:28:20,689 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'S. No.' using MinMaxScaler...
+2026-11-05 03:28:20,690 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'Age      ' using MinMaxScaler...
+2026-11-05 03:28:20,691 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature ' MCHC  ' using RobustScaler...
+2026-11-05 03:28:20,692 - IRAP_AdaptiveScaler - INFO - Adaptive Scaling finished. Scaled 3 features.
+2026-11-05 03:28:20,693 - IRAP_Preprocessor - INFO - IRAP Preprocessing Complete. Processed shape: (374, 12), Residual missing values: 0.
+2026-11-05 03:28:20,693 - IRAP_Main - INFO - Processed DataFrame Shape: (374, 12)
+2026-11-05 03:28:20,693 - IRAP_Main - INFO - 
+--- PHASE 8: Pipeline Validation & Ablation Study ---
+2026-11-05 03:28:20,693 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:20,693 - IRAP_Validator - INFO - Starting Phase 8: Pipeline Validation & Ablation
+2026-11-05 03:28:20,693 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:20,693 - IRAP_Validator - INFO - Target column designated for validation: 'Sex  '
+2026-11-05 03:28:20,693 - IRAP_Validator - INFO - Executing Scikit-Learn Baseline Preprocessing...
+2026-11-05 03:28:21,552 - IRAP_Validator - INFO - Validation Results: Baseline Accuracy=0.6703, IRAP Accuracy=0.9780 (Gain = 30.77%)
+2026-11-05 03:28:21,552 - IRAP_Validator - INFO - Validation Results: Baseline F1=0.6553, IRAP F1=0.9781 (Gain = 32.28%)
+2026-11-05 03:28:21,566 - IRAP_Validator - INFO - Validation completed successfully.
+2026-11-05 03:28:21,572 - IRAP_Main - INFO - 
+--- PHASE 9: Explainability & Audit Engine ---
+2026-11-05 03:28:21,572 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:21,572 - IRAP_ExplainabilityEngine - INFO - Starting Phase 9: Explainability & Audit Engine
+2026-11-05 03:28:21,572 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:21,585 - IRAP_ExplainabilityEngine - INFO - Explainability Engine generated audit trails for 12 features.
+2026-11-05 03:28:21,585 - IRAP_Main - INFO - 
+--- PHASE 10: Final Report Generation ---
+2026-11-05 03:28:21,586 - IRAP_ReportGenerator - INFO - Generating final evaluation reports...
+2026-11-05 03:28:21,588 - IRAP_ReportGenerator - INFO - Saved Markdown report to: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:21,589 - IRAP_ReportGenerator - INFO - Saved HTML report to: outputs/reports\irap_execution_report.html
+2026-11-05 03:28:21,589 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:21,589 - IRAP_Main - INFO -               IRAP PIPELINE EXECUTION SUMMARY                    
+2026-11-05 03:28:21,589 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:21,589 - IRAP_Main - INFO - Task Evaluated: CLASSIFICATION (Target: 'Sex  ')
+2026-11-05 03:28:21,589 - IRAP_Main - INFO - Baseline Accuracy:  0.6703
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - IRAP Accuracy:      0.978  (Gain = +30.77%)
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - Baseline F1-Score:  0.6553
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - IRAP F1-Score:      0.9781  (Gain = +32.28%)
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - Imputation Error Reduction: 0.0% over Standard Mean Imputation
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - Markdown Report: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - HTML Report:     outputs/reports\irap_execution_report.html
+2026-11-05 03:28:21,590 - IRAP_Main - INFO - =================================================================
+--------------------------------------------------------------------------------
+Result: SUCCESS (Code 0) | Duration: 8.58s
+================================================================================
+
+================================================================================
+STEP: IRAP Pipeline Execution: Hospital Diabetes Diagnostic Cohort (5,132 rows)
+Command: C:\Users\sree\AppData\Local\Programs\Python\Python313\python.exe src/main.py --dataset datasets/sample/Diabetes Classification.csv --target Diagnosis
+Timestamp: 2026-11-05 03:28:21
+--------------------------------------------------------------------------------
+2026-11-05 03:28:25,230 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:25,230 - IRAP_Main - INFO -       INTELLIGENT RELATIONSHIP-AWARE PREPROCESSING (IRAP)        
+2026-11-05 03:28:25,230 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:25,230 - IRAP_Main - INFO - Target Dataset: datasets/sample/Diabetes Classification.csv
+2026-11-05 03:28:25,230 - IRAP_Main - INFO - Designated Target Column: Diagnosis
+2026-11-05 03:28:25,230 - IRAP_Main - INFO - 
+--- PHASE 1: Data Loading ---
+2026-11-05 03:28:25,295 - IRAP_Main - INFO - Ingested dataset shape: (5132, 11)
+2026-11-05 03:28:25,295 - IRAP_Main - INFO - 
+--- PHASE 2: Dataset Profiling ---
+2026-11-05 03:28:25,295 - DatasetProfiler - INFO - Starting dataset profiling...
+2026-11-05 03:28:25,304 - DatasetProfiler - INFO - Dataset profiling completed.
+2026-11-05 03:28:25,304 - IRAP_Main - INFO - Dataset Profile: {'dataset_name': 'Diabetes Classification.csv', 'rows': 5132, 'columns': 11, 'missing_percentage': 0.0, 'duplicate_rows': 0, 'quality_score': None, 'target_column': 'Diagnosis'}
+2026-11-05 03:28:25,304 - IRAP_Main - INFO - 
+--- PHASE 3: Feature Profiling ---
+2026-11-05 03:28:25,304 - FeatureProfiler - INFO - Starting feature profiling...
+2026-11-05 03:28:25,336 - FeatureProfiler - INFO - Feature profiling completed for 11 features.
+2026-11-05 03:28:25,337 - IRAP_Main - INFO - Profiled 11 individual features.
+2026-11-05 03:28:25,337 - IRAP_Main - INFO - 
+--- PHASE 4: Relationship Discovery & Knowledge Graph ---
+2026-11-05 03:28:25,337 - IRAP_RelationshipDiscovery - INFO - Starting Relationship Discovery Phase...
+2026-11-05 03:28:25,340 - IRAP_RelationshipDiscovery - INFO - Using sampled data shape (5000, 10) for discovery.
+2026-11-05 03:28:29,483 - IRAP_RelationshipDiscovery - INFO - Relationship Discovery Complete. Knowledge Graph contains 59 dependent edges.
+2026-11-05 03:28:29,484 - IRAP_Main - INFO - Knowledge Graph: 10 Nodes, 59 Discovered Edges.
+2026-11-05 03:28:29,487 - IRAP_Main - INFO - 
+--- PHASE 5: Intelligent Decision Engine ---
+2026-11-05 03:28:29,487 - IRAP_DecisionEngine - INFO - Starting Intelligent Decision Engine Phase...
+2026-11-05 03:28:29,487 - IRAP_DecisionEngine - INFO - Intelligent Decision Engine generated plan for 11 features.
+2026-11-05 03:28:29,487 - IRAP_Main - INFO - Generated dynamic preprocessing plan for 11 features.
+2026-11-05 03:28:29,487 - IRAP_Main - INFO - 
+--- PHASE 6 & 7: Context-Aware Preprocessing Execution ---
+2026-11-05 03:28:29,613 - IRAP_ContextAwareImputer - INFO - Loaded 40778 biological guardrail rules.
+2026-11-05 03:28:29,613 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:29,613 - IRAP_Preprocessor - INFO - Starting Phase 6 & 7: IRAP Preprocessing Execution
+2026-11-05 03:28:29,614 - IRAP_Preprocessor - INFO - ==================================================
+2026-11-05 03:28:29,614 - IRAP_Preprocessor - INFO - Step 1/3: Context-Aware Imputation & Guardrail Enforcement...
+2026-11-05 03:28:29,614 - IRAP_ContextAwareImputer - INFO - Starting Context-Aware Imputation...
+2026-11-05 03:28:29,615 - IRAP_ContextAwareImputer - INFO - Context-Aware Imputation finished. Total imputed: 0, Guardrail interventions: 0, Dropped columns: []
+2026-11-05 03:28:29,615 - IRAP_Preprocessor - INFO - Step 2/3: Adaptive Categorical Encoding...
+2026-11-05 03:28:29,615 - IRAP_AdaptiveEncoder - INFO - Starting Adaptive Categorical Encoding...
+2026-11-05 03:28:29,615 - IRAP_AdaptiveEncoder - INFO - Encoding 'Gender' using OneHotEncoding...
+2026-11-05 03:28:29,617 - IRAP_AdaptiveEncoder - INFO - Adaptive Encoding finished. Transformed 1 features.
+2026-11-05 03:28:29,617 - IRAP_Preprocessor - INFO - Step 3/3: Adaptive Numerical Scaling...
+2026-11-05 03:28:29,617 - IRAP_AdaptiveScaler - INFO - Starting Adaptive Numerical Scaling...
+2026-11-05 03:28:29,618 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'Unnamed: 0' using MinMaxScaler...
+2026-11-05 03:28:29,619 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'Age' using MinMaxScaler...
+2026-11-05 03:28:29,620 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'BMI' using RobustScaler...
+2026-11-05 03:28:29,622 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'Chol' using RobustScaler...
+2026-11-05 03:28:29,624 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'TG' using RobustScaler...
+2026-11-05 03:28:29,627 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'HDL' using RobustScaler...
+2026-11-05 03:28:29,629 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'LDL' using RobustScaler...
+2026-11-05 03:28:29,633 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'Cr' using RobustScaler...
+2026-11-05 03:28:29,636 - IRAP_AdaptiveScaler - INFO - Scaling numeric feature 'BUN' using RobustScaler...
+2026-11-05 03:28:29,637 - IRAP_AdaptiveScaler - INFO - Adaptive Scaling finished. Scaled 9 features.
+2026-11-05 03:28:29,640 - IRAP_Preprocessor - INFO - IRAP Preprocessing Complete. Processed shape: (5132, 12), Residual missing values: 0.
+2026-11-05 03:28:29,640 - IRAP_Main - INFO - Processed DataFrame Shape: (5132, 12)
+2026-11-05 03:28:29,640 - IRAP_Main - INFO - 
+--- PHASE 8: Pipeline Validation & Ablation Study ---
+2026-11-05 03:28:29,640 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:29,640 - IRAP_Validator - INFO - Starting Phase 8: Pipeline Validation & Ablation
+2026-11-05 03:28:29,640 - IRAP_Validator - INFO - ==================================================
+2026-11-05 03:28:29,640 - IRAP_Validator - INFO - Target column designated for validation: 'Diagnosis'
+2026-11-05 03:28:29,641 - IRAP_Validator - INFO - Executing Scikit-Learn Baseline Preprocessing...
+2026-11-05 03:28:30,371 - IRAP_Validator - INFO - Validation Results: Baseline Accuracy=0.9992, IRAP Accuracy=0.9992 (Gain = 0.0%)
+2026-11-05 03:28:30,371 - IRAP_Validator - INFO - Validation Results: Baseline F1=0.9992, IRAP F1=0.9992 (Gain = 0.0%)
+2026-11-05 03:28:30,559 - IRAP_Validator - INFO - Validation completed successfully.
+2026-11-05 03:28:30,560 - IRAP_Main - INFO - 
+--- PHASE 9: Explainability & Audit Engine ---
+2026-11-05 03:28:30,560 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:30,560 - IRAP_ExplainabilityEngine - INFO - Starting Phase 9: Explainability & Audit Engine
+2026-11-05 03:28:30,560 - IRAP_ExplainabilityEngine - INFO - ==================================================
+2026-11-05 03:28:30,566 - IRAP_ExplainabilityEngine - INFO - Explainability Engine generated audit trails for 11 features.
+2026-11-05 03:28:30,566 - IRAP_Main - INFO - 
+--- PHASE 10: Final Report Generation ---
+2026-11-05 03:28:30,566 - IRAP_ReportGenerator - INFO - Generating final evaluation reports...
+2026-11-05 03:28:30,568 - IRAP_ReportGenerator - INFO - Saved Markdown report to: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:30,568 - IRAP_ReportGenerator - INFO - Saved HTML report to: outputs/reports\irap_execution_report.html
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:30,569 - IRAP_Main - INFO -               IRAP PIPELINE EXECUTION SUMMARY                    
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - =================================================================
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - Task Evaluated: CLASSIFICATION (Target: 'Diagnosis')
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - Baseline Accuracy:  0.9992
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - IRAP Accuracy:      0.9992  (Gain = +0.0%)
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - Baseline F1-Score:  0.9992
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - IRAP F1-Score:      0.9992  (Gain = +0.0%)
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - Imputation Error Reduction: 17.38% over Standard Mean Imputation
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - Markdown Report: outputs/reports\irap_execution_report.md
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - HTML Report:     outputs/reports\irap_execution_report.html
+2026-11-05 03:28:30,569 - IRAP_Main - INFO - =================================================================
+--------------------------------------------------------------------------------
+Result: SUCCESS (Code 0) | Duration: 8.84s
+================================================================================
+
+================================================================================
+STEP: Cross-Dataset Benchmark and Ablation Experiment Suite
+Command: C:\Users\sree\AppData\Local\Programs\Python\Python313\python.exe experiments/run_benchmarks.py
+Timestamp: 2026-11-05 03:28:30
+--------------------------------------------------------------------------------
+=======================================================
+ Running Benchmark on: Realistic Clinical Cohort (Synthetic Non-Linear)
+ File: datasets/realistic_sample.csv | Target: diabetes_target
+=======================================================
+[OK] Completed Realistic Clinical Cohort (Synthetic Non-Linear) in 2.65s
+  Accuracy: Baseline 0.78 vs IRAP 0.78 (Gain: +0.0%)
+  F1-Score: Baseline 0.7723 vs IRAP 0.7723 (Gain: +0.0%)
+  Imputation Error Reduction: 44.06%
+
+=======================================================
+ Running Benchmark on: Mendeley CBC Hematology Clinical Lab
+ File: datasets/sample/CBC data_for_meandeley_csv.csv | Target: Sex  
+=======================================================
+[OK] Completed Mendeley CBC Hematology Clinical Lab in 3.94s
+  Accuracy: Baseline 0.6703 vs IRAP 0.978 (Gain: +30.77%)
+  F1-Score: Baseline 0.6553 vs IRAP 0.9781 (Gain: +32.28%)
+  Imputation Error Reduction: 0.0%
+
+=======================================================
+ Running Benchmark on: Hospital Diabetes Clinical Diagnostic Cohort
+ File: datasets/sample/Diabetes Classification.csv | Target: Diagnosis
+=======================================================
+[OK] Completed Hospital Diabetes Clinical Diagnostic Cohort in 5.39s
+  Accuracy: Baseline 0.9992 vs IRAP 0.9992 (Gain: +0.0%)
+  F1-Score: Baseline 0.9992 vs IRAP 0.9992 (Gain: +0.0%)
+  Imputation Error Reduction: 17.38%
+
+=======================================================
+ ALL EXPERIMENTS COMPLETE!
+ Summary CSV: outputs/reports/benchmark_summary.csv
+ Summary Markdown: outputs/reports/benchmark_summary.md
+=======================================================
+
+                                       dataset_name  rows  columns           target  graph_edges  baseline_accuracy  irap_accuracy  accuracy_gain_pct  baseline_f1  irap_f1  f1_gain_pct  imputation_error_reduction  execution_time_sec
+0  Realistic Clinical Cohort (Synthetic Non-Linear)   200       10  diabetes_target           49             0.7800         0.7800               0.00       0.7723   0.7723         0.00                       44.06                2.65
+1              Mendeley CBC Hematology Clinical Lab   374       12            Sex            116             0.6703         0.9780              30.77       0.6553   0.9781        32.28                        0.00                3.94
+2      Hospital Diabetes Clinical Diagnostic Cohort  5132       12        Diagnosis           59             0.9992         0.9992               0.00       0.9992   0.9992         0.00                       17.38                5.39
+--------------------------------------------------------------------------------
+Result: SUCCESS (Code 0) | Duration: 15.39s
+================================================================================
+
+================================================================================
+STEP: Artifact and Generated Files Audit
+--------------------------------------------------------------------------------
+[ EXISTS (8,405 bytes) ] outputs/pipeline.log - Chronological logging file
+[ EXISTS (3,179 bytes) ] outputs/discovered_edges.txt - Discovered Knowledge Graph edge list
+[ EXISTS (4,136 bytes) ] outputs/knowledge_graph.dot - Graphviz DOT visualization graph
+[EXISTS (10,937 bytes) ] outputs/knowledge_graph.json - Node-link Knowledge Graph JSON
+[ EXISTS (5,212 bytes) ] outputs/reports/irap_execution_report.md - Executive Markdown report
+[ EXISTS (5,238 bytes) ] outputs/reports/irap_execution_report.html - Styled standalone HTML executive report
+[  EXISTS (510 bytes)  ] outputs/reports/benchmark_summary.csv - Comparative ablation summary CSV
+[ EXISTS (1,794 bytes) ] outputs/reports/benchmark_summary.md - Comparative ablation summary Markdown
+[EXISTS (8,369,451 bytes)] datasets/biological_guardrails.json - LOINC Biological Guardrails database
+[EXISTS (12,719 bytes) ] PROJECT_MILESTONES.md - Project Milestones Documentation
+[EXISTS (13,336 bytes) ] PPT_PREPARATION.md - Panel Review Presentation Slide Preparation
+--------------------------------------------------------------------------------
+ARTIFACT AUDIT RESULT: ALL REQUIRED ARTIFACTS VERIFIED AND NON-EMPTY.
+
+================================================================================
+FINAL SYSTEM VERIFICATION VERDICT: ALL TESTS, PIPELINES & BENCHMARKS PASSED (100% SUCCESS)
+================================================================================

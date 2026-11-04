@@ -2,3 +2,9 @@ pandas
 chardet
 openpyxl
 xlrd
+numpy
+scipy
+xgboost
+shap
+networkx
+scikit-learn

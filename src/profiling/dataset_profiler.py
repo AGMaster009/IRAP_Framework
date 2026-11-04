@@ -65,7 +65,7 @@ class DatasetProfiler:
         numeric_cols = df.select_dtypes(include=['number']).columns
         bool_cols = df.select_dtypes(include=['bool']).columns
         datetime_cols = df.select_dtypes(include=['datetime']).columns
-        categorical_cols = df.select_dtypes(include=['object', 'category']).columns
+        categorical_cols = df.select_dtypes(include=['object', 'category', 'string']).columns
 
         profile.numeric_columns = len(numeric_cols)
         profile.boolean_columns = len(bool_cols)

@@ -1,0 +1,393 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Unnamed: 0"
+        },
+        {
+            "id": "Age"
+        },
+        {
+            "id": "Gender"
+        },
+        {
+            "id": "BMI"
+        },
+        {
+            "id": "Chol"
+        },
+        {
+            "id": "TG"
+        },
+        {
+            "id": "HDL"
+        },
+        {
+            "id": "LDL"
+        },
+        {
+            "id": "Cr"
+        },
+        {
+            "id": "BUN"
+        }
+    ],
+    "edges": [
+        {
+            "weight": 1.0,
+            "absolute_shap": 5.864799976348877,
+            "source": "Unnamed: 0",
+            "target": "Age"
+        },
+        {
+            "weight": 0.12169033288955688,
+            "absolute_shap": 0.08225955814123154,
+            "source": "Unnamed: 0",
+            "target": "Gender"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 1.3328969478607178,
+            "source": "Unnamed: 0",
+            "target": "BMI"
+        },
+        {
+            "weight": 0.1441238522529602,
+            "absolute_shap": 0.07254498451948166,
+            "source": "Unnamed: 0",
+            "target": "TG"
+        },
+        {
+            "weight": 0.14326855540275574,
+            "absolute_shap": 0.06777053326368332,
+            "source": "Unnamed: 0",
+            "target": "LDL"
+        },
+        {
+            "weight": 0.3345244824886322,
+            "absolute_shap": 3.001086711883545,
+            "source": "Unnamed: 0",
+            "target": "Cr"
+        },
+        {
+            "weight": 0.2219359278678894,
+            "absolute_shap": 0.09452635794878006,
+            "source": "Unnamed: 0",
+            "target": "BUN"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 311.43798828125,
+            "source": "Age",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.13621927797794342,
+            "absolute_shap": 0.09208075702190399,
+            "source": "Age",
+            "target": "Gender"
+        },
+        {
+            "weight": 0.4297574460506439,
+            "absolute_shap": 0.5728223919868469,
+            "source": "Age",
+            "target": "BMI"
+        },
+        {
+            "weight": 0.1396636962890625,
+            "absolute_shap": 0.07029996067285538,
+            "source": "Age",
+            "target": "TG"
+        },
+        {
+            "weight": 0.6078351736068726,
+            "absolute_shap": 0.25888752937316895,
+            "source": "Age",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.16378574073314667,
+            "absolute_shap": 0.9605706334114075,
+            "source": "Gender",
+            "target": "Age"
+        },
+        {
+            "weight": 0.2018488496541977,
+            "absolute_shap": 0.2690437138080597,
+            "source": "Gender",
+            "target": "BMI"
+        },
+        {
+            "weight": 0.1069057360291481,
+            "absolute_shap": 0.05381118133664131,
+            "source": "Gender",
+            "target": "TG"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 8.97120189666748,
+            "source": "Gender",
+            "target": "Cr"
+        },
+        {
+            "weight": 0.5051059722900391,
+            "absolute_shap": 157.30918884277344,
+            "source": "BMI",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.2710627019405365,
+            "absolute_shap": 1.5897284746170044,
+            "source": "BMI",
+            "target": "Age"
+        },
+        {
+            "weight": 0.1278800070285797,
+            "absolute_shap": 0.08644362539052963,
+            "source": "BMI",
+            "target": "Gender"
+        },
+        {
+            "weight": 0.4113348126411438,
+            "absolute_shap": 0.20704607665538788,
+            "source": "BMI",
+            "target": "TG"
+        },
+        {
+            "weight": 0.12510612607002258,
+            "absolute_shap": 0.053284868597984314,
+            "source": "BMI",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.17743998765945435,
+            "absolute_shap": 55.26155090332031,
+            "source": "Chol",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.2373676598072052,
+            "absolute_shap": 1.3921138048171997,
+            "source": "Chol",
+            "target": "Age"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.5033516883850098,
+            "source": "Chol",
+            "target": "TG"
+        },
+        {
+            "weight": 0.2456384003162384,
+            "absolute_shap": 0.12154856324195862,
+            "source": "Chol",
+            "target": "HDL"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.4730314314365387,
+            "source": "Chol",
+            "target": "LDL"
+        },
+        {
+            "weight": 0.20948673784732819,
+            "absolute_shap": 0.08922403305768967,
+            "source": "Chol",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.20443473756313324,
+            "absolute_shap": 63.66874313354492,
+            "source": "TG",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.23309732973575592,
+            "absolute_shap": 1.3670692443847656,
+            "source": "TG",
+            "target": "Age"
+        },
+        {
+            "weight": 0.16321030259132385,
+            "absolute_shap": 0.11032599955797195,
+            "source": "TG",
+            "target": "Gender"
+        },
+        {
+            "weight": 0.6451534628868103,
+            "absolute_shap": 0.8599230647087097,
+            "source": "TG",
+            "target": "BMI"
+        },
+        {
+            "weight": 0.35618969798088074,
+            "absolute_shap": 0.20425227284431458,
+            "source": "TG",
+            "target": "Chol"
+        },
+        {
+            "weight": 0.20667202770709991,
+            "absolute_shap": 0.10226694494485855,
+            "source": "TG",
+            "target": "HDL"
+        },
+        {
+            "weight": 0.21536028385162354,
+            "absolute_shap": 0.10187218338251114,
+            "source": "TG",
+            "target": "LDL"
+        },
+        {
+            "weight": 0.28514528274536133,
+            "absolute_shap": 0.12144831568002701,
+            "source": "TG",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.9899240732192993,
+            "absolute_shap": 308.2999572753906,
+            "source": "HDL",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.14572682976722717,
+            "absolute_shap": 0.09850762039422989,
+            "source": "HDL",
+            "target": "Gender"
+        },
+        {
+            "weight": 0.225532665848732,
+            "absolute_shap": 0.30061179399490356,
+            "source": "HDL",
+            "target": "BMI"
+        },
+        {
+            "weight": 0.35358139872550964,
+            "absolute_shap": 0.2027565836906433,
+            "source": "HDL",
+            "target": "Chol"
+        },
+        {
+            "weight": 0.5211102366447449,
+            "absolute_shap": 0.2623017132282257,
+            "source": "HDL",
+            "target": "TG"
+        },
+        {
+            "weight": 0.654107928276062,
+            "absolute_shap": 0.3094136118888855,
+            "source": "HDL",
+            "target": "LDL"
+        },
+        {
+            "weight": 0.13684973120689392,
+            "absolute_shap": 0.058286674320697784,
+            "source": "HDL",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.4249360263347626,
+            "absolute_shap": 132.34121704101562,
+            "source": "LDL",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.10103975981473923,
+            "absolute_shap": 0.5925779938697815,
+            "source": "LDL",
+            "target": "Age"
+        },
+        {
+            "weight": 0.10914819687604904,
+            "absolute_shap": 0.14548330008983612,
+            "source": "LDL",
+            "target": "BMI"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.5734367966651917,
+            "source": "LDL",
+            "target": "Chol"
+        },
+        {
+            "weight": 0.5917472243309021,
+            "absolute_shap": 0.2978569567203522,
+            "source": "LDL",
+            "target": "TG"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.4948272109031677,
+            "source": "LDL",
+            "target": "HDL"
+        },
+        {
+            "weight": 0.1117216944694519,
+            "absolute_shap": 1.0022778511047363,
+            "source": "LDL",
+            "target": "Cr"
+        },
+        {
+            "weight": 0.18249167501926422,
+            "absolute_shap": 0.07772636413574219,
+            "source": "LDL",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.32957056164741516,
+            "absolute_shap": 102.64079284667969,
+            "source": "Cr",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.10815256088972092,
+            "absolute_shap": 0.6342931389808655,
+            "source": "Cr",
+            "target": "Age"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.6759744882583618,
+            "source": "Cr",
+            "target": "Gender"
+        },
+        {
+            "weight": 0.11258627474308014,
+            "absolute_shap": 0.15006589889526367,
+            "source": "Cr",
+            "target": "BMI"
+        },
+        {
+            "weight": 1.0,
+            "absolute_shap": 0.4259173274040222,
+            "source": "Cr",
+            "target": "BUN"
+        },
+        {
+            "weight": 0.2165016084909439,
+            "absolute_shap": 67.42682647705078,
+            "source": "BUN",
+            "target": "Unnamed: 0"
+        },
+        {
+            "weight": 0.32079145312309265,
+            "absolute_shap": 1.8813776969909668,
+            "source": "BUN",
+            "target": "Age"
+        },
+        {
+            "weight": 0.14717119932174683,
+            "absolute_shap": 0.07407887279987335,
+            "source": "BUN",
+            "target": "TG"
+        },
+        {
+            "weight": 0.5330681800842285,
+            "absolute_shap": 4.782262325286865,
+            "source": "BUN",
+            "target": "Cr"
+        }
+    ]
+}

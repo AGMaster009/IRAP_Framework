@@ -1,0 +1,312 @@
+LOINC_NUM,COMPONENT,PROPERTY,TIME_ASPCT,SYSTEM,SCALE_TYP,METHOD_TYP,CLASS,VersionLastChanged,STATUS,CLASSTYPE,ORDER_OBS,EXTERNAL_COPYRIGHT_NOTICE,EXAMPLE_UNITS,LONG_COMMON_NAME,EXAMPLE_UCUM_UNITS,VersionFirstReleased,LHCForms,FormalName
+76675-8,"Appearance^1st tube",Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Appearance of Cerebrospinal Fluid --1st tube",,2.52,false,"Appearance^1st tube:Aper:Pt:CSF:Nom:"
+76676-6,"Appearance^2nd tube",Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Appearance of Cerebrospinal Fluid --2nd tube",,2.52,false,"Appearance^2nd tube:Aper:Pt:CSF:Nom:"
+76678-2,"Appearance^4th tube",Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Appearance of Cerebrospinal Fluid --4th tube",,2.52,false,"Appearance^4th tube:Aper:Pt:CSF:Nom:"
+47227-4,Blood.dried,PrThr,Pt,Calculus,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Blood.dried [Presence] of Stone Qualitative",,2.19,false,Blood.dried:PrThr:Pt:Calculus:Ord:
+49499-7,Blood.dried/Total,MFr,Pt,Calculus,Qn,,SPEC,2.73,ACTIVE,1,Observation,,%,"Blood.dried/Total of Stone",%,2.22,false,Blood.dried/Total:MFr:Pt:Calculus:Qn:
+97199-4,"Icteric interference index",ACnc,Pt,CSF,Qn,,SPEC,2.83,ACTIVE,1,Observation,,"Index value","Icteric interference index of Cerebrospinal Fluid",{Index_val},2.70,false,"Icteric interference index:ACnc:Pt:CSF:Qn:"
+46426-3,"Icteric interference index",ACnc,Pt,Ser/Plas,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Icteric interference index of Serum or Plasma",[arb'U]/mL,2.19,false,"Icteric interference index:ACnc:Pt:Ser/Plas:Qn:"
+97202-6,"Icteric interference index",ACnc,Pt,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,"Index value","Icteric interference index of Urine",{Index_val},2.70,false,"Icteric interference index:ACnc:Pt:Urine:Qn:"
+80581-2,"Incubation date & time range",TmStpRange,Pt,Specimen,Qn,,SPEC,2.58,ACTIVE,1,Observation,,{tmstp_range},"Specimen incubation date and time range",{tmstp_range},2.56,false,"Incubation date & time range:TmStpRange:Pt:Specimen:Qn:"
+90101-7,"Internal control result",PrThr,Pt,Specimen,Ord,,SPEC,2.72,ACTIVE,1,Observation,,,"Internal control result",,2.65,false,"Internal control result:PrThr:Pt:Specimen:Ord:"
+14271-1,Character,Aper,Pt,"Synv fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Character of Synovial fluid",,1.0k,false,"Character:Aper:Pt:Synv fld:Nom:"
+19244-3,Character,Aper,Pt,Urine,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Character of Urine",,1.0l,false,Character:Aper:Pt:Urine:Nom:
+94127-8,Clarity,Type,Pt,"Body fld",Nom,,SPEC,2.67,ACTIVE,1,Observation,,,"Clarity of Body fluid",,2.67,false,"Clarity:Type:Pt:Body fld:Nom:"
+49736-2,Clarity,Type,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Clarity of Cerebrospinal Fluid",,2.22,false,Clarity:Type:Pt:CSF:Nom:
+61193-9,Clarity,Type,Pt,"Plr fld^Fetus",Nom,,SPEC,2.34,ACTIVE,1,Observation,,,"Clarity of Pleural fluid from Fetus",,2.34,false,"Clarity:Type:Pt:Plr fld^Fetus:Nom:"
+32167-9,Clarity,Type,Pt,Urine,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Clarity of Urine",,2.07,false,Clarity:Type:Pt:Urine:Nom:
+33515-8,Clarity,Type,Pt,XXX,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Clarity of Specimen",,2.09,false,Clarity:Type:Pt:XXX:Nom:
+103593-0,"Cell growth",PrThr,Pt,Amniocytes,Ord,"Tissue culture",SPEC,2.77,ACTIVE,1,Both,,,"Cell growth [Presence] of Amniocytes Qualitative by Tissue culture",,2.77,false,"Cell growth:PrThr:Pt:Amniocytes:Ord:Tissue culture"
+103713-4,"Cell growth",PrThr,Pt,CVS,Ord,"Tissue culture",SPEC,2.77,ACTIVE,1,Both,,,"Cell growth [Presence] of Chorionic villus sample Qualitative by Tissue culture",,2.77,false,"Cell growth:PrThr:Pt:CVS:Ord:Tissue culture"
+96300-9,"Cell growth",PrThr,Pt,Fibroblasts,Ord,"Tissue culture",SPEC,2.69,ACTIVE,1,Both,,,"Cell growth [Presence] of Fibroblast in Tissue culture",,2.69,false,"Cell growth:PrThr:Pt:Fibroblasts:Ord:Tissue culture"
+94496-7,"Cell suspension",Vol,Pt,Specimen,Qn,,SPEC,2.68,ACTIVE,1,Observation,,mL,"Cell suspension [Volume] of Specimen",mL,2.68,false,"Cell suspension:Vol:Pt:Specimen:Qn:"
+41293-2,Clot,Arb,Pt,XXX,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Clotted specimen",,2.16,false,Clot:Arb:Pt:XXX:Ord:
+96710-9,Clot,PrThr,Pt,"Body fld",Ord,,SPEC,2.69,ACTIVE,1,Observation,,,"Clot [Presence] of Body fluid Qualitative",,2.69,false,"Clot:PrThr:Pt:Body fld:Ord:"
+33882-2,"Collection date",Date,Pt,^Specimen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection date of Specimen",,2.09,false,"Collection date:Date:Pt:^Specimen:Qn:"
+58734-5,"Collection date",TmStp,Pt,"Amnio fld",Qn,,SPEC,2.32,ACTIVE,1,Observation,,,"Collection date of Amniotic fluid",,2.32,false,"Collection date:TmStp:Pt:Amnio fld:Qn:"
+51953-8,"Collection date",TmStp,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection date of Blood",,2.24,false,"Collection date:TmStp:Pt:Bld:Qn:"
+41393-0,"Collection date",TmStp,Pt,"Body fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection date of Body fluid",,2.16,false,"Collection date:TmStp:Pt:Body fld:Qn:"
+41394-8,"Collection date",TmStp,Pt,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection date of Stool",,2.16,false,"Collection date:TmStp:Pt:Stool:Qn:"
+41395-5,"Collection date",TmStp,Pt,Urine,Qn,,SPEC,2.26,ACTIVE,1,Observation,,,"Collection date of Urine",,2.16,false,"Collection date:TmStp:Pt:Urine:Qn:"
+68963-8,"Collection date & time",TmStp,Pt,^Specimen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,dd:hh,"Collection date and time of Specimen",,2.38,false,"Collection date & time:TmStp:Pt:^Specimen:Qn:"
+61100-4,"Collection date^2nd specimen",TmStp,Pt,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,MMDDYY,"Collection date of Stool--2nd specimen",{mm/dd/yyyy},2.38,false,"Collection date^2nd specimen:TmStp:Pt:Stool:Qn:"
+61099-8,"Collection date^3rd specimen",TmStp,Pt,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,MMDDYY,"Collection date of Stool--3rd specimen",{mm/dd/yyyy},2.38,false,"Collection date^3rd specimen:TmStp:Pt:Stool:Qn:"
+19085-0,"Collection duration",Time,*,Urine,Qn,,SPEC,2.70,DEPRECATED,1,,,h,"Deprecated Collection duration of Urine - time unspecified",h,1.0l,false,"Collection duration:Time:*:Urine:Qn:"
+14659-7,"Collection duration",Time,Pt,Urine,Qn,,SPEC,2.36,DEPRECATED,1,,,,"Deprecated Collection duration of Urine",,1.0k,false,"Collection duration:Time:Pt:Urine:Qn:"
+19086-8,"Collection end date",Date,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection of urine specimen end date",{date},1.0l,false,"Collection end date:Date:Pt:Urine:Qn:"
+51905-8,"Collection end time",TmStp,Pt,Air,Qn,,SPEC,2.70,ACTIVE,1,Observation,,HHMM,"Collection of air specimen end time",,2.24,false,"Collection end time:TmStp:Pt:Air:Qn:"
+19087-6,"Collection end time",TmStp,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection of urine specimen end time",{clock_time},1.0l,false,"Collection end time:TmStp:Pt:Urine:Qn:"
+105082-2,"Collection end time",TmStp,Pt,XXX,Qn,,SPEC,2.78,ACTIVE,1,Observation,,{hh:min},"Collection end time of Specimen",{hh:min},2.78,false,"Collection end time:TmStp:Pt:XXX:Qn:"
+50220-3,"Collection interval from baseline",Time,Pt,^Specimen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,min,"Collection interval from baseline of Unspecified specimen",min,2.22,false,"Collection interval from baseline:Time:Pt:^Specimen:Qn:"
+79566-6,"Collection method",Type,Pt,Bld.dot,Nom,,SPEC,2.61,ACTIVE,1,Observation,,,"Collection method - DBS",,2.54,false,"Collection method:Type:Pt:Bld.dot:Nom:"
+34696-5,"Collection method",Type,Pt,Semen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection method - Semen",,2.11,false,"Collection method:Type:Pt:Semen:Nom:"
+53903-1,"Collection method",Type,Pt,Specimen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection method - Specimen",,2.26,false,"Collection method:Type:Pt:Specimen:Nom:"
+94331-6,"Collection procedure comment",Find,Pt,Specimen,Nom,,SPEC,2.68,TRIAL,1,Observation,,,"Specimen Collection procedure comment",,2.68,false,"Collection procedure comment:Find:Pt:Specimen:Nom:"
+90041-5,"Collection setting",Type,Pt,Specimen,Nom,,SPEC,2.65,ACTIVE,1,Both,,,"Specimen collection setting type",,2.65,false,"Collection setting:Type:Pt:Specimen:Nom:"
+19088-4,"Collection start date",Date,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection of urine specimen start date",{date},1.0l,false,"Collection start date:Date:Pt:Urine:Qn:"
+51906-6,"Collection start time",TmStp,Pt,Air,Qn,,SPEC,2.70,ACTIVE,1,Observation,,HHMM,"Collection of air specimen start time",,2.24,false,"Collection start time:TmStp:Pt:Air:Qn:"
+19089-2,"Collection start time",TmStp,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection of urine specimen start time",{clock_time},1.0l,false,"Collection start time:TmStp:Pt:Urine:Qn:"
+100154-4,"Collection supervision level",Find,Pt,Specimen,Nom,,SPEC,2.72,ACTIVE,1,Observation,,,"Specimen collection supervision level",,2.72,false,"Collection supervision level:Find:Pt:Specimen:Nom:"
+49049-0,"Collection time",TmStp,Pt,^Specimen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Specimen",{clock_time},2.21,false,"Collection time:TmStp:Pt:^Specimen:Qn:"
+29264-9,"Collection time",TmStp,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Blood",,2.03,false,"Collection time:TmStp:Pt:Bld:Qn:"
+49488-0,"Collection time",TmStp,Pt,"Body fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Body fluid",,2.22,false,"Collection time:TmStp:Pt:Body fld:Qn:"
+34595-9,"Collection time",TmStp,Pt,"Gast fld",Qn,,SPEC,2.26,ACTIVE,1,Observation,,,"Collection time of Gastric fluid",,2.11,false,"Collection time:TmStp:Pt:Gast fld:Qn:"
+13358-7,"Collection time",TmStp,Pt,Semen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Semen",,1.0j-a,false,"Collection time:TmStp:Pt:Semen:Qn:"
+74751-9,"Collection time",TmStp,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,"Clock time","Collection time of Urine",{clock_time},2.48,false,"Collection time:TmStp:Pt:Urine:Qn:"
+49972-3,"Collection time^2nd specimen",TmStp,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Blood--2nd specimen",,2.22,false,"Collection time^2nd specimen:TmStp:Pt:Bld:Qn:"
+49971-5,"Collection time^3rd specimen",TmStp,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Collection time of Blood--3rd specimen",,2.22,false,"Collection time^3rd specimen:TmStp:Pt:Bld:Qn:"
+49970-7,"Collection time^4th specimen",TmStp,Pt,Bld,Qn,,SPEC,2.26,ACTIVE,1,Observation,,,"Collection time of Blood--4th specimen",,2.22,false,"Collection time^4th specimen:TmStp:Pt:Bld:Qn:"
+53749-8,"Collection time^5th specimen",TmStp,Pt,Bld,Qn,,SPEC,2.26,ACTIVE,1,Observation,,,"Collection time of Blood--5th specimen",,2.26,false,"Collection time^5th specimen:TmStp:Pt:Bld:Qn:"
+60458-7,"Collection time^6th specimen",TmStp,Pt,Bld,Qn,,SPEC,2.70,ACTIVE,1,Observation,,TmStp,"Collection time of Blood--6th specimen",,2.34,false,"Collection time^6th specimen:TmStp:Pt:Bld:Qn:"
+13360-3,Color,Imp,Pt,Semen,Nom,,SPEC,2.40,DEPRECATED,1,Observation,,,"Deprecated Color of Semen - impression",,1.0j-a,false,Color:Imp:Pt:Semen:Nom:
+14663-9,Color,Type,Pt,Semen,Nom,Visual,SPEC,2.40,DEPRECATED,1,Observation,,,"Deprecated Color of Semen by Visual",,1.0k,false,Color:Type:Pt:Semen:Nom:Visual
+76679-0,"Color^1st tube",Type,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Color of Cerebrospinal Fluid --1st tube",,2.52,false,"Color^1st tube:Type:Pt:CSF:Nom:"
+76680-8,"Color^2nd tube",Type,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Color of Cerebrospinal Fluid --2nd tube",,2.52,false,"Color^2nd tube:Type:Pt:CSF:Nom:"
+76681-6,"Color^3rd tube",Type,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Color of Cerebrospinal Fluid --3rd tube",,2.52,false,"Color^3rd tube:Type:Pt:CSF:Nom:"
+76682-4,"Color^4th tube",Type,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Color of Cerebrospinal Fluid --4th tube",,2.52,false,"Color^4th tube:Type:Pt:CSF:Nom:"
+10571-8,Consistency,ACnc,Pt,Semen,Ord,,SPEC,2.54,DEPRECATED,1,Observation,,,"Deprecated Consistency of Semen",,1.0i,false,Consistency:ACnc:Pt:Semen:Ord:
+10570-0,Consistency,PrThr,Pt,Cvm,Ord,,SPEC,2.56,ACTIVE,1,Observation,,,"Consistency of Cervical mucus",,1.0i,false,Consistency:PrThr:Pt:Cvm:Ord:
+9797-2,Consistency,Type,Pt,Calculus,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Consistency of Stone",,1.0i,false,Consistency:Type:Pt:Calculus:Nom:
+11029-6,Consistency,Type,Pt,Stool,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Consistency of Stool",,1.0j-a,false,Consistency:Type:Pt:Stool:Nom:
+104534-3,Consistency,Type,Pt,Urine,Nom,,SPEC,2.78,ACTIVE,1,Order,,,"Consistency of Urine",,2.78,false,Consistency:Type:Pt:Urine:Nom:
+107166-1,Electron,ElecCond,Pt,Urine,Qn,,SPEC,2.81,ACTIVE,1,Both,,umho/cm,"Electron [Electrical Conductivity] of Urine",umho/cm,2.79,false,Electron:ElecCond:Pt:Urine:Qn:
+87444-6,Electron,ElecCond,Pt,Water,Qn,,SPEC,2.79,ACTIVE,1,Both,,umho/cm,"Electron [Electrical Conductivity] of Water",umho/cm,2.63,false,Electron:ElecCond:Pt:Water:Qn:
+74532-3,"Energy content",EngCnt,24H,Stool.wet,Qn,,SPEC,2.48,ACTIVE,1,Both,,kcal/kg,"Energy content [Energy/mass] of 24 hour Stool.wet",kcal/kg,2.48,false,"Energy content:EngCnt:24H:Stool.wet:Qn:"
+41277-5,"Gross blood",PrThr,Pt,"Body fld",Ord,,SPEC,2.56,ACTIVE,1,Observation,,,"Gross blood [Presence] of Body fluid Qualitative",,2.15,false,"Gross blood:PrThr:Pt:Body fld:Ord:"
+41278-3,"Gross blood",PrThr,Pt,Stool,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Gross blood [Presence] of Stool Qualitative",,2.15,false,"Gross blood:PrThr:Pt:Stool:Ord:"
+56119-1,"Cellular material",MCnt,Pt,Calculus,Qn,Estimated,SPEC,2.73,ACTIVE,1,Both,,%,"Cellular material [Mass/mass] of Stone by Estimated",%,2.29,false,"Cellular material:MCnt:Pt:Calculus:Qn:Estimated"
+9374-0,Character,Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Observation,,,"Character of Cerebrospinal Fluid",,1.0i,false,Character:Aper:Pt:CSF:Nom:
+13359-5,Character,Aper,Pt,Semen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Character of Semen",,1.0j-a,false,Character:Aper:Pt:Semen:Nom:
+10568-4,Clarity,Type,Pt,Semen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Clarity of Semen",,1.0i,false,Clarity:Type:Pt:Semen:Nom:
+96449-4,"Cell growth",PrThr,Pt,Tumor,Ord,"Tissue culture",SPEC,2.69,ACTIVE,1,Both,,,"Cell growth [Presence] of Tumor in Tissue culture",,2.69,false,"Cell growth:PrThr:Pt:Tumor:Ord:Tissue culture"
+42605-6,"Dialysis bag number",ID,Pt,"Periton fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Peritoneal dialysis bag number",,2.16,false,"Dialysis bag number:ID:Pt:Periton fld:Nom:"
+85930-6,"Date specimen sent to CDC",Date,Pt,^Patient,Qn,,SPEC,2.61,ACTIVE,1,Observation,,MMDDYY,"Date specimen sent to CDC",{mm/dd/yyyy},2.61,false,"Date specimen sent to CDC:Date:Pt:^Patient:Qn:"
+20824-9,"Freezing point",Temp,Pt,Milk,Qn,,SPEC,2.42,ACTIVE,1,Observation,,"deg C","Freezing point of Milk",Cel,1.0m,false,"Freezing point:Temp:Pt:Milk:Qn:"
+80352-8,"Environment temperature during transport",Temp,Pt,Envir,Qn,,SPEC,2.54,ACTIVE,1,Observation,,"deg C","Environment temperature during transport",Cel,2.54,false,"Environment temperature during transport:Temp:Pt:Envir:Qn:"
+87443-8,Hardness,MCnc,Pt,Water,Qn,Calculated,SPEC,2.63,ACTIVE,1,Both,,mg/L,"Hardness [Mass/volume] of Water by Calculation",mg/L,2.63,false,Hardness:MCnc:Pt:Water:Qn:Calculated
+42185-9,"Number of specimens obtained",Num,Pt,XXX,Qn,,SPEC,2.69,ACTIVE,1,Observation,,,"Number of specimens obtained",,2.16,false,"Number of specimens obtained:Num:Pt:XXX:Qn:"
+42186-7,"Number of specimens received",Num,Pt,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,#,"Number of specimens received",{#},2.16,false,"Number of specimens received:Num:Pt:XXX:Qn:"
+38527-8,"Number of specimens received",Num,Stdy,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,#,"Number of specimens received of Stool",{#},2.14,false,"Number of specimens received:Num:Stdy:Stool:Qn:"
+42187-5,"Number of specimens tested",Num,Pt,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Number of specimens tested",,2.16,false,"Number of specimens tested:Num:Pt:XXX:Qn:"
+38526-0,"Number of specimens tested",Num,Stdy,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,#,"Number of specimens tested of Stool",{#},2.14,false,"Number of specimens tested:Num:Stdy:Stool:Qn:"
+1887-9,Observation,Aper,Pt,"Amnio fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Amniotic fluid",,1.0,false,"Observation:Aper:Pt:Amnio fld:Nom:"
+38196-2,Observation,Aper,Pt,Bld,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Blood",,2.13,false,Observation:Aper:Pt:Bld:Nom:
+9335-1,Observation,Aper,Pt,"Body fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Body fluid",,1.0i,false,"Observation:Aper:Pt:Body fld:Nom:"
+11134-4,Observation,Aper,Pt,"Body fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Body fluid",,1.0j-a,false,"Observation:Aper:Pt:Body fld.spun:Nom:"
+32803-9,Observation,Aper,Pt,Bronchial,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Bronchial specimen",,2.09,false,Observation:Aper:Pt:Bronchial:Nom:
+14618-3,Observation,Aper,Pt,Calculus,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Stone",,1.0k,false,Observation:Aper:Pt:Calculus:Nom:
+10333-3,Observation,Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Observation,,,"Appearance of Cerebrospinal Fluid",,1.0i,false,Observation:Aper:Pt:CSF:Nom:
+11135-1,Observation,Aper,Pt,CSF.spun,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Cerebral spinal fluid",,1.0j-a,false,Observation:Aper:Pt:CSF.spun:Nom:
+57835-1,Observation,Aper,Pt,"Dial fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Dialysis fluid",,2.29,false,"Observation:Aper:Pt:Dial fld:Nom:"
+40606-6,Observation,Aper,Pt,"Dial fld prt",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Peritoneal dialysis fluid",,2.15,false,"Observation:Aper:Pt:Dial fld prt:Nom:"
+52812-5,Observation,Aper,Pt,"Dial fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Dialysis fluid",,2.24,false,"Observation:Aper:Pt:Dial fld.spun:Nom:"
+29606-1,Observation,Aper,Pt,"Gast fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Gastric fluid",,2.03,false,"Observation:Aper:Pt:Gast fld:Nom:"
+14617-5,Observation,Aper,Pt,"Pericard fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Pericardial fluid",,1.0k,false,"Observation:Aper:Pt:Pericard fld:Nom:"
+52820-8,Observation,Aper,Pt,"Pericard fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Pericardial fluid",,2.24,false,"Observation:Aper:Pt:Pericard fld.spun:Nom:"
+14621-7,Observation,Aper,Pt,"Periton fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Peritoneal fluid",,1.0k,false,"Observation:Aper:Pt:Periton fld:Nom:"
+52814-1,Observation,Aper,Pt,"Periton fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Peritoneal fluid",,2.24,false,"Observation:Aper:Pt:Periton fld.spun:Nom:"
+14619-1,Observation,Aper,Pt,Plas,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Plasma",,1.0k,false,Observation:Aper:Pt:Plas:Nom:
+14620-9,Observation,Aper,Pt,"Plr fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Pleural fluid",,1.0k,false,"Observation:Aper:Pt:Plr fld:Nom:"
+52813-3,Observation,Aper,Pt,"Plr fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Pleural fluid",,2.24,false,"Observation:Aper:Pt:Plr fld.spun:Nom:"
+16400-4,Observation,Aper,Pt,"Semin plas",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Seminal plasma",,1.0l,false,"Observation:Aper:Pt:Semin plas:Nom:"
+11158-3,Observation,Aper,Pt,Ser,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Serum",,1.0j-a,false,Observation:Aper:Pt:Ser:Nom:
+33455-7,Observation,Aper,Pt,Sputum,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Sputum",,2.09,false,Observation:Aper:Pt:Sputum:Nom:
+29636-8,Observation,Aper,Pt,Stool,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Stool",,2.03,false,Observation:Aper:Pt:Stool:Nom:
+29605-3,Observation,Aper,Pt,"Synv fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Synovial fluid",,2.03,false,"Observation:Aper:Pt:Synv fld:Nom:"
+41280-9,Observation,Aper,Pt,"Synv fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Spun Synovial fluid",,2.15,false,"Observation:Aper:Pt:Synv fld.spun:Nom:"
+5767-9,Observation,Aper,Pt,Urine,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Urine",,1.0,false,Observation:Aper:Pt:Urine:Nom:
+68436-5,Observation,Aper,Pt,"Vitr fld",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Appearance of Vitreous fluid",,2.38,false,"Observation:Aper:Pt:Vitr fld:Nom:"
+68455-5,Observation,Aper,Pt,"Vitr fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Appearance of Spun Vitreous fluid",,2.38,false,"Observation:Aper:Pt:Vitr fld.spun:Nom:"
+33511-7,Observation,Aper,Pt,XXX,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Specimen",,2.09,false,Observation:Aper:Pt:XXX:Nom:
+87728-2,Observation,Aper,Pt,XXX.swab,Nar,,SPEC,2.79,ACTIVE,1,Observation,,,"Description of swab specimen Narrative",,2.63,false,Observation:Aper:Pt:XXX.swab:Nar:
+38386-9,Observation,Color,Pt,"Amnio fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Amniotic fluid",,2.14,false,"Observation:Color:Pt:Amnio fld:Nom:"
+6824-7,Observation,Color,Pt,"Body fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Body fluid",,1.0h(2),false,"Observation:Color:Pt:Body fld:Nom:"
+53733-2,Observation,Color,Pt,"Body fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Spun Body fluid",,2.26,false,"Observation:Color:Pt:Body fld.spun:Nom:"
+32802-1,Observation,Color,Pt,Bronchial,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Bronchial specimen",,2.09,false,Observation:Color:Pt:Bronchial:Nom:
+9796-4,Observation,Color,Pt,Calculus,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Stone",,1.0i,false,Observation:Color:Pt:Calculus:Nom:
+10335-8,Observation,Color,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Observation,,,"Color of Cerebrospinal Fluid",,1.0i,false,Observation:Color:Pt:CSF:Nom:
+32168-7,Observation,Color,Pt,CSF.spun,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Spun Cerebral spinal fluid",,2.07,false,Observation:Color:Pt:CSF.spun:Nom:
+51617-9,Observation,Color,Pt,"Dial fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Dialysis fluid",,2.24,false,"Observation:Color:Pt:Dial fld:Nom:"
+80661-2,Observation,Color,Pt,"Dial fld prt",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Peritoneal dialysis fluid",,2.56,false,"Observation:Color:Pt:Dial fld prt:Nom:"
+14132-5,Observation,Color,Pt,"Gast fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Gastric fluid",,1.0k,false,"Observation:Color:Pt:Gast fld:Nom:"
+86242-5,Observation,Color,Pt,"Nasal fluid",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Nasal fluid",,2.61,false,"Observation:Color:Pt:Nasal fluid:Nom:"
+14661-3,Observation,Color,Pt,"Pericard fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Pericardial fluid",,1.0k,false,"Observation:Color:Pt:Pericard fld:Nom:"
+103657-3,Observation,Color,Pt,"Pericard fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Color of Spun Pericardial fluid",,2.77,false,"Observation:Color:Pt:Pericard fld.spun:Nom:"
+14660-5,Observation,Color,Pt,"Periton fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Peritoneal fluid",,1.0k,false,"Observation:Color:Pt:Periton fld:Nom:"
+103656-5,Observation,Color,Pt,"Periton fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Color of Spun Peritoneal fluid",,2.77,false,"Observation:Color:Pt:Periton fld.spun:Nom:"
+14662-1,Observation,Color,Pt,"Plr fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Pleural fluid",,1.0k,false,"Observation:Color:Pt:Plr fld:Nom:"
+103655-7,Observation,Color,Pt,"Plr fld.spun",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Color of Spun Pleural fluid",,2.77,false,"Observation:Color:Pt:Plr fld.spun:Nom:"
+61192-1,Observation,Color,Pt,"Plr fld^Fetus",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Pleural fluid from Fetus",,2.34,false,"Observation:Color:Pt:Plr fld^Fetus:Nom:"
+96715-8,Observation,Color,Pt,"Prostatic fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Prostatic fluid",,2.69,false,"Observation:Color:Pt:Prostatic fld:Nom:"
+10569-2,Observation,Color,Pt,Semen,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Semen",,1.0i,false,Observation:Color:Pt:Semen:Nom:
+86243-3,Observation,Color,Pt,Sputum,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Sputum",,2.61,false,Observation:Color:Pt:Sputum:Nom:
+9397-1,Observation,Color,Pt,Stool,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Stool",,1.0i,false,Observation:Color:Pt:Stool:Nom:
+14664-7,Observation,Color,Pt,"Synv fld",Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Synovial fluid",,1.0k,false,"Observation:Color:Pt:Synv fld:Nom:"
+5778-6,Observation,Color,Pt,Urine,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Urine",,1.0,false,Observation:Color:Pt:Urine:Nom:
+68971-1,Observation,Color,Pt,"Vitr fld",Nom,,SPEC,2.79,ACTIVE,1,Both,,,"Color of Vitreous fluid",,2.38,false,"Observation:Color:Pt:Vitr fld:Nom:"
+33512-5,Observation,Color,Pt,XXX,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Color of Specimen",,2.09,false,Observation:Color:Pt:XXX:Nom:
+58681-8,Observation,Temp,Pt,Urine,Qn,,SPEC,2.82,ACTIVE,1,Observation,,"deg C","Temperature of Urine",Cel,2.32,false,Observation:Temp:Pt:Urine:Qn:
+14725-6,Observation,Type,Pt,"Body fld",Nom,,SPEC,2.81,ACTIVE,1,Observation,,,"[Type] of Body fluid",,1.0k,false,"Observation:Type:Pt:Body fld:Nom:"
+66746-9,Observation,Type,Pt,Specimen,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Specimen type",,2.38,false,Observation:Type:Pt:Specimen:Nom:
+46273-9,"Observation^post transfusion reaction",Aper,Pt,Ser,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Serum--after transfusion reaction",,2.19,false,"Observation^post transfusion reaction:Aper:Pt:Ser:Nom:"
+46272-1,"Observation^post transfusion reaction",Aper,Pt,Urine,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Appearance of Urine --after transfusion reaction",,2.19,false,"Observation^post transfusion reaction:Aper:Pt:Urine:Nom:"
+96716-6,Odor,Type,Pt,"Prostatic fld",Nom,,SPEC,2.69,ACTIVE,1,Observation,,,"Odor of Prostatic fluid",,2.69,false,"Odor:Type:Pt:Prostatic fld:Nom:"
+96723-2,Odor,Type,Pt,"Respiratory system specimen.lower",Nom,,SPEC,2.77,ACTIVE,1,Observation,,,"Odor of Lower respiratory specimen",,2.69,false,"Odor:Type:Pt:Respiratory system specimen.lower:Nom:"
+34533-0,Odor,Type,Pt,Urine,Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Odor of Urine",,2.10,false,Odor:Type:Pt:Urine:Nom:
+94330-8,"Processing comment",Find,Pt,Specimen,Nom,,SPEC,2.68,TRIAL,1,Observation,,,"Specimen Processing comment",,2.68,false,"Processing comment:Find:Pt:Specimen:Nom:"
+74482-1,"Reason for unsatisfactory specimen not related to sample quality of dried blood spot",Type,Pt,Bld.dot,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Reason for unsatisfactory specimen not related to sample quality of dried blood spot",,2.46,false,"Reason for unsatisfactory specimen not related to sample quality of dried blood spot:Type:Pt:Bld.dot:Nom:"
+94847-1,"Reason specimen not collected",Find,Pt,Specimen,Nom,,SPEC,2.68,ACTIVE,1,Observation,,,"Reason specimen not collected",,2.68,false,"Reason specimen not collected:Find:Pt:Specimen:Nom:"
+20395-0,"Sample integrity",Type,Pt,Ser/Plas,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Sample integrity [Type] of Serum or Plasma",,1.0m,false,"Sample integrity:Type:Pt:Ser/Plas:Nom:"
+93048-7,"Reason for specimen rejection",Type,Pt,Specimen,Nom,,SPEC,2.66,ACTIVE,1,Observation,,,"Reason for specimen rejection [Type]",,2.66,false,"Reason for specimen rejection:Type:Pt:Specimen:Nom:"
+95044-4,"Refused specimen collection",Find,Pt,^Patient,Ord,,SPEC,2.68,ACTIVE,1,Observation,,,"Patient refused specimen collection",,2.68,false,"Refused specimen collection:Find:Pt:^Patient:Ord:"
+90369-0,"Sample collection timing related to drug dose",Type,Pt,Specimen,Nom,,SPEC,2.65,ACTIVE,1,Observation,,,"Sample collection timing related to drug dose",,2.65,false,"Sample collection timing related to drug dose:Type:Pt:Specimen:Nom:"
+57718-9,"Sample condition",Type,Pt,Bld.dot,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Sample quality of Dried blood spot",,2.29,false,"Sample condition:Type:Pt:Bld.dot:Nom:"
+70153-2,"Sample hemolyzed",PrThr,Pt,CSF,Ord,,SPEC,2.83,ACTIVE,1,Observation,,,"Sample hemolyzed [Presence] of Cerebrospinal Fluid Qualitative",,2.44,false,"Sample hemolyzed:PrThr:Pt:CSF:Ord:"
+20393-5,"Sample hemolyzed",PrThr,Pt,Ser/Plas,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Sample hemolyzed [Presence] of Serum or Plasma Qualitative",,1.0m,false,"Sample hemolyzed:PrThr:Pt:Ser/Plas:Ord:"
+70137-5,"Sample icteric",PrThr,Pt,CSF,Ord,Spectrophotometry,SPEC,2.83,ACTIVE,1,Observation,,,"Sample icteric [Presence] of Cerebrospinal Fluid Qualitative by Spectrophotometry",,2.44,false,"Sample icteric:PrThr:Pt:CSF:Ord:Spectrophotometry"
+20392-7,"Sample icteric",PrThr,Pt,Ser/Plas,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Sample icteric [Presence] of Serum or Plasma Qualitative",,1.0m,false,"Sample icteric:PrThr:Pt:Ser/Plas:Ord:"
+20394-3,"Sample lipemic",PrThr,Pt,Ser/Plas,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Sample lipemic [Presence] of Serum or Plasma Qualitative",,1.0m,false,"Sample lipemic:PrThr:Pt:Ser/Plas:Ord:"
+75371-5,"Bartlett score",Score,Pt,Sputum,Ord,Microscopy.light,SPEC,2.50,ACTIVE,1,Both,,score,"Bartlett score of Sputum Qualitative by Light microscopy",{score},2.50,false,"Bartlett score:Score:Pt:Sputum:Ord:Microscopy.light"
+76677-4,"Appearance^3rd tube",Aper,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Both,,,"Appearance of Cerebrospinal Fluid --3rd tube",,2.52,false,"Appearance^3rd tube:Aper:Pt:CSF:Nom:"
+95366-1,"Date of first positive specimen collection",Date,Pt,^Patient,Qn,,SPEC,2.68,ACTIVE,1,Observation,,MMDDYY,"Date of first positive specimen collection",{mm/dd/yyyy},2.68,false,"Date of first positive specimen collection:Date:Pt:^Patient:Qn:"
+107163-8,Diameter.transverse,Mass,Pt,Cerebellum^Fetus,Qn,,SPEC,2.82,ACTIVE,1,Both,,mm,"Diameter transverse [Mass] of Cerebellum from Fetus",mm,2.82,false,Diameter.transverse:Mass:Pt:Cerebellum^Fetus:Qn:
+46424-8,"Hemolysis interference index",ACnc,Pt,Ser/Plas,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Hemolysis interference index of Serum or Plasma",[arb'U]/mL,2.19,false,"Hemolysis interference index:ACnc:Pt:Ser/Plas:Qn:"
+97201-8,"Hemolysis interference index",ACnc,Pt,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,"Index value","Hemolysis interference index of Urine",{Index_val},2.70,false,"Hemolysis interference index:ACnc:Pt:Urine:Qn:"
+97198-6,"Hemolysis interference index",ACnc,Pt,CSF,Qn,,SPEC,2.83,ACTIVE,1,Observation,,"Index value","Hemolysis interference index of Cerebrospinal Fluid",{Index_val},2.70,false,"Hemolysis interference index:ACnc:Pt:CSF:Qn:"
+12704-3,Length,EntLen,Pt,Hair,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mm,"Length of Hair",mm,1.0j-a,false,Length:EntLen:Pt:Hair:Qn:
+97200-0,"Lipemic interference index",ACnc,Pt,CSF,Qn,,SPEC,2.83,ACTIVE,1,Observation,,"Index value","Lipemic interference index of Cerebrospinal Fluid",{Index_val},2.70,false,"Lipemic interference index:ACnc:Pt:CSF:Qn:"
+46425-5,"Lipemic interference index",ACnc,Pt,Ser/Plas,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Lipemic interference index of Serum or Plasma",[arb'U]/mL,2.19,false,"Lipemic interference index:ACnc:Pt:Ser/Plas:Qn:"
+97203-4,"Lipemic interference index",ACnc,Pt,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,"Index value","Lipemic interference index of Urine",{Index_val},2.70,false,"Lipemic interference index:ACnc:Pt:Urine:Qn:"
+94497-5,"Packed erythrocytes",Vol,Pt,Specimen,Qn,,SPEC,2.68,ACTIVE,1,Observation,,mL,"Packed erythrocytes [Volume] of Specimen",mL,2.68,false,"Packed erythrocytes:Vol:Pt:Specimen:Qn:"
+87458-6,"Particle diameter.mean",Len,Pt,Feed,Qn,,SPEC,2.63,ACTIVE,1,Observation,,um,"Mean diameter [Length] of Feed particles",um,2.63,false,"Particle diameter.mean:Len:Pt:Feed:Qn:"
+96830-5,Specimen,Source,Pt,XXX^Donor,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Specimen source [Identifier] from Donor",,2.70,false,Specimen:Source:Pt:XXX^Donor:Nom:
+49546-5,"Specimen age",Time,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,H,"Age of Blood specimen",h,2.22,false,"Specimen age:Time:Pt:Bld:Qn:"
+57900-3,"Specimen age",Time,Pt,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,days,"Age of Specimen",d,2.29,false,"Specimen age:Time:Pt:XXX:Qn:"
+30211-7,"Specimen collection",Time,*,^Specimen,Qn,,SPEC,2.82,ACTIVE,1,Observation,,H,"Specimen collection [Time] of Specimen",h,2.04,false,"Specimen collection:Time:*:^Specimen:Qn:"
+47842-0,"Specimen collection",Time,*,"Dial fld",Qn,,SPEC,2.82,ACTIVE,1,Both,,h,"Specimen collection [Time] of Dialysis fluid",h,2.21,false,"Specimen collection:Time:*:Dial fld:Qn:"
+24454-1,"Specimen collection",Time,*,"Gast fld",Qn,,SPEC,2.82,ACTIVE,1,Observation,,min,"Specimen collection [Time] of Gastric fluid",min,1.0o,false,"Specimen collection:Time:*:Gast fld:Qn:"
+13363-7,"Specimen collection",Time,*,Stool,Qn,,SPEC,2.82,ACTIVE,1,Observation,,days;hr,"Specimen collection [Time] of Stool",h,1.0j-a,false,"Specimen collection:Time:*:Stool:Qn:"
+13362-9,"Specimen collection",Time,*,Urine,Qn,,SPEC,2.82,ACTIVE,1,Observation,,"hours;hr; min","Specimen collection [Time] of Urine",h,1.0j-a,false,"Specimen collection:Time:*:Urine:Qn:"
+68959-6,"Specimen condition",Imp,Pt,Urine,Nar,,SPEC,2.68,ACTIVE,1,Observation,,,"Specimen condition [Interpretation] of Urine Narrative",,2.38,false,"Specimen condition:Imp:Pt:Urine:Nar:"
+49070-6,"Specimen drawn",TmStp,Pt,CSF,Qn,,SPEC,2.83,ACTIVE,1,Observation,,,"Specimen drawn [Date and time] of Cerebrospinal Fluid",,2.21,false,"Specimen drawn:TmStp:Pt:CSF:Qn:"
+19151-0,"Specimen drawn",TmStp,Pt,Ser/Plas,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen drawn [Date and time] of Serum or Plasma",,1.0l,false,"Specimen drawn:TmStp:Pt:Ser/Plas:Qn:"
+20506-2,"Specimen drawn from",Type,Pt,^Patient,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen drawn from",,1.0m,false,"Specimen drawn from:Type:Pt:^Patient:Nom:"
+49832-9,"Specimen drawn^1st specimen",TmStp,Pt,Ser/Plas,Qn,,SPEC,2.26,ACTIVE,1,Observation,,,"Specimen drawn [Date and time] of Serum or Plasma--1st specimen",,2.22,false,"Specimen drawn^1st specimen:TmStp:Pt:Ser/Plas:Qn:"
+45374-6,"Specimen expiration date",Date,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Observation,,MMDDYY,"Specimen expiration date of Blood",,2.17,false,"Specimen expiration date:Date:Pt:Bld:Qn:"
+3155-9,"Specimen mass",Mass,Pt,XXX,Qn,,SPEC,2.69,DEPRECATED,1,,,,"Deprecated Weight of Unspecified specimen",,1.0,false,"Specimen mass:Mass:Pt:XXX:Qn:"
+58400-3,"Specimen pH acceptable",Arb,Pt,Urine,Ord,,SPEC,2.73,ACTIVE,1,Both,,,"Specimen pH acceptable of Urine",,2.30,false,"Specimen pH acceptable:Arb:Pt:Urine:Ord:"
+8100-0,"Specimen preparation",Type,Pt,XXX,Nom,*,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen preparation [Type]",,1.0h(2),false,"Specimen preparation:Type:Pt:XXX:Nom:*"
+82314-6,"Specimen sent to CDC",Find,Pt,Specimen,Ord,,SPEC,2.58,ACTIVE,1,Observation,,,"Specimen sent to CDC",,2.58,false,"Specimen sent to CDC:Find:Pt:Specimen:Ord:"
+85793-8,"Specimen source subject",Type,Pt,*,Nom,,SPEC,2.61,ACTIVE,1,Both,,,"Specimen source subject [Type]",,2.61,false,"Specimen source subject:Type:Pt:*:Nom:"
+3158-3,"Specimen volume",MRat,24H,"Body fld",Qn,,SPEC,2.21,ACTIVE,1,Observation,,,"Volume [Mass/time] of 24 hour Body fluid",,1.0,false,"Specimen volume:MRat:24H:Body fld:Qn:"
+17599-2,"Specimen volume",Vol,24H,"Dial fld prt",Qn,,SPEC,2.40,ACTIVE,1,Observation,,L,"Volume of 24 hour Peritoneal dialysis fluid",L,1.0l,false,"Specimen volume:Vol:24H:Dial fld prt:Qn:"
+17605-7,"Specimen volume",Vol,24H,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of 24 hour Specimen",mL,1.0l,false,"Specimen volume:Vol:24H:XXX:Qn:"
+13619-2,"Specimen volume",Vol,2H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of 2 hour Urine",mL,1.0k,false,"Specimen volume:Vol:2H:Urine:Qn:"
+18352-5,"Specimen volume",Vol,4H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of 4 hour Urine",mL,1.0l,false,"Specimen volume:Vol:4H:Urine:Qn:"
+12255-6,"Specimen volume",Vol,5H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,L,"Volume of 5 hour Urine",L,1.0j-a,false,"Specimen volume:Vol:5H:Urine:Qn:"
+17600-8,"Specimen volume",Vol,6H,Urine,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 6 hour Urine",mL,1.0l,false,"Specimen volume:Vol:6H:Urine:Qn:"
+3163-3,"Specimen volume",Vol,72H,Stool,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 72 hour Stool",mL,1.0,false,"Specimen volume:Vol:72H:Stool:Qn:"
+21529-3,"Specimen volume",Vol,8H,Urine,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 8 hour Urine",mL,1.0m,false,"Specimen volume:Vol:8H:Urine:Qn:"
+3156-7,"Specimen volume",Vol,Pt,"Amnio fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Amniotic fluid",mL,1.0,false,"Specimen volume:Vol:Pt:Amnio fld:Qn:"
+3157-5,"Specimen volume",Vol,Pt,Bld,Qn,,SPEC,2.82,ACTIVE,1,Observation,,mL,"Volume of Blood",mL,1.0,false,"Specimen volume:Vol:Pt:Bld:Qn:"
+12254-9,"Specimen volume",Vol,Pt,"Body fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,liters;mL,"Volume of Body fluid",L,1.0j-a,false,"Specimen volume:Vol:Pt:Body fld:Qn:"
+32801-3,"Specimen volume",Vol,Pt,Bronchial,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Bronchial specimen",mL,2.09,false,"Specimen volume:Vol:Pt:Bronchial:Qn:"
+17607-3,"Specimen volume",Vol,Pt,CSF,Qn,,SPEC,2.83,ACTIVE,1,Observation,,mL,"Volume of Cerebrospinal Fluid",mL,1.0l,false,"Specimen volume:Vol:Pt:CSF:Qn:"
+3159-1,"Specimen volume",Vol,Pt,Plas,Qn,,SPEC,2.40,ACTIVE,1,Observation,,L,"Volume of Plasma",L,1.0,false,"Specimen volume:Vol:Pt:Plas:Qn:"
+34979-5,"Specimen volume",Vol,Pt,"Plr fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Pleural fluid",mL,2.11,false,"Specimen volume:Vol:Pt:Plr fld:Qn:"
+72278-5,"Specimen volume",Vol,Pt,"Prostatic fld",Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of Prostatic fluid",mL,2.42,false,"Specimen volume:Vol:Pt:Prostatic fld:Qn:"
+33514-1,"Specimen volume",Vol,Pt,Sweat,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Sweat",mL,2.09,false,"Specimen volume:Vol:Pt:Sweat:Qn:"
+34980-3,"Specimen volume",Vol,Pt,"Synv fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL;cc,"Volume of Synovial fluid",mL,2.11,false,"Specimen volume:Vol:Pt:Synv fld:Qn:"
+28009-9,"Specimen volume",Vol,Pt,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Urine",mL,2.00,false,"Specimen volume:Vol:Pt:Urine:Qn:"
+68391-2,"Specimen volume",Vol,Pt,"Vitr fld",Qn,,SPEC,2.70,ACTIVE,1,Observation,,mL,"Volume of Vitreous fluid",mL,2.38,false,"Specimen volume:Vol:Pt:Vitr fld:Qn:"
+3169-0,"Specimen volume",Vol,Pt,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Specimen",mL,1.0,false,"Specimen volume:Vol:Pt:XXX:Qn:"
+57390-7,"Specimen volume",VRat,12H,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,mL/min,"Volume [Flow] of 12 hour Urine",mL/min,2.29,false,"Specimen volume:VRat:12H:Urine:Qn:"
+3161-7,"Specimen volume",VRat,24H,Sputum,Qn,,SPEC,2.42,ACTIVE,1,Observation,,"mL/24 H","Volume [Flow] of 24 hour Sputum",mL/(24.h),1.0,false,"Specimen volume:VRat:24H:Sputum:Qn:"
+3164-1,"Specimen volume",VRat,24H,Stool,Qn,,SPEC,2.42,ACTIVE,1,Observation,,"mL/24 H","Volume [Flow] of 24 hour Stool",mL/(24.h),1.0,false,"Specimen volume:VRat:24H:Stool:Qn:"
+3166-6,"Specimen volume",VRat,24H,Sweat,Qn,,SPEC,2.42,ACTIVE,1,Observation,,"mL/24 H","Volume [Flow] of 24 hour Sweat",mL/(24.h),1.0,false,"Specimen volume:VRat:24H:Sweat:Qn:"
+3153-4,"Specimen weight",Mass,24H,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Weight of 24 hour Specimen",g,1.0,false,"Specimen weight:Mass:24H:XXX:Qn:"
+30078-0,"Specimen weight",Mass,Pt,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,grams;gm,"Weight of Stool",g,2.04,false,"Specimen weight:Mass:Pt:Stool:Qn:"
+33247-8,"Specimen weight",Mass,Pt,Sweat,Qn,,SPEC,2.73,ACTIVE,1,Observation,,"gm; mg","Weight of Sweat",mg,2.09,false,"Specimen weight:Mass:Pt:Sweat:Qn:"
+29638-4,"Specimen weight",Mass,Pt,Tiss,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mg,"Weight of Tissue",mg,2.03,false,"Specimen weight:Mass:Pt:Tiss:Qn:"
+34648-6,"Specimen weight",Mass,XXX,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,g,"Weight of unspecified time Stool",g,2.11,false,"Specimen weight:Mass:XXX:Stool:Qn:"
+17608-1,"Specimen weight",MRat,48H,Stool,Qn,,SPEC,2.44,ACTIVE,1,Observation,,"g/48 H","Weight [Mass/time] of 48 hour Stool",g/(48.h),1.0l,false,"Specimen weight:MRat:48H:Stool:Qn:"
+18382-2,"Specimen.dry weight",MRat,24H,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Dry weight [Mass/time] of 24 hour Stool",,1.0l,false,"Specimen.dry weight:MRat:24H:Stool:Qn:"
+31208-2,Specimen,Source,Pt,XXX,Nom,,SPEC,2.79,ACTIVE,1,Observation,,,"Specimen source identified",,2.07,false,Specimen:Source:Pt:XXX:Nom:
+93047-9,"Specimen condition",Type,Pt,Specimen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen condition [Type]",,2.66,false,"Specimen condition:Type:Pt:Specimen:Nom:"
+74384-9,"Specimen container",Type,Pt,Specimen,Nom,,SPEC,2.73,ACTIVE,1,Both,,,"Specimen container [Type]",,2.46,false,"Specimen container:Type:Pt:Specimen:Nom:"
+49833-7,"Specimen drawn^2nd specimen",TmStp,Pt,Ser/Plas,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen drawn [Date and time] of Serum or Plasma--2nd specimen",,2.22,false,"Specimen drawn^2nd specimen:TmStp:Pt:Ser/Plas:Qn:"
+47938-6,"Specimen source",Prid,Pt,"Body fld",Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen source [Identifier] of Body fluid",,2.21,false,"Specimen source:Prid:Pt:Body fld:Nom:"
+72923-6,"Specimen source",Prid,Pt,"Synv fld",Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Specimen source [Identifier] of Synovial fluid",,2.44,false,"Specimen source:Prid:Pt:Synv fld:Nom:"
+3162-5,"Specimen volume",MRat,24H,Stool,Qn,,SPEC,2.21,ACTIVE,1,Observation,,,"Volume [Mass/time] of 24 hour Stool",,1.0,false,"Specimen volume:MRat:24H:Stool:Qn:"
+21530-1,"Specimen volume",Vol,10H,Urine,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 10 hour Urine",mL,1.0m,false,"Specimen volume:Vol:10H:Urine:Qn:"
+13620-0,"Specimen volume",Vol,12H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of 12 hour Urine",mL,1.0k,false,"Specimen volume:Vol:12H:Urine:Qn:"
+58989-5,"Specimen volume",Vol,18H,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,mL,"Volume of 18 hour Urine",mL,2.32,false,"Specimen volume:Vol:18H:Urine:Qn:"
+13495-7,"Specimen volume",Vol,24H,"Dial fld",Qn,,SPEC,2.40,ACTIVE,1,Observation,,L,"Volume of 24 hour Dialysis fluid",L,1.0j-a,false,"Specimen volume:Vol:24H:Dial fld:Qn:"
+17601-6,"Specimen volume",Vol,24H,Sputum,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 24 hour Sputum",mL,1.0l,false,"Specimen volume:Vol:24H:Sputum:Qn:"
+17603-2,"Specimen volume",Vol,24H,Stool,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 24 hour Stool",mL,1.0l,false,"Specimen volume:Vol:24H:Stool:Qn:"
+17604-0,"Specimen volume",Vol,24H,Sweat,Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 24 hour Sweat",mL,1.0l,false,"Specimen volume:Vol:24H:Sweat:Qn:"
+3167-4,"Specimen volume",Vol,24H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,"Liters; mL","Volume of 24 hour Urine",L,1.0,false,"Specimen volume:Vol:24H:Urine:Qn:"
+13494-0,"Specimen volume",Vol,4H,"Dial fld",Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of 4 hour Dialysis fluid",mL,1.0j-a,false,"Specimen volume:Vol:4H:Dial fld:Qn:"
+40671-0,"Specimen volume",Vol,72H,Urine,Qn,,SPEC,2.70,ACTIVE,1,Observation,,L,"Volume of 72 hour Urine",L,2.15,false,"Specimen volume:Vol:72H:Urine:Qn:"
+12457-8,"Specimen volume",Vol,Pt,"Dial fld",Qn,,SPEC,2.21,ACTIVE,1,Observation,,mL,"Volume of Dialysis fluid",mL,1.0j-a,false,"Specimen volume:Vol:Pt:Dial fld:Qn:"
+80662-0,"Specimen volume",Vol,Pt,"Dial fld prt",Qn,,SPEC,2.56,ACTIVE,1,Both,,mL,"Volume of Peritoneal dialysis fluid",mL,2.56,false,"Specimen volume:Vol:Pt:Dial fld prt:Qn:"
+34981-1,"Specimen volume",Vol,Pt,"Pericard fld",Qn,,SPEC,2.42,ACTIVE,1,Observation,,mL,"Volume of Pericardial fluid",mL,2.11,false,"Specimen volume:Vol:Pt:Pericard fld:Qn:"
+34978-7,"Specimen volume",Vol,Pt,"Periton fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Peritoneal fluid",mL,2.11,false,"Specimen volume:Vol:Pt:Periton fld:Qn:"
+17602-4,"Specimen volume",Vol,Pt,"Semin plas",Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Seminal plasma",mL,1.0l,false,"Specimen volume:Vol:Pt:Semin plas:Qn:"
+38200-2,"Specimen volume",Vol,Pt,Sputum,Qn,,SPEC,2.70,ACTIVE,1,Observation,,cm3,"Volume of Sputum",cm3,2.13,false,"Specimen volume:Vol:Pt:Sputum:Qn:"
+17606-5,"Specimen volume",Vol,Pt,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume of Stool",mL,1.0l,false,"Specimen volume:Vol:Pt:Stool:Qn:"
+19153-6,"Specimen volume",Vol,XXX,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,mL,"Volume in Urine collected for unspecified duration",mL,1.0l,false,"Specimen volume:Vol:XXX:Urine:Qn:"
+105083-0,"Specimen volume",Vol,XXX,XXX,Qn,,SPEC,2.78,ACTIVE,1,Observation,,mL,"Volume of unspecified time Specimen",mL,2.78,false,"Specimen volume:Vol:XXX:XXX:Qn:"
+3168-2,"Specimen volume",VRat,24H,Urine,Qn,,SPEC,2.73,ACTIVE,1,Observation,,"L/24 H","Volume [Flow] of 24 hour Urine",L/(24.h),1.0,false,"Specimen volume:VRat:24H:Urine:Qn:"
+3170-8,"Specimen volume",VRat,24H,XXX,Qn,,SPEC,2.69,ACTIVE,1,Observation,,"mL/24 H","Volume [Flow] of 24 hour Specimen",mL/(24.h),1.0,false,"Specimen volume:VRat:24H:XXX:Qn:"
+3165-8,"Specimen volume",VRat,72H,Stool,Qn,,SPEC,2.42,ACTIVE,1,Observation,,"mL/72 H","Volume [Flow] of 72 hour Stool",mL/(72.h),1.0,false,"Specimen volume:VRat:72H:Stool:Qn:"
+3154-2,"Specimen weight",Mass,Pt,XXX,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Weight of Specimen",g,1.0,false,"Specimen weight:Mass:Pt:XXX:Qn:"
+25530-7,"Specimen weight",MRat,24H,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Weight [Mass/time] of 24 hour Stool",,2.00,false,"Specimen weight:MRat:24H:Stool:Qn:"
+17609-9,"Specimen weight",MRat,72H,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,"g/72 H","Weight [Mass/time] of 72 hour Stool",g/(72.h),1.0l,false,"Specimen weight:MRat:72H:Stool:Qn:"
+3171-6,"Specimen.dry weight",MRat,72H,Stool,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Dry weight [Mass/time] of 72 hour Stool",,1.0,false,"Specimen.dry weight:MRat:72H:Stool:Qn:"
+77149-3,"Specimen.dry weight/total",MFr,24H,Stool,Qn,,SPEC,2.52,ACTIVE,1,Both,,%,"Dry weight/Total of 24 hour Stool",%,2.52,false,"Specimen.dry weight/total:MFr:24H:Stool:Qn:"
+46728-2,Weight,Mass,Pt,Water,Qn,,SPEC,2.73,ACTIVE,1,Observation,,g,"Weight of Water",g,2.19,false,Weight:Mass:Pt:Water:Qn:
+46729-0,"Weight container+Specimen",Mass,Pt,Stool,Qn,,SPEC,2.44,ACTIVE,1,Observation,,g,"Weight container+Specimen of Stool",g,2.19,false,"Weight container+Specimen:Mass:Pt:Stool:Qn:"
+13532-7,Xanthochromia,PrThr,Pt,CSF,Ord,,SPEC,2.83,ACTIVE,1,Both,,,"Xanthochromia [Presence] of Cerebrospinal Fluid Qualitative",,1.0k,false,Xanthochromia:PrThr:Pt:CSF:Ord:
+42765-8,"Tube number",ID,Pt,"Body fld",Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Tube number of Body fluid",,2.16,false,"Tube number:ID:Pt:Body fld:Nom:"
+19157-7,"Tube number",ID,Pt,CSF,Nom,,SPEC,2.83,ACTIVE,1,Observation,,,"Tube number of Cerebrospinal Fluid",,1.0l,false,"Tube number:ID:Pt:CSF:Nom:"
+41610-7,"Tube number",ID,Pt,"Pericard fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Tube number of Pericardial fluid",,2.16,false,"Tube number:ID:Pt:Pericard fld:Nom:"
+41611-5,"Tube number",ID,Pt,"Periton fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Tube number of Peritoneal fluid",,2.16,false,"Tube number:ID:Pt:Periton fld:Nom:"
+41613-1,"Tube number",ID,Pt,Semen,Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Tube number of Semen",,2.16,false,"Tube number:ID:Pt:Semen:Nom:"
+46963-5,"Tube number",ID,Pt,Ser/Plas/Bld,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Tube number of Serum, Plasma or Blood",,2.19,false,"Tube number:ID:Pt:Ser/Plas/Bld:Nom:"
+41614-9,"Tube number",ID,Pt,"Synv fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Tube number of Synovial fluid",,2.16,false,"Tube number:ID:Pt:Synv fld:Nom:"
+105118-4,"Tube number",ID,Pt,XXX,Nom,,SPEC,2.78,ACTIVE,1,Both,,integer,"Tube number of Specimen",,2.78,false,"Tube number:ID:Pt:XXX:Nom:"
+20513-8,Turbidity,PrThr,Pt,"Body fld",Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Turbidity [Presence] of Body fluid Qualitative",,1.0m,false,"Turbidity:PrThr:Pt:Body fld:Ord:"
+80398-1,"Unique identifier",ID,Pt,"Current sample",Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Unique identifier for Current sample",,2.54,false,"Unique identifier:ID:Pt:Current sample:Nom:"
+63572-2,"Time received in laboratory",TmStp,Pt,Specimen,Qn,,SPEC,2.73,ACTIVE,1,Observation,,,"Time received in laboratory of Specimen",,2.36,false,"Time received in laboratory:TmStp:Pt:Specimen:Qn:"
+20512-0,Turbidity,PrThr,Pt,CSF,Ord,,SPEC,2.83,ACTIVE,1,Observation,,,"Turbidity [Presence] of Cerebrospinal Fluid Qualitative",,1.0m,false,Turbidity:PrThr:Pt:CSF:Ord:
+48053-3,Turbidity,PrThr,Pt,"Synv fld",Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Turbidity [Presence] of Synovial fluid Qualitative",,2.21,false,"Turbidity:PrThr:Pt:Synv fld:Ord:"
+12273-9,Xanthochromia,PrThr,Pt,"Body fld",Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Xanthochromia [Presence] of Body fluid Qualitative",,1.0j-a,false,"Xanthochromia:PrThr:Pt:Body fld:Ord:"
+105050-9,Xanthochromia,PrThr,Pt,XXX,Ord,,SPEC,2.78,ACTIVE,1,Both,,,"Xanthochromia [Presence] of Specimen Qualitative",,2.78,false,Xanthochromia:PrThr:Pt:XXX:Ord:
+41612-3,"Tube number",ID,Pt,"Plr fld",Nom,,SPEC,2.19,ACTIVE,1,Observation,,,"Tube number of Pleural fluid",,2.16,false,"Tube number:ID:Pt:Plr fld:Nom:"
+87442-0,Turbidity,Arb,Pt,Water,Qn,,SPEC,2.63,ACTIVE,1,Both,,NTU,"Turbidity of Water",{ntu},2.63,false,Turbidity:Arb:Pt:Water:Qn:
+33326-0,Turbidity,PrThr,Pt,"Amnio fld",Ord,,SPEC,2.56,ACTIVE,1,Observation,,,"Turbidity [Presence] of Amniotic fluid Qualitative",,2.09,false,"Turbidity:PrThr:Pt:Amnio fld:Ord:"
+40681-9,Turbidity,PrThr,Pt,Ser/Plas,Ord,,SPEC,2.56,ACTIVE,1,Observation,,,"Turbidity [Presence] of Serum or Plasma Qualitative",,2.15,false,Turbidity:PrThr:Pt:Ser/Plas:Ord:
+20627-6,Turbidity,PrThr,Pt,Urine,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Turbidity [Presence] of Urine Qualitative",,1.0m,false,Turbidity:PrThr:Pt:Urine:Ord:
+105119-2,Turbidity,PrThr,Pt,XXX,Ord,,SPEC,2.78,ACTIVE,1,Both,,,"Turbidity [Presence] of Specimen Qualitative",,2.78,false,Turbidity:PrThr:Pt:XXX:Ord:
+57723-9,"Unique bar code number",ID,Pt,"Current sample",Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Unique bar code number of Current sample",,2.29,false,"Unique bar code number:ID:Pt:Current sample:Nom:"
+57711-4,"Unique bar code number",ID,Pt,"Initial sample",Nom,,SPEC,2.36,ACTIVE,1,Observation,,,"Unique bar code number of Initial sample",,2.29,false,"Unique bar code number:ID:Pt:Initial sample:Nom:"
+89873-4,"Unique identifier",ID,Pt,"Initial sample",Nom,,SPEC,2.65,ACTIVE,1,Observation,,,"Unique identifier [Identifier] of Initial sample",,2.65,false,"Unique identifier:ID:Pt:Initial sample:Nom:"
+4690-4,Viscosity,Visc,Pt,Bld,Qn,,SPEC,2.73,ACTIVE,1,Both,,cP,"Viscosity of Blood",cP,1.0,false,Viscosity:Visc:Pt:Bld:Qn:
+3127-8,Viscosity,Visc,Pt,"Body fld",Qn,,SPEC,2.73,ACTIVE,1,Both,,cP,"Viscosity of Body fluid",cP,1.0,false,"Viscosity:Visc:Pt:Body fld:Qn:"
+41264-3,Viscosity,Visc,Pt,CSF,Ord,,SPEC,2.83,ACTIVE,1,Observation,,,"Viscosity of Cerebrospinal Fluid Qualitative",,2.15,false,Viscosity:Visc:Pt:CSF:Ord:
+79333-1,Viscosity,Visc,Pt,Cvm,Ord,,SPEC,2.54,ACTIVE,1,Both,,,"Viscosity of Cervical mucus Qualitative",,2.54,false,Viscosity:Visc:Pt:Cvm:Ord:
+41245-2,Viscosity,Visc,Pt,"Pericard fld",Ord,,SPEC,2.54,ACTIVE,1,Observation,,,"Viscosity of Pericardial fluid Qualitative",,2.15,false,"Viscosity:Visc:Pt:Pericard fld:Ord:"
+41262-7,Viscosity,Visc,Pt,"Periton fld",Ord,,SPEC,2.54,ACTIVE,1,Observation,,,"Viscosity of Peritoneal fluid Qualitative",,2.15,false,"Viscosity:Visc:Pt:Periton fld:Ord:"
+4691-2,Viscosity,Visc,Pt,Plas,Qn,,SPEC,2.73,ACTIVE,1,Both,,cP,"Viscosity of Plasma",cP,1.0,false,Viscosity:Visc:Pt:Plas:Qn:
+41263-5,Viscosity,Visc,Pt,"Plr fld",Ord,,SPEC,2.54,ACTIVE,1,Observation,,,"Viscosity of Pleural fluid Qualitative",,2.15,false,"Viscosity:Visc:Pt:Plr fld:Ord:"
+32789-0,Viscosity,Visc,Pt,Semen,Ord,,SPEC,2.73,ACTIVE,1,Both,,,"Viscosity of Semen Qualitative",,2.09,false,Viscosity:Visc:Pt:Semen:Ord:
+9631-3,Viscosity,Visc,Pt,Semen,Qn,,SPEC,2.73,ACTIVE,1,Both,,cP,"Viscosity of Semen",cP,1.0i,false,Viscosity:Visc:Pt:Semen:Qn:
+41241-1,Viscosity,Visc,Pt,Ser,Ord,,SPEC,2.73,ACTIVE,1,Observation,,,"Viscosity of Serum Qualitative",,2.15,false,Viscosity:Visc:Pt:Ser:Ord:
+3128-6,Viscosity,Visc,Pt,Ser,Qn,,SPEC,2.73,ACTIVE,1,Both,,cP,"Viscosity of Serum",cP,1.0,false,Viscosity:Visc:Pt:Ser:Qn:
+14950-0,Viscosity,Visc,Pt,"Synv fld",Ord,,SPEC,2.73,ACTIVE,1,Both,,,"Viscosity of Synovial fluid Qualitative",,1.0k,false,"Viscosity:Visc:Pt:Synv fld:Ord:"
+41238-7,Viscosity,Visc,Pt,"Synv fld",Qn,,SPEC,2.73,ACTIVE,1,Observation,,cP,"Viscosity of Synovial fluid",cP,2.15,false,"Viscosity:Visc:Pt:Synv fld:Qn:"
+41226-2,Viscosity,Visc,Pt,Water,Qn,,SPEC,2.44,ACTIVE,1,Observation,,cP,"Viscosity of Water",cP,2.15,false,Viscosity:Visc:Pt:Water:Qn:
+41862-4,"Viscosity^20M post collection",Visc,Pt,Semen,Qn,,SPEC,2.54,ACTIVE,1,Observation,,cP,"Viscosity of Semen--20 minutes post collection",cP,2.16,false,"Viscosity^20M post collection:Visc:Pt:Semen:Qn:"
+38509-6,"Viscosity^30M post collection",Visc,Pt,Semen,Ord,,SPEC,2.58,ACTIVE,1,Observation,,,"Viscosity of Semen Qualitative--30 minutes post collection",,2.14,false,"Viscosity^30M post collection:Visc:Pt:Semen:Ord:"
+41208-0,Viscosity+Liquefaction,Prid,Pt,Semen,Nom,,SPEC,2.73,ACTIVE,1,Observation,,,"Viscosity+Liquefaction [Identifier] of Semen",,2.15,false,Viscosity+Liquefaction:Prid:Pt:Semen:Nom:

@@ -1,0 +1,4 @@
+dataset_name,rows,columns,target,graph_edges,baseline_accuracy,irap_accuracy,accuracy_gain_pct,baseline_f1,irap_f1,f1_gain_pct,imputation_error_reduction,execution_time_sec
+Realistic Clinical Cohort (Synthetic Non-Linear),200,10,diabetes_target,49,0.78,0.78,0.0,0.7723,0.7723,0.0,44.06,2.65
+Mendeley CBC Hematology Clinical Lab,374,12,Sex  ,116,0.6703,0.978,30.77,0.6553,0.9781,32.28,0.0,3.94
+Hospital Diabetes Clinical Diagnostic Cohort,5132,12,Diagnosis,59,0.9992,0.9992,0.0,0.9992,0.9992,0.0,17.38,5.39

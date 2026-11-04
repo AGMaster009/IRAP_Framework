@@ -1,0 +1,443 @@
+LOINC_NUM,COMPONENT,PROPERTY,TIME_ASPCT,SYSTEM,SCALE_TYP,METHOD_TYP,CLASS,VersionLastChanged,STATUS,CLASSTYPE,ORDER_OBS,EXTERNAL_COPYRIGHT_NOTICE,EXAMPLE_UNITS,LONG_COMMON_NAME,EXAMPLE_UCUM_UNITS,VersionFirstReleased,LHCForms,FormalName
+106544-0,10-Hydroxycarbazepine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.79,ACTIVE,1,Both,,mg,"10-Hydroxycarbazepine [Mass] of Dose",mg,2.79,false,10-Hydroxycarbazepine:Mass:Pt:Dose:Qn:
+4100-4,2-Oxoisocaproate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"2-Oxoisocaproate [Mass] of Dose",mg,1.0,false,2-Oxoisocaproate:Mass:Pt:Dose:Qn:
+4101-2,2-Pyridone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"2-Pyridone [Mass] of Dose",mg,1.0,false,2-Pyridone:Mass:Pt:Dose:Qn:
+4102-0,5-Fluorocytosine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"5-Fluorocytosine [Mass] of Dose",mg,1.0,false,5-Fluorocytosine:Mass:Pt:Dose:Qn:
+4257-2,5-Fluorocytosine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated 5-Fluorocytosine [Mass] of Dose",mg,1.0,false,5-Fluorocytosine:Mass:Pt:Dose:Qn:
+4103-8,Acebutolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Acebutolol [Mass] of Dose",mg,1.0,false,Acebutolol:Mass:Pt:Dose:Qn:
+4104-6,Acepromazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Acepromazine [Mass] of Dose",mg,1.0,false,Acepromazine:Mass:Pt:Dose:Qn:
+4105-3,Acetaminophen,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,mg,"Acetaminophen [Mass] of Dose",mg,1.0,false,Acetaminophen:Mass:Pt:Dose:Qn:
+4106-1,acetaZOLAMIDE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Acetazolamide [Mass] of Dose",mg,1.0,false,acetaZOLAMIDE:Mass:Pt:Dose:Qn:
+4107-9,Acyclovir,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Acyclovir [Mass] of Dose",mg,1.0,false,Acyclovir:Mass:Pt:Dose:Qn:
+4108-7,Adenine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Adenine [Mass] of Dose",mg,1.0,false,Adenine:Mass:Pt:Dose:Qn:
+4109-5,Alfentanil,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Alfentanil [Mass] of Dose",mg,1.0,false,Alfentanil:Mass:Pt:Dose:Qn:
+4110-3,Alphaprodine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Alphaprodine [Mass] of Dose",mg,1.0,false,Alphaprodine:Mass:Pt:Dose:Qn:
+4111-1,ALPRAZolam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"ALPRAZolam [Mass] of Dose",mg,1.0,false,ALPRAZolam:Mass:Pt:Dose:Qn:
+4112-9,Alprenolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Alprenolol [Mass] of Dose",mg,1.0,false,Alprenolol:Mass:Pt:Dose:Qn:
+4113-7,Amantadine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amantadine [Mass] of Dose",mg,1.0,false,Amantadine:Mass:Pt:Dose:Qn:
+4114-5,Amdinocillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amdinocillin [Mass] of Dose",mg,1.0,false,Amdinocillin:Mass:Pt:Dose:Qn:
+4115-2,Amikacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Amikacin [Mass] of Dose",mg,1.0,false,Amikacin:Mass:Pt:Dose:Qn:
+4116-0,aMILoride,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"aMILoride [Mass] of Dose",mg,1.0,false,aMILoride:Mass:Pt:Dose:Qn:
+4117-8,Aminopyrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Aminopyrine [Mass] of Dose",mg,1.0,false,Aminopyrine:Mass:Pt:Dose:Qn:
+4118-6,Aminosalicylate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Aminosalicylate [Mass] of Dose",mg,1.0,false,Aminosalicylate:Mass:Pt:Dose:Qn:
+4119-4,Amiodarone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Amiodarone [Mass] of Dose",mg,1.0,false,Amiodarone:Mass:Pt:Dose:Qn:
+4120-2,Amitriptyline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amitriptyline [Mass] of Dose",mg,1.0,false,Amitriptyline:Mass:Pt:Dose:Qn:
+4121-0,Amobarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amobarbital [Mass] of Dose",mg,1.0,false,Amobarbital:Mass:Pt:Dose:Qn:
+4122-8,Amoxapine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amoxapine [Mass] of Dose",mg,1.0,false,Amoxapine:Mass:Pt:Dose:Qn:
+4123-6,Amoxicillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.21,ACTIVE,1,Observation,,mg,"Amoxicillin [Mass] of Dose",mg,1.0,false,Amoxicillin:Mass:Pt:Dose:Qn:
+4125-1,Amphetaminil,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amphetaminil [Mass] of Dose",mg,1.0,false,Amphetaminil:Mass:Pt:Dose:Qn:
+4126-9,"Amphotericin B",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Amphotericin B [Mass] of Dose",mg,1.0,false,"Amphotericin B:Mass:Pt:Dose:Qn:"
+4127-7,Ampicillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.21,ACTIVE,1,Observation,,mg,"Ampicillin [Mass] of Dose",mg,1.0,false,Ampicillin:Mass:Pt:Dose:Qn:
+4137-6,Barbiturates,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Barbiturates [Mass] of Dose",mg,1.0,false,Barbiturates:Mass:Pt:Dose:Qn:
+4129-3,Anthraquinone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Anthraquinone [Mass] of Dose",mg,1.0,false,Anthraquinone:Mass:Pt:Dose:Qn:
+4138-4,Bendroflumethiazide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Bendroflumethiazide [Mass] of Dose",mg,1.0,false,Bendroflumethiazide:Mass:Pt:Dose:Qn:
+4141-8,Benzthiazide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Benzthiazide [Mass] of Dose",mg,1.0,false,Benzthiazide:Mass:Pt:Dose:Qn:
+47208-4,Arginine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Arginine [Mass] of Dose",mg,2.19,false,Arginine:Mass:Pt:Dose:Qn:
+4134-3,Azlocillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Azlocillin [Mass] of Dose",mg,1.0,false,Azlocillin:Mass:Pt:Dose:Qn:
+4223-4,HYDROmorphone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"HYDROmorphone [Mass] of Dose",mg,1.0,false,HYDROmorphone:Mass:Pt:Dose:Qn:
+4278-8,Hydroxychloroquine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Hydroxychloroquine [Mass] of Dose",mg,1.0,false,Hydroxychloroquine:Mass:Pt:Dose:Qn:
+4279-6,Hydroxymethoxyphenamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Hydroxymethoxyphenamine [Mass] of Dose",mg,1.0,false,Hydroxymethoxyphenamine:Mass:Pt:Dose:Qn:
+4281-2,Ibuprofen,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Ibuprofen [Mass] of Dose",mg,1.0,false,Ibuprofen:Mass:Pt:Dose:Qn:
+4282-0,Imipenem,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Imipenem [Mass] of Dose",mg,1.0,false,Imipenem:Mass:Pt:Dose:Qn:
+4283-8,Imipramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Imipramine [Mass] of Dose",mg,1.0,false,Imipramine:Mass:Pt:Dose:Qn:
+4284-6,Indomethacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Indomethacin [Mass] of Dose",mg,1.0,false,Indomethacin:Mass:Pt:Dose:Qn:
+4285-3,"Insulin Lente",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Insulin Lente [Mass] of Dose",[IU],1.0,false,"Insulin Lente:Mass:Pt:Dose:Qn:"
+4286-1,"Insulin NPH",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Insulin NPH [Mass] of Dose",[IU],1.0,false,"Insulin NPH:Mass:Pt:Dose:Qn:"
+4287-9,"Insulin regular",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Insulin regular [Mass] of Dose",[IU],1.0,false,"Insulin regular:Mass:Pt:Dose:Qn:"
+4288-7,"Insulin semilente",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Insulin semilente [Mass] of Dose",[IU],1.0,false,"Insulin semilente:Mass:Pt:Dose:Qn:"
+4289-5,"Insulin ultralente",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Insulin ultralente [Mass] of Dose",[IU],1.0,false,"Insulin ultralente:Mass:Pt:Dose:Qn:"
+59181-8,"Interferon.beta given",Type,Pt,^Patient,Nom,,DRUGDOSE,2.40,ACTIVE,1,Observation,,,"Interferon beta given [Type]",,2.32,false,"Interferon.beta given:Type:Pt:^Patient:Nom:"
+4290-3,Isoniazid,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Isoniazid [Mass] of Dose",mg,1.0,false,Isoniazid:Mass:Pt:Dose:Qn:
+115779-1,Isoniazid^peak,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Isoniazid --peak [Mass/volume] of Serum",mg/L,2.83,false,Isoniazid^peak:MCnc:Pt:Ser:Qn:
+115780-9,Isoniazid^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Isoniazid --trough [Mass/volume] of Serum",mg/L,2.83,false,Isoniazid^trough:MCnc:Pt:Ser:Qn:
+115776-7,Levetiracetam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"levETIRAcetam [Mass] of Dose",mg,2.83,false,Levetiracetam:Mass:Pt:Dose:Qn:
+4297-8,Levomepromazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,Observation,,,"Deprecated Levomepromazine [Mass] of Dose",mg,1.0,false,Levomepromazine:Mass:Pt:Dose:Qn:
+4299-4,Lidocaine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Lidocaine [Mass] of Dose",mg,1.0,false,Lidocaine:Mass:Pt:Dose:Qn:
+115774-2,Linezolid^peak,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Linezolid --peak [Mass/volume] of Serum",mg/L,2.83,false,Linezolid^peak:MCnc:Pt:Ser:Qn:
+115775-9,Linezolid^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Linezolid --trough [Mass/volume] of Serum",mg/L,2.83,false,Linezolid^trough:MCnc:Pt:Ser:Qn:
+4293-7,Ketobemidone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Ketobemidone [Mass] of Dose",mg,1.0,false,Ketobemidone:Mass:Pt:Dose:Qn:
+4300-0,Lithium,Mass,Pt,Dose,Qn,,DRUGDOSE,2.77,ACTIVE,1,Observation,,,"Lithium [Mass] of Dose",mg,1.0,false,Lithium:Mass:Pt:Dose:Qn:
+4295-2,Labetalol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Labetalol [Mass] of Dose",mg,1.0,false,Labetalol:Mass:Pt:Dose:Qn:
+106543-2,Lacosamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.79,ACTIVE,1,Both,,mg,"Lacosamide [Mass] of Dose",mg,2.79,false,Lacosamide:Mass:Pt:Dose:Qn:
+4302-6,Lormetazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Lormetazepam [Mass] of Dose",mg,1.0,false,Lormetazepam:Mass:Pt:Dose:Qn:
+14806-4,Lactose.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,g,"Lactose.PO [Mass] of Dose",g,1.0k,false,Lactose.PO:Mass:Pt:Dose:Qn:
+115778-3,Lamotrigine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"lamoTRIgine [Mass] of Dose",mg,2.83,false,Lamotrigine:Mass:Pt:Dose:Qn:
+4170-7,Cephalexin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cephalexin [Mass] of Dose",mg,1.0,false,Cephalexin:Mass:Pt:Dose:Qn:
+4171-5,Cephalothin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cephalothin [Mass] of Dose",mg,1.0,false,Cephalothin:Mass:Pt:Dose:Qn:
+4151-7,Canrenone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Canrenone [Mass] of Dose",mg,1.0,false,Canrenone:Mass:Pt:Dose:Qn:
+4172-3,"Chloral hydrate",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chloral hydrate [Mass] of Dose",mg,1.0,false,"Chloral hydrate:Mass:Pt:Dose:Qn:"
+4173-1,Chloramphenicol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chloramphenicol [Mass] of Dose",mg,1.0,false,Chloramphenicol:Mass:Pt:Dose:Qn:
+4175-6,chlordiazePOXIDE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"chlordiazePOXIDE [Mass] of Dose",mg,1.0,false,chlordiazePOXIDE:Mass:Pt:Dose:Qn:
+4182-2,Chloroquine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chloroquine [Mass] of Dose",mg,1.0,false,Chloroquine:Mass:Pt:Dose:Qn:
+4177-2,Chlorothiazide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chlorothiazide [Mass] of Dose",mg,1.0,false,Chlorothiazide:Mass:Pt:Dose:Qn:
+4178-0,Chlorpheniramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chlorpheniramine [Mass] of Dose",mg,1.0,false,Chlorpheniramine:Mass:Pt:Dose:Qn:
+4155-8,Carisoprodol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Carisoprodol [Mass] of Dose",mg,1.0,false,Carisoprodol:Mass:Pt:Dose:Qn:
+4180-6,chlorproPAMIDE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"chlorproPAMIDE [Mass] of Dose",mg,1.0,false,chlorproPAMIDE:Mass:Pt:Dose:Qn:
+4181-4,Chlorprothixene,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chlorprothixene [Mass] of Dose",mg,1.0,false,Chlorprothixene:Mass:Pt:Dose:Qn:
+4183-0,Chlorthalidone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chlorthalidone [Mass] of Dose",mg,1.0,false,Chlorthalidone:Mass:Pt:Dose:Qn:
+4185-5,Cimetidine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cimetidine [Mass] of Dose",mg,1.0,false,Cimetidine:Mass:Pt:Dose:Qn:
+4159-0,ceFAZolin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"ceFAZolin [Mass] of Dose",mg,1.0,false,ceFAZolin:Mass:Pt:Dose:Qn:
+4162-4,Cefotaxime,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefotaxime [Mass] of Dose",mg,1.0,false,Cefotaxime:Mass:Pt:Dose:Qn:
+4187-1,CISplatin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"CISplatin [Mass] of Dose",mg,1.0,false,CISplatin:Mass:Pt:Dose:Qn:
+4163-2,cefoTEtan,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cefoTEtan [Mass] of Dose",mg,1.0,false,cefoTEtan:Mass:Pt:Dose:Qn:
+4164-0,cefOXitin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cefOXitin [Mass] of Dose",mg,1.0,false,cefOXitin:Mass:Pt:Dose:Qn:
+4165-7,Cefsulodin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefsulodin [Mass] of Dose",mg,1.0,false,Cefsulodin:Mass:Pt:Dose:Qn:
+106541-6,cefTAZidime+Avibactam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.79,ACTIVE,1,Both,,mg,"cefTAZidime+Avibactam [Mass] of Dose",mg,2.79,false,cefTAZidime+Avibactam:Mass:Pt:Dose:Qn:
+106538-2,Ceftobiprole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.79,ACTIVE,1,Both,,mg,"Ceftobiprole [Mass] of Dose",mg,2.79,false,Ceftobiprole:Mass:Pt:Dose:Qn:
+4168-1,cefTRIAXone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cefTRIAXone [Mass] of Dose",mg,1.0,false,cefTRIAXone:Mass:Pt:Dose:Qn:
+4188-9,Clavulanate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clavulanate [Mass] of Dose",mg,1.0,false,Clavulanate:Mass:Pt:Dose:Qn:
+4190-5,cloBAZam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cloBAZam [Mass] of Dose",mg,1.0,false,cloBAZam:Mass:Pt:Dose:Qn:
+4191-3,Clobenzorex,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clobenzorex [Mass] of Dose",mg,1.0,false,Clobenzorex:Mass:Pt:Dose:Qn:
+4192-1,Clofibrate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clofibrate [Mass] of Dose",mg,1.0,false,Clofibrate:Mass:Pt:Dose:Qn:
+4193-9,clomiPRAMINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"clomiPRAMINE [Mass] of Dose",mg,1.0,false,clomiPRAMINE:Mass:Pt:Dose:Qn:
+4209-3,clomiPRAMINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated clomiPRAMINE [Mass] of Dose",mg,1.0,false,clomiPRAMINE:Mass:Pt:Dose:Qn:
+4194-7,clonazePAM,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"clonazePAM [Mass] of Dose",mg,1.0,false,clonazePAM:Mass:Pt:Dose:Qn:
+4196-2,Clopenthixol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clopenthixol [Mass] of Dose",mg,1.0,false,Clopenthixol:Mass:Pt:Dose:Qn:
+32608-2,cloZAPine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cloZAPine [Mass] of Dose",mg,2.08,false,cloZAPine:Mass:Pt:Dose:Qn:
+4199-6,Codeine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Codeine [Mass] of Dose",mg,1.0,false,Codeine:Mass:Pt:Dose:Qn:
+47206-8,Corticotropin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,ug,"Corticotropin [Mass] of Dose",ug,2.19,false,Corticotropin:Mass:Pt:Dose:Qn:
+50671-7,"Corticotropin releasing hormone",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Corticotropin releasing hormone [Mass] of Dose",pg/kg,2.22,false,"Corticotropin releasing hormone:Mass:Pt:Dose:Qn:"
+4202-8,Crotetamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Crotethamide [Mass] of Dose",mg,1.0,false,Crotetamide:Mass:Pt:Dose:Qn:
+4211-9,Desethylamiodarone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Desethylamiodarone [Mass] of Dose",mg,1.0,false,Desethylamiodarone:Mass:Pt:Dose:Qn:
+4212-7,Desipramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Desipramine [Mass] of Dose",mg,1.0,false,Desipramine:Mass:Pt:Dose:Qn:
+4228-3,Disopyramide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Disopyramide [Mass] of Dose",mg,1.0,false,Disopyramide:Mass:Pt:Dose:Qn:
+4229-1,Disulfiram,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Disulfiram [Mass] of Dose",mg,1.0,false,Disulfiram:Mass:Pt:Dose:Qn:
+4230-9,Doxepin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Doxepin [Mass] of Dose",mg,1.0,false,Doxepin:Mass:Pt:Dose:Qn:
+4231-7,Doxylamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Doxylamine [Mass] of Dose",mg,1.0,false,Doxylamine:Mass:Pt:Dose:Qn:
+4232-5,Dyphylline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dyphylline [Mass] of Dose",mg,1.0,false,Dyphylline:Mass:Pt:Dose:Qn:
+4233-3,Emetine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Emetine [Mass] of Dose",mg,1.0,false,Emetine:Mass:Pt:Dose:Qn:
+4235-8,Enoxacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Enoxacin [Mass] of Dose",mg,1.0,false,Enoxacin:Mass:Pt:Dose:Qn:
+4266-3,Furosemide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Furosemide [Mass] of Dose",mg,1.0,false,Furosemide:Mass:Pt:Dose:Qn:
+32589-4,Gabapentin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,mg,"Gabapentin [Mass] of Dose",mg,2.08,false,Gabapentin:Mass:Pt:Dose:Qn:
+4236-6,ePHEDrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"ePHEDrine [Mass] of Dose",mg,1.0,false,ePHEDrine:Mass:Pt:Dose:Qn:
+4238-2,Estazolam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Estazolam [Mass] of Dose",mg,1.0,false,Estazolam:Mass:Pt:Dose:Qn:
+4239-0,Etafedrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Etafedrine [Mass] of Dose",mg,1.0,false,Etafedrine:Mass:Pt:Dose:Qn:
+4240-8,Etamivan,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Etamivan [Mass] of Dose",mg,1.0,false,Etamivan:Mass:Pt:Dose:Qn:
+47209-2,Glucagon,Mass,Pt,Dose,Qn,,DRUGDOSE,2.19,ACTIVE,1,Observation,,,"Glucagon [Mass] of Dose",,2.19,false,Glucagon:Mass:Pt:Dose:Qn:
+4243-2,Ethchlorvynol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethchlorvynol [Mass] of Dose",mg,1.0,false,Ethchlorvynol:Mass:Pt:Dose:Qn:
+4249-9,Etilefrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Etilefrine [Mass] of Dose",mg,1.0,false,Etilefrine:Mass:Pt:Dose:Qn:
+4270-5,Glutethimide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Glutethimide [Mass] of Dose",mg,1.0,false,Glutethimide:Mass:Pt:Dose:Qn:
+32600-9,Felbamate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,g,"Felbamate [Mass] of Dose",g,2.08,false,Felbamate:Mass:Pt:Dose:Qn:
+4250-7,Fencamfamin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fencamfamin [Mass] of Dose",mg,1.0,false,Fencamfamin:Mass:Pt:Dose:Qn:
+4251-5,Fenetylline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fenetylline [Mass] of Dose",mg,1.0,false,Fenetylline:Mass:Pt:Dose:Qn:
+4252-3,Fenfluramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fenfluramine [Mass] of Dose",mg,1.0,false,Fenfluramine:Mass:Pt:Dose:Qn:
+115781-7,Fluconazole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Fluconazole [Mass] of Dose",mg,2.83,false,Fluconazole:Mass:Pt:Dose:Qn:
+115782-5,Fluconazole^peak,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Fluconazole --peak [Mass/volume] of Serum",mg/L,2.83,false,Fluconazole^peak:MCnc:Pt:Ser:Qn:
+115783-3,Fluconazole^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Fluconazole --trough [Mass/volume] of Serum",mg/L,2.83,false,Fluconazole^trough:MCnc:Pt:Ser:Qn:
+4258-0,Flunitrazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Flunitrazepam [Mass] of Dose",mg,1.0,false,Flunitrazepam:Mass:Pt:Dose:Qn:
+4259-8,Fluorouracil,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fluorouracil [Mass] of Dose",mg,1.0,false,Fluorouracil:Mass:Pt:Dose:Qn:
+4260-6,FLUoxetine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"FLUoxetine [Mass] of Dose",mg,1.0,false,FLUoxetine:Mass:Pt:Dose:Qn:
+107907-8,Fluoxetine+Norfluoxetine,SCnc,Pt,Ser/Plas,Qn,,DRUGDOSE,2.81,ACTIVE,1,Both,,nmol/L,"FLUoxetine+Norfluoxetine [Moles/volume] of Serum or Plasma",nmol/L,2.81,false,Fluoxetine+Norfluoxetine:SCnc:Pt:Ser/Plas:Qn:
+4263-0,fluPHENAZine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"fluPHENAZine [Mass] of Dose",mg,1.0,false,fluPHENAZine:Mass:Pt:Dose:Qn:
+4264-8,Flurazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Flurazepam [Mass] of Dose",mg,1.0,false,Flurazepam:Mass:Pt:Dose:Qn:
+4305-9,Medazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Medazepam [Mass] of Dose",mg,1.0,false,Medazepam:Mass:Pt:Dose:Qn:
+45373-8,"Medication route",Prid,Pt,Dose,Nom,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Medication route [Identifier] of Dose",,2.17,false,"Medication route:Prid:Pt:Dose:Nom:"
+65818-7,"Medication XXX",MCnc,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Medication [Mass/volume] Dose",,2.36,false,"Medication XXX:MCnc:Pt:Dose:Qn:"
+4306-7,Mefenorex,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mefenorex [Mass] of Dose",mg,1.0,false,Mefenorex:Mass:Pt:Dose:Qn:
+4307-5,Meperidine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Meperidine [Mass] of Dose",mg,1.0,false,Meperidine:Mass:Pt:Dose:Qn:
+4308-3,Mephenytoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mephenytoin [Mass] of Dose",mg,1.0,false,Mephenytoin:Mass:Pt:Dose:Qn:
+4309-1,Mephobarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mephobarbital [Mass] of Dose",mg,1.0,false,Mephobarbital:Mass:Pt:Dose:Qn:
+4310-9,Meprobamate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Meprobamate [Mass] of Dose",mg,1.0,false,Meprobamate:Mass:Pt:Dose:Qn:
+115771-8,Meropenem,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Meropenem [Mass] of Dose",mg,2.83,false,Meropenem:Mass:Pt:Dose:Qn:
+115772-6,Meropenem^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Meropenem --trough [Mass/volume] of Serum",mg/L,2.83,false,Meropenem^trough:MCnc:Pt:Ser:Qn:
+4311-7,Mersalyl,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mersalyl [Mass] of Dose",mg,1.0,false,Mersalyl:Mass:Pt:Dose:Qn:
+4312-5,Mesantoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Mephenytoin [Mass] of Dose",mg,1.0,false,Mesantoin:Mass:Pt:Dose:Qn:
+4313-3,Mesoridazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mesoridazine [Mass] of Dose",mg,1.0,false,Mesoridazine:Mass:Pt:Dose:Qn:
+4314-1,Mesterolone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mesterolone [Mass] of Dose",mg,1.0,false,Mesterolone:Mass:Pt:Dose:Qn:
+4315-8,Metandienone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Metandienone [Mass] of Dose",mg,1.0,false,Metandienone:Mass:Pt:Dose:Qn:
+4316-6,Metaraminol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Metaraminol [Mass] of Dose",mg,1.0,false,Metaraminol:Mass:Pt:Dose:Qn:
+4317-4,Metenolone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Metenolone [Mass] of Dose",mg,1.0,false,Metenolone:Mass:Pt:Dose:Qn:
+65866-6,Methacholine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methacholine [Mass] of Dose",mg,2.36,false,Methacholine:Mass:Pt:Dose:Qn:
+4318-2,Methadone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methadone [Mass] of Dose",mg,1.0,false,Methadone:Mass:Pt:Dose:Qn:
+4319-0,Methamphetamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methamphetamine [Mass] of Dose",mg,1.0,false,Methamphetamine:Mass:Pt:Dose:Qn:
+4320-8,Methapyrilene,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methapyrilene [Mass] of Dose",mg,1.0,false,Methapyrilene:Mass:Pt:Dose:Qn:
+4321-6,Methaqualone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methaqualone [Mass] of Dose",mg,1.0,false,Methaqualone:Mass:Pt:Dose:Qn:
+4322-4,Methicillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methicillin [Mass] of Dose",mg,1.0,false,Methicillin:Mass:Pt:Dose:Qn:
+47199-5,Methionine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methionine [Mass] of Dose",mg,2.19,false,Methionine:Mass:Pt:Dose:Qn:
+47200-1,Methionine+Homocysteine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methionine+Homocysteine [Mass] of Dose",mg,2.19,false,Methionine+Homocysteine:Mass:Pt:Dose:Qn:
+4323-2,Methocarbamol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methocarbamol [Mass] of Dose",mg,1.0,false,Methocarbamol:Mass:Pt:Dose:Qn:
+4324-0,Methotrexate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Methotrexate [Mass] of Dose",mg,1.0,false,Methotrexate:Mass:Pt:Dose:Qn:
+115770-0,Methotrexate^trough,SCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,umol/L,"Methotrexate --trough [Moles/volume] of Serum",umol/L,2.83,false,Methotrexate^trough:SCnc:Pt:Ser:Qn:
+4296-0,Methotrimeprazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methotrimeprazine [Mass] of Dose",mg,1.0,false,Methotrimeprazine:Mass:Pt:Dose:Qn:
+55252-1,"Methoxsalen 0.02 mg per mL given",Vol,Pt,^Patient,Qn,,DRUGDOSE,2.70,ACTIVE,1,Both,,mL,"Methoxsalen 0.02 mg/mL given [Volume]",mL,2.27,false,"Methoxsalen 0.02 mg per mL given:Vol:Pt:^Patient:Qn:"
+4325-7,Methoxyphenamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methoxyphenamine [Mass] of Dose",mg,1.0,false,Methoxyphenamine:Mass:Pt:Dose:Qn:
+4326-5,Methsuximide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methsuximide [Mass] of Dose",mg,1.0,false,Methsuximide:Mass:Pt:Dose:Qn:
+4327-3,Methyldopa,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methyldopa [Mass] of Dose",mg,1.0,false,Methyldopa:Mass:Pt:Dose:Qn:
+4328-1,MethylePHEDrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"MethylePHEDrine [Mass] of Dose",mg,1.0,false,MethylePHEDrine:Mass:Pt:Dose:Qn:
+4329-9,Methylphenidate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methylphenidate [Mass] of Dose",mg,1.0,false,Methylphenidate:Mass:Pt:Dose:Qn:
+4330-7,Methyprylon,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Methyprylon [Mass] of Dose",mg,1.0,false,Methyprylon:Mass:Pt:Dose:Qn:
+4331-5,Metoprolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Metoprolol [Mass] of Dose",mg,1.0,false,Metoprolol:Mass:Pt:Dose:Qn:
+4332-3,Mexiletine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Mexiletine [Mass] of Dose",mg,1.0,false,Mexiletine:Mass:Pt:Dose:Qn:
+4334-9,Midazolam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Midazolam [Mass] of Dose",mg,1.0,false,Midazolam:Mass:Pt:Dose:Qn:
+4337-2,Morphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Morphine [Mass] of Dose",mg,1.0,false,Morphine:Mass:Pt:Dose:Qn:
+115787-4,Mycophenolate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Mycophenolate [Mass] of Dose",mg,2.83,false,Mycophenolate:Mass:Pt:Dose:Qn:
+4338-0,Moxalactam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Moxalactam [Mass] of Dose",mg,1.0,false,Moxalactam:Mass:Pt:Dose:Qn:
+4346-3,Neopterin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Neopterin [Mass] of Dose",mg,1.0,false,Neopterin:Mass:Pt:Dose:Qn:
+4351-3,Nikethamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nikethamide [Mass] of Dose",mg,1.0,false,Nikethamide:Mass:Pt:Dose:Qn:
+4352-1,Nitrazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nitrazepam [Mass] of Dose",mg,1.0,false,Nitrazepam:Mass:Pt:Dose:Qn:
+4213-5,Nordiazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nordiazepam [Mass] of Dose",mg,1.0,false,Nordiazepam:Mass:Pt:Dose:Qn:
+4210-1,Nordoxepin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nordoxepin [Mass] of Dose",mg,1.0,false,Nordoxepin:Mass:Pt:Dose:Qn:
+4355-4,Nordoxepin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Nordoxepin [Mass] of Dose",mg,1.0,false,Nordoxepin:Mass:Pt:Dose:Qn:
+4357-0,Norethandrolone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Norethandrolone [Mass] of Dose",mg,1.0,false,Norethandrolone:Mass:Pt:Dose:Qn:
+4377-8,Pefloxacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pefloxacin [Mass] of Dose",mg,1.0,false,Pefloxacin:Mass:Pt:Dose:Qn:
+4378-6,Pemoline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pemoline [Mass] of Dose",mg,1.0,false,Pemoline:Mass:Pt:Dose:Qn:
+4379-4,"Penicillin G benzathine",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Penicillin G benzathine [Mass] of Dose",mg,1.0,false,"Penicillin G benzathine:Mass:Pt:Dose:Qn:"
+4380-2,"Penicillin G potassium",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Penicillin G potassium [Mass] of Dose",mg,1.0,false,"Penicillin G potassium:Mass:Pt:Dose:Qn:"
+4381-0,"Penicillin G procaine",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Penicillin G procaine [Mass] of Dose",mg,1.0,false,"Penicillin G procaine:Mass:Pt:Dose:Qn:"
+4382-8,"Penicillin V potassium",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Penicillin V potassium [Mass] of Dose",mg,1.0,false,"Penicillin V potassium:Mass:Pt:Dose:Qn:"
+4383-6,Pentazocine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pentazocine [Mass] of Dose",mg,1.0,false,Pentazocine:Mass:Pt:Dose:Qn:
+4384-4,Pentetrazol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pentetrazol [Mass] of Dose",mg,1.0,false,Pentetrazol:Mass:Pt:Dose:Qn:
+4385-1,PENTobarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"PENTobarbital [Mass] of Dose",mg,1.0,false,PENTobarbital:Mass:Pt:Dose:Qn:
+4386-9,Perphenazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Perphenazine [Mass] of Dose",mg,1.0,false,Perphenazine:Mass:Pt:Dose:Qn:
+4387-7,Phenacetin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenacetin [Mass] of Dose",mg,1.0,false,Phenacetin:Mass:Pt:Dose:Qn:
+4388-5,Phenazocine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenazocine [Mass] of Dose",mg,1.0,false,Phenazocine:Mass:Pt:Dose:Qn:
+4389-3,Phencyclidine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phencyclidine [Mass] of Dose",mg,1.0,false,Phencyclidine:Mass:Pt:Dose:Qn:
+4390-1,Phendimetrazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phendimetrazine [Mass] of Dose",mg,1.0,false,Phendimetrazine:Mass:Pt:Dose:Qn:
+4391-9,Pheniramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pheniramine [Mass] of Dose",mg,1.0,false,Pheniramine:Mass:Pt:Dose:Qn:
+4392-7,Phenmetrazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenmetrazine [Mass] of Dose",mg,1.0,false,Phenmetrazine:Mass:Pt:Dose:Qn:
+4393-5,PHENobarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"PHENobarbital [Mass] of Dose",mg,1.0,false,PHENobarbital:Mass:Pt:Dose:Qn:
+4395-0,Phensuximide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phensuximide [Mass] of Dose",mg,1.0,false,Phensuximide:Mass:Pt:Dose:Qn:
+4152-5,carBAMazepine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"carBAMazepine [Mass] of Dose",mg,1.0,false,carBAMazepine:Mass:Pt:Dose:Qn:
+4153-3,Carbenicillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Carbenicillin [Mass] of Dose",mg,1.0,false,Carbenicillin:Mass:Pt:Dose:Qn:
+4154-1,Carbromal,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Carbromal [Mass] of Dose",mg,1.0,false,Carbromal:Mass:Pt:Dose:Qn:
+4176-4,Chlormerodrin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Chlormerodrin [Mass] of Dose",mg,1.0,false,Chlormerodrin:Mass:Pt:Dose:Qn:
+4179-8,chlorproMAZINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"chlorproMAZINE [Mass] of Dose",mg,1.0,false,chlorproMAZINE:Mass:Pt:Dose:Qn:
+4156-6,Cathine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cathine [Mass] of Dose",mg,1.0,false,Cathine:Mass:Pt:Dose:Qn:
+4184-8,Cilastatin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cilastatin [Mass] of Dose",mg,1.0,false,Cilastatin:Mass:Pt:Dose:Qn:
+4157-4,Cefamandole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefamandole [Mass] of Dose",mg,1.0,false,Cefamandole:Mass:Pt:Dose:Qn:
+4158-2,ceFAZolin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated ceFAZolin [Mass] of Dose",mg,1.0,false,ceFAZolin:Mass:Pt:Dose:Qn:
+4186-3,Ciprofloxacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ciprofloxacin [Mass] of Dose",mg,1.0,false,Ciprofloxacin:Mass:Pt:Dose:Qn:
+4160-8,Cefonicid,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefonicid [Mass] of Dose",mg,1.0,false,Cefonicid:Mass:Pt:Dose:Qn:
+4161-6,Cefoperazone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefoperazone [Mass] of Dose",mg,1.0,false,Cefoperazone:Mass:Pt:Dose:Qn:
+4166-5,cefTAZidime,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cefTAZidime [Mass] of Dose",mg,1.0,false,cefTAZidime:Mass:Pt:Dose:Qn:
+4167-3,Ceftizoxime,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ceftizoxime [Mass] of Dose",mg,1.0,false,Ceftizoxime:Mass:Pt:Dose:Qn:
+4169-9,Cefuroxime.parenteral,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cefuroxime Parenteral [Mass] of Dose",mg,1.0,false,Cefuroxime.parenteral:Mass:Pt:Dose:Qn:
+4189-7,Clindamycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clindamycin [Mass] of Dose",mg,1.0,false,Clindamycin:Mass:Pt:Dose:Qn:
+4195-4,cloNIDine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cloNIDine [Mass] of Dose",mg,1.0,false,cloNIDine:Mass:Pt:Dose:Qn:
+32607-4,Clorazepate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Clorazepate [Mass] of Dose",mg,2.08,false,Clorazepate:Mass:Pt:Dose:Qn:
+4174-9,Clorazepate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clorazepate [Mass] of Dose",mg,1.0,false,Clorazepate:Mass:Pt:Dose:Qn:
+4197-0,Clorprenaline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clorprenaline [Mass] of Dose",mg,1.0,false,Clorprenaline:Mass:Pt:Dose:Qn:
+4198-8,Clostebol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Clostebol [Mass] of Dose",mg,1.0,false,Clostebol:Mass:Pt:Dose:Qn:
+4201-0,Cropropamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cropropamide [Mass] of Dose",mg,1.0,false,Cropropamide:Mass:Pt:Dose:Qn:
+4203-6,Cyanocobalamin.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Cyanocobalamin.PO [Mass] of Dose",mg,1.0,false,Cyanocobalamin.PO:Mass:Pt:Dose:Qn:
+4204-4,Cyclacillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cyclacillin [Mass] of Dose",mg,1.0,false,Cyclacillin:Mass:Pt:Dose:Qn:
+4205-1,Cyclizine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Cyclizine [Mass] of Dose",mg,1.0,false,Cyclizine:Mass:Pt:Dose:Qn:
+4206-9,cycloSERINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"cycloSERINE [Mass] of Dose",mg,1.0,false,cycloSERINE:Mass:Pt:Dose:Qn:
+4207-7,cycloSPORINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"cycloSPORINE [Mass] of Dose",mg,1.0,false,cycloSPORINE:Mass:Pt:Dose:Qn:
+29742-4,"Date last dose",TmStp,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Date last dose",,2.03,false,"Date last dose:TmStp:Pt:Dose:Qn:"
+4216-8,Diamorphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Diamorphine [Mass] of Dose",mg,1.0,false,Diamorphine:Mass:Pt:Dose:Qn:
+4217-6,diazePAM,Mass,Pt,Dose,Qn,,DRUGDOSE,2.21,ACTIVE,1,Observation,,mg,"diazePAM [Mass] of Dose",mg,1.0,false,diazePAM:Mass:Pt:Dose:Qn:
+4218-4,Dibenzepin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dibenzepin [Mass] of Dose",mg,1.0,false,Dibenzepin:Mass:Pt:Dose:Qn:
+4219-2,"Dibucaine nbr",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Dibucaine nbr",mg,1.0,false,"Dibucaine nbr:Mass:Pt:Dose:Qn:"
+4234-1,Encainide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Encainide [Mass] of Dose",mg,1.0,false,Encainide:Mass:Pt:Dose:Qn:
+4265-5,Furfenorex,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Furfenorex [Mass] of Dose",mg,1.0,false,Furfenorex:Mass:Pt:Dose:Qn:
+4267-1,Galactose.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Galactose.PO [Mass] of Dose",mg,1.0,false,Galactose.PO:Mass:Pt:Dose:Qn:
+4237-4,Erythromycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Erythromycin [Mass] of Dose",mg,1.0,false,Erythromycin:Mass:Pt:Dose:Qn:
+4268-9,Gentamicin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Gentamicin [Mass] of Dose",mg,1.0,false,Gentamicin:Mass:Pt:Dose:Qn:
+23634-9,"Erythropoietin given",ACnc,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,"arb U/mL","Erythropoietin (EPO) given [Units/volume] of Dose",[IU]/L,1.0n,false,"Erythropoietin given:ACnc:Pt:Dose:Qn:"
+23635-6,"Erythropoietin given",ACnt,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,"U/kg bw","Erythropoietin (EPO) given [Units/mass] of Dose",u/kg,1.0n,false,"Erythropoietin given:ACnt:Pt:Dose:Qn:"
+4241-6,Ethacrynate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethacrynate [Mass] of Dose",mg,1.0,false,Ethacrynate:Mass:Pt:Dose:Qn:
+4242-4,Ethambutol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethambutol [Mass] of Dose",mg,1.0,false,Ethambutol:Mass:Pt:Dose:Qn:
+4244-0,Ethoheptazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethoheptazine [Mass] of Dose",mg,1.0,false,Ethoheptazine:Mass:Pt:Dose:Qn:
+4245-7,Ethosuximide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Ethosuximide [Mass] of Dose",mg,1.0,false,Ethosuximide:Mass:Pt:Dose:Qn:
+4246-5,Ethotoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethotoin [Mass] of Dose",mg,1.0,false,Ethotoin:Mass:Pt:Dose:Qn:
+47621-8,Glucose.IV,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Glucose.IV [Mass] of Dose",mg,2.21,false,Glucose.IV:Mass:Pt:Dose:Qn:
+4269-7,Glucose.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,grams;gm,"Glucose.PO [Mass] of Dose",g,1.0,false,Glucose.PO:Mass:Pt:Dose:Qn:
+4247-3,Ethylmorphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ethylmorphine [Mass] of Dose",mg,1.0,false,Ethylmorphine:Mass:Pt:Dose:Qn:
+80652-1,Everolimus,Mass,Pt,Dose,Qn,,DRUGDOSE,2.56,ACTIVE,1,Observation,,mg,"Everolimus [Mass] of Dose",mg,2.56,false,Everolimus:Mass:Pt:Dose:Qn:
+4271-3,"Gonadotropin releasing hormone",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Gonadotropin releasing hormone [Mass] of Dose",mg,1.0,false,"Gonadotropin releasing hormone:Mass:Pt:Dose:Qn:"
+4253-1,Fenoprofen,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fenoprofen [Mass] of Dose",mg,1.0,false,Fenoprofen:Mass:Pt:Dose:Qn:
+4254-9,Fenproporex,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fenproporex [Mass] of Dose",mg,1.0,false,Fenproporex:Mass:Pt:Dose:Qn:
+4255-6,fentaNYL,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"fentaNYL [Mass] of Dose",mg,1.0,false,fentaNYL:Mass:Pt:Dose:Qn:
+4256-4,Flecainide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Flecainide [Mass] of Dose",mg,1.0,false,Flecainide:Mass:Pt:Dose:Qn:
+4261-4,Fluoxymesterone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Fluoxymesterone [Mass] of Dose",mg,1.0,false,Fluoxymesterone:Mass:Pt:Dose:Qn:
+4262-2,Flupenthixol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Flupenthixol [Mass] of Dose",mg,1.0,false,Flupenthixol:Mass:Pt:Dose:Qn:
+4272-1,Haloperidol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Haloperidol [Mass] of Dose",mg,1.0,false,Haloperidol:Mass:Pt:Dose:Qn:
+47205-0,metyraPONE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,g,"metyraPONE [Mass] of Dose",g,2.19,false,metyraPONE:Mass:Pt:Dose:Qn:
+4333-1,Mezlocillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Mezlocillin [Mass] of Dose",mg,1.0,false,Mezlocillin:Mass:Pt:Dose:Qn:
+4335-6,Minocycline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Minocycline [Mass] of Dose",mg,1.0,false,Minocycline:Mass:Pt:Dose:Qn:
+4336-4,Morazone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Morazone [Mass] of Dose",mg,1.0,false,Morazone:Mass:Pt:Dose:Qn:
+115789-0,Mycophenolate,TmMCnc,Pt,Bld,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,ug.h/L,"Mycophenolate [AUC] of Blood",ug.h/L,2.83,false,Mycophenolate:TmMCnc:Pt:Bld:Qn:
+4339-8,N-acetylprocainamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"N-acetylprocainamide [Mass] of Dose",mg,1.0,false,N-acetylprocainamide:Mass:Pt:Dose:Qn:
+4341-4,Nadolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nadolol [Mass] of Dose",mg,1.0,false,Nadolol:Mass:Pt:Dose:Qn:
+4342-2,Nalbuphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nalbuphine [Mass] of Dose",mg,1.0,false,Nalbuphine:Mass:Pt:Dose:Qn:
+4343-0,Nalorphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nalorphine [Mass] of Dose",mg,1.0,false,Nalorphine:Mass:Pt:Dose:Qn:
+4344-8,Nandrolone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nandrolone [Mass] of Dose",mg,1.0,false,Nandrolone:Mass:Pt:Dose:Qn:
+4345-5,Naproxen,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Naproxen [Mass] of Dose",mg,1.0,false,Naproxen:Mass:Pt:Dose:Qn:
+4248-1,N-ethylnicotinamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"N-ethylnicotinamide [Mass] of Dose",mg,1.0,false,N-ethylnicotinamide:Mass:Pt:Dose:Qn:
+4340-6,N-ethylnicotinamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated N-ethylnicotinamide [Mass] of Dose",mg,1.0,false,N-ethylnicotinamide:Mass:Pt:Dose:Qn:
+4347-1,Netilmicin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Netilmicin [Mass] of Dose",mg,1.0,false,Netilmicin:Mass:Pt:Dose:Qn:
+4348-9,Nicomorphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nicomorphine [Mass] of Dose",mg,1.0,false,Nicomorphine:Mass:Pt:Dose:Qn:
+4349-7,Nicotinamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nicotinamide [Mass] of Dose",mg,1.0,false,Nicotinamide:Mass:Pt:Dose:Qn:
+4350-5,Nicotine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nicotine [Mass] of Dose",mg,1.0,false,Nicotine:Mass:Pt:Dose:Qn:
+4353-9,Nitrofurantoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nitrofurantoin [Mass] of Dose",mg,1.0,false,Nitrofurantoin:Mass:Pt:Dose:Qn:
+4354-7,Nordiazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Nordiazepam [Mass] of Dose",mg,1.0,false,Nordiazepam:Mass:Pt:Dose:Qn:
+4356-2,Norepinephrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Norepinephrine [Mass] of Dose",mg,1.0,false,Norepinephrine:Mass:Pt:Dose:Qn:
+4358-8,Norfenefrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Norfenefrine [Mass] of Dose",mg,1.0,false,Norfenefrine:Mass:Pt:Dose:Qn:
+4359-6,Norfloxacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Norfloxacin [Mass] of Dose",mg,1.0,false,Norfloxacin:Mass:Pt:Dose:Qn:
+4360-4,Normetanephrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Normetanephrine [Mass] of Dose",mg,1.0,false,Normetanephrine:Mass:Pt:Dose:Qn:
+4361-2,Nortriptyline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Nortriptyline [Mass] of Dose",mg,1.0,false,Nortriptyline:Mass:Pt:Dose:Qn:
+4362-0,Ofloxacin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ofloxacin [Mass] of Dose",mg,1.0,false,Ofloxacin:Mass:Pt:Dose:Qn:
+74832-7,OLANZapine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.56,ACTIVE,1,Observation,,mg,"OLANZapine [Mass] of Dose",mg,2.48,false,OLANZapine:Mass:Pt:Dose:Qn:
+115767-6,Posaconazole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Posaconazole [Mass] of Dose",mg,2.83,false,Posaconazole:Mass:Pt:Dose:Qn:
+115768-4,Posaconazole^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Posaconazole --trough [Mass/volume] of Serum",mg/L,2.83,false,Posaconazole^trough:MCnc:Pt:Ser:Qn:
+4405-7,Practolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Practolol [Mass] of Dose",mg,1.0,false,Practolol:Mass:Pt:Dose:Qn:
+4406-5,Prazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Prazepam [Mass] of Dose",mg,1.0,false,Prazepam:Mass:Pt:Dose:Qn:
+4407-3,Primidone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Primidone [Mass] of Dose",mg,1.0,false,Primidone:Mass:Pt:Dose:Qn:
+4408-1,Probenecid,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Probenecid [Mass] of Dose",mg,1.0,false,Probenecid:Mass:Pt:Dose:Qn:
+4409-9,Procainamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Procainamide [Mass] of Dose",mg,1.0,false,Procainamide:Mass:Pt:Dose:Qn:
+4200-2,Prochlorperazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Prochlorperazine [Mass] of Dose",mg,1.0,false,Prochlorperazine:Mass:Pt:Dose:Qn:
+4410-7,Prolintane,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Prolintane [Mass] of Dose",mg,1.0,false,Prolintane:Mass:Pt:Dose:Qn:
+4411-5,Promazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Promazine [Mass] of Dose",mg,1.0,false,Promazine:Mass:Pt:Dose:Qn:
+4412-3,Promethazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Promethazine [Mass] of Dose",mg,1.0,false,Promethazine:Mass:Pt:Dose:Qn:
+4414-9,Propranolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Propranolol [Mass] of Dose",mg,1.0,false,Propranolol:Mass:Pt:Dose:Qn:
+4416-4,Protriptyline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Protriptyline [Mass] of Dose",mg,1.0,false,Protriptyline:Mass:Pt:Dose:Qn:
+4418-0,Pyrilamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pyrilamine [Mass] of Dose",mg,1.0,false,Pyrilamine:Mass:Pt:Dose:Qn:
+4421-4,rifAMPin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"rifAMPin [Mass] of Dose",mg,1.0,false,rifAMPin:Mass:Pt:Dose:Qn:
+4422-2,Salicylamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Salicylamide [Mass] of Dose",mg,1.0,false,Salicylamide:Mass:Pt:Dose:Qn:
+4413-1,Propanol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Propranolol [Mass] of Dose",mg,1.0,false,Propanol:Mass:Pt:Dose:Qn:
+4415-6,Propylhexedrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Propylhexedrine [Mass] of Dose",mg,1.0,false,Propylhexedrine:Mass:Pt:Dose:Qn:
+4417-2,Pseudoephedrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pseudoephedrine [Mass] of Dose",mg,1.0,false,Pseudoephedrine:Mass:Pt:Dose:Qn:
+47203-5,Pyridoxine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pyridoxine [Mass] of Dose",mg,2.19,false,Pyridoxine:Mass:Pt:Dose:Qn:
+4419-8,quiNIDine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"quiNIDine [Mass] of Dose",mg,1.0,false,quiNIDine:Mass:Pt:Dose:Qn:
+4420-6,quiNINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"quiNINE [Mass] of Dose",mg,1.0,false,quiNINE:Mass:Pt:Dose:Qn:
+4423-0,Salicylates,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Salicylates [Mass] of Dose",mg,1.0,false,Salicylates:Mass:Pt:Dose:Qn:
+102035-3,"Screening anti-hypertensive and anti-thrombotic drugs",PrThr,Pt,Ser,Ord,LC/MS/MS,DRUGDOSE,2.83,ACTIVE,1,Both,,,"Screening anti-hypertensive and anti-thrombotic drugs [Presence] of Serum",,2.75,false,"Screening anti-hypertensive and anti-thrombotic drugs:PrThr:Pt:Ser:Ord:LC/MS/MS"
+4424-8,Secobarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Secobarbital [Mass] of Dose",mg,1.0,false,Secobarbital:Mass:Pt:Dose:Qn:
+64135-7,Secobarbital/Creatinine,MRto,Pt,Urine,Qn,,DRUGDOSE,2.73,ACTIVE,1,Both,,"ng/mg creatinine","Secobarbital/Creatinine [Mass Ratio] of Urine",ng/mg{creat},2.36,false,Secobarbital/Creatinine:MRto:Pt:Urine:Qn:
+47207-6,Secretin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Secretin [Mass] of Dose",mg,2.19,false,Secretin:Mass:Pt:Dose:Qn:
+32598-5,Sertraline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,mg,"Sertraline [Mass] of Dose",mg,2.08,false,Sertraline:Mass:Pt:Dose:Qn:
+47202-7,Sincalide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Sincalide [Mass] of Dose",mg,2.19,false,Sincalide:Mass:Pt:Dose:Qn:
+49737-0,Sirolimus,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Sirolimus [Mass] of Dose",mg,2.22,false,Sirolimus:Mass:Pt:Dose:Qn:
+115766-8,Sirolimus^trough,MCnc,Pt,Bld,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Sirolimus --trough [Mass/volume] of Blood",mg/L,2.83,false,Sirolimus^trough:MCnc:Pt:Bld:Qn:
+4136-8,Barbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Barbital [Mass] of Dose",mg,1.0,false,Barbital:Mass:Pt:Dose:Qn:
+4128-5,Anileridine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Anileridine [Mass] of Dose",mg,1.0,false,Anileridine:Mass:Pt:Dose:Qn:
+4130-1,Antipyrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Antipyrine [Mass] of Dose",mg,1.0,false,Antipyrine:Mass:Pt:Dose:Qn:
+47201-9,Bentiromide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Bentiromide [Mass] of Dose",mg,2.19,false,Bentiromide:Mass:Pt:Dose:Qn:
+4139-2,Benzfetamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Benzfetamine [Mass] of Dose",mg,1.0,false,Benzfetamine:Mass:Pt:Dose:Qn:
+4140-0,Benzoylecgonine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Benzoylecgonine [Mass] of Dose",mg,1.0,false,Benzoylecgonine:Mass:Pt:Dose:Qn:
+4131-9,Ascorbate.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Ascorbate.PO [Mass] of Dose",mg,1.0,false,Ascorbate.PO:Mass:Pt:Dose:Qn:
+4142-6,Bisacodyl,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Bisacodyl [Mass] of Dose",mg,1.0,false,Bisacodyl:Mass:Pt:Dose:Qn:
+4132-7,Atenolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Atenolol [Mass] of Dose",mg,1.0,false,Atenolol:Mass:Pt:Dose:Qn:
+4133-5,Atropine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Atropine [Mass] of Dose",mg,1.0,false,Atropine:Mass:Pt:Dose:Qn:
+4135-0,Aztreonam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Aztreonam [Mass] of Dose",mg,1.0,false,Aztreonam:Mass:Pt:Dose:Qn:
+4143-4,Bolasterone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Bolasterone [Mass] of Dose",mg,1.0,false,Bolasterone:Mass:Pt:Dose:Qn:
+4144-2,Bromazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Bromazepam [Mass] of Dose",mg,1.0,false,Bromazepam:Mass:Pt:Dose:Qn:
+4145-9,Brompheniramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Brompheniramine [Mass] of Dose",mg,1.0,false,Brompheniramine:Mass:Pt:Dose:Qn:
+4146-7,Bumetanide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Bumetanide [Mass] of Dose",mg,1.0,false,Bumetanide:Mass:Pt:Dose:Qn:
+4147-5,Buprenorphine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Buprenorphine [Mass] of Dose",mg,1.0,false,Buprenorphine:Mass:Pt:Dose:Qn:
+93477-8,"Busulfan given",Mass,XXX,Dose,Qn,,DRUGDOSE,2.68,ACTIVE,1,Observation,,mg,"Busulfan given [Mass] of Dose",mg,2.67,false,"Busulfan given:Mass:XXX:Dose:Qn:"
+4148-3,Butabarbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Butabarbital [Mass] of Dose",mg,1.0,false,Butabarbital:Mass:Pt:Dose:Qn:
+4149-1,Butalbital,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Butalbital [Mass] of Dose",mg,1.0,false,Butalbital:Mass:Pt:Dose:Qn:
+4150-9,Caffeine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Caffeine [Mass] of Dose",mg,1.0,false,Caffeine:Mass:Pt:Dose:Qn:
+4208-5,Dantron,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dantron [Mass] of Dose",mg,1.0,false,Dantron:Mass:Pt:Dose:Qn:
+115786-6,Daptomycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"DAPTOmycin [Mass] of Dose",mg,2.83,false,Daptomycin:Mass:Pt:Dose:Qn:
+115784-1,Daptomycin^peak,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"DAPTOmycin --peak [Mass/volume] of Serum",mg/L,2.83,false,Daptomycin^peak:MCnc:Pt:Ser:Qn:
+115785-8,Daptomycin^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"DAPTOmycin --trough [Mass/volume] of Serum",mg/L,2.83,false,Daptomycin^trough:MCnc:Pt:Ser:Qn:
+77665-8,Dexamethasone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,mg,"Dexamethasone [Mass] of Dose",mg,2.52,false,Dexamethasone:Mass:Pt:Dose:Qn:
+45285-4,"Date and time",TmStp,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Date and time of Dose",,2.17,false,"Date and time:TmStp:Pt:Dose:Qn:"
+4214-3,Dextromethorphan,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dextromethorphan [Mass] of Dose",mg,1.0,false,Dextromethorphan:Mass:Pt:Dose:Qn:
+4215-0,Dextromoramide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dextromoramide [Mass] of Dose",mg,1.0,false,Dextromoramide:Mass:Pt:Dose:Qn:
+4220-0,Dichlorphenamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dichlorphenamide [Mass] of Dose",mg,1.0,false,Dichlorphenamide:Mass:Pt:Dose:Qn:
+4124-4,Diethylpropion,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Diethylpropion [Mass] of Dose",mg,1.0,false,Diethylpropion:Mass:Pt:Dose:Qn:
+4221-8,Digitoxin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Digitoxin [Mass] of Dose",mg,1.0,false,Digitoxin:Mass:Pt:Dose:Qn:
+4222-6,Digoxin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Digoxin [Mass] of Dose",mg,1.0,false,Digoxin:Mass:Pt:Dose:Qn:
+4224-2,diphenhydrAMINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"diphenhydrAMINE [Mass] of Dose",mg,1.0,false,diphenhydrAMINE:Mass:Pt:Dose:Qn:
+4226-7,Diphenylhydramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated diphenhydrAMINE [Mass] of Dose",mg,1.0,false,Diphenylhydramine:Mass:Pt:Dose:Qn:
+4227-5,Dipipanone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Dipipanone [Mass] of Dose",mg,1.0,false,Dipipanone:Mass:Pt:Dose:Qn:
+55253-9,"Heparin 10000 U per mL given",Vol,Pt,^Patient,Qn,,DRUGDOSE,2.70,ACTIVE,1,Both,,mL,"Heparin 10000 U/mL given [Volume]",mL,2.27,false,"Heparin 10000 U per mL given:Vol:Pt:^Patient:Qn:"
+55254-7,"Heparin 5000 U per mL given",Vol,Pt,^Patient,Qn,,DRUGDOSE,2.70,ACTIVE,1,Both,,mL,"Heparin 5000 U/mL given [Volume]",mL,2.27,false,"Heparin 5000 U per mL given:Vol:Pt:^Patient:Qn:"
+4273-9,Heptaminol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Heptaminol [Mass] of Dose",mg,1.0,false,Heptaminol:Mass:Pt:Dose:Qn:
+4274-7,Hippurate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Hippurate [Mass] of Dose",mg,1.0,false,Hippurate:Mass:Pt:Dose:Qn:
+58957-2,"Heparin given",Type,Pt,^Patient,Nom,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Heparin given [Type]",,2.32,false,"Heparin given:Type:Pt:^Patient:Nom:"
+4275-4,hydroCHLOROthiazide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"hydroCHLOROthiazide [Mass] of Dose",mg,1.0,false,hydroCHLOROthiazide:Mass:Pt:Dose:Qn:
+4276-2,HYDROcodone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"HYDROcodone [Mass] of Dose",mg,1.0,false,HYDROcodone:Mass:Pt:Dose:Qn:
+4277-0,HYDROmorphone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated HYDROmorphone [Mass] of Dose",mg,1.0,false,HYDROmorphone:Mass:Pt:Dose:Qn:
+4280-4,hydrOXYzine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"hydrOXYzine [Mass] of Dose",mg,1.0,false,hydrOXYzine:Mass:Pt:Dose:Qn:
+115762-7,Isavuconazole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Isavuconazole [Mass] of Dose",mg,2.83,false,Isavuconazole:Mass:Pt:Dose:Qn:
+115763-5,Isavuconazole^peak,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Isavuconazole --peak [Mass/volume] of Serum",mg/L,2.83,false,Isavuconazole^peak:MCnc:Pt:Ser:Qn:
+115764-3,Isavuconazole^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Isavuconazole --trough [Mass/volume] of Serum",mg/L,2.83,false,Isavuconazole^trough:MCnc:Pt:Ser:Qn:
+115777-5,Levetiracetam^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"levETIRAcetam --trough [Mass/volume] of Serum",mg/L,2.83,false,Levetiracetam^trough:MCnc:Pt:Ser:Qn:
+4294-5,Levodopa.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Levodopa.PO [Mass] of Dose",mg,1.0,false,Levodopa.PO:Mass:Pt:Dose:Qn:
+4298-6,Levorphanol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Levorphanol [Mass] of Dose",mg,1.0,false,Levorphanol:Mass:Pt:Dose:Qn:
+115773-4,Linezolid,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Linezolid [Mass] of Dose",mg,2.83,false,Linezolid:Mass:Pt:Dose:Qn:
+4291-1,Kanamycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Kanamycin [Mass] of Dose",mg,1.0,false,Kanamycin:Mass:Pt:Dose:Qn:
+4292-9,Ketamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ketamine [Mass] of Dose",mg,1.0,false,Ketamine:Mass:Pt:Dose:Qn:
+4301-8,LORazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"LORazepam [Mass] of Dose",mg,1.0,false,LORazepam:Mass:Pt:Dose:Qn:
+4303-4,Loxapine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Loxapine [Mass] of Dose",mg,1.0,false,Loxapine:Mass:Pt:Dose:Qn:
+48701-7,"Luteinizing releasing hormone",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Luteinizing releasing hormone [Mass] of Dose",mg,2.21,false,"Luteinizing releasing hormone:Mass:Pt:Dose:Qn:"
+57015-0,Lactulose.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Lactulose.PO [Mass] of Dose",mg,2.29,false,Lactulose.PO:Mass:Pt:Dose:Qn:
+4304-2,Maprotiline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Maprotiline [Mass] of Dose",mg,1.0,false,Maprotiline:Mass:Pt:Dose:Qn:
+4394-3,Phenothiazines,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenothiazines [Mass] of Dose",mg,1.0,false,Phenothiazines:Mass:Pt:Dose:Qn:
+4396-8,Phentermine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phentermine [Mass] of Dose",mg,1.0,false,Phentermine:Mass:Pt:Dose:Qn:
+4363-8,Orphenadrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Orphenadrine [Mass] of Dose",mg,1.0,false,Orphenadrine:Mass:Pt:Dose:Qn:
+4364-6,Ouabain,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ouabain [Mass] of Dose",mg,1.0,false,Ouabain:Mass:Pt:Dose:Qn:
+4398-4,Phenylephrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenylephrine [Mass] of Dose",mg,1.0,false,Phenylephrine:Mass:Pt:Dose:Qn:
+4399-2,Phenylpropanolamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenylpropanolamine [Mass] of Dose",mg,1.0,false,Phenylpropanolamine:Mass:Pt:Dose:Qn:
+4401-6,Pholedrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pholedrine [Mass] of Dose",mg,1.0,false,Pholedrine:Mass:Pt:Dose:Qn:
+4372-9,Oxymetholone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Oxymetholone [Mass] of Dose",mg,1.0,false,Oxymetholone:Mass:Pt:Dose:Qn:
+4373-7,Oxyphenbutazone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxyphenbutazone [Mass] of Dose",mg,1.0,false,Oxyphenbutazone:Mass:Pt:Dose:Qn:
+4374-5,"Para methylhippurate",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Para methylhippurate [Mass] of Dose",mg,1.0,false,"Para methylhippurate:Mass:Pt:Dose:Qn:"
+4402-4,Pindolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pindolol [Mass] of Dose",mg,1.0,false,Pindolol:Mass:Pt:Dose:Qn:
+4365-3,Oxacillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxacillin [Mass] of Dose",mg,1.0,false,Oxacillin:Mass:Pt:Dose:Qn:
+4366-1,Oxandrolone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxandrolone [Mass] of Dose",mg,1.0,false,Oxandrolone:Mass:Pt:Dose:Qn:
+4367-9,Oxazepam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxazepam [Mass] of Dose",mg,1.0,false,Oxazepam:Mass:Pt:Dose:Qn:
+4368-7,Oxedrine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxedrine [Mass] of Dose",mg,1.0,false,Oxedrine:Mass:Pt:Dose:Qn:
+4369-5,Oxprenolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxprenolol [Mass] of Dose",mg,1.0,false,Oxprenolol:Mass:Pt:Dose:Qn:
+4370-3,oxyCODONE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"oxyCODONE [Mass] of Dose",mg,1.0,false,oxyCODONE:Mass:Pt:Dose:Qn:
+4397-6,Phenylbutazone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Phenylbutazone [Mass] of Dose",mg,1.0,false,Phenylbutazone:Mass:Pt:Dose:Qn:
+4225-9,Phenytoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Phenytoin [Mass] of Dose",mg,1.0,false,Phenytoin:Mass:Pt:Dose:Qn:
+4400-8,Phenytoin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Phenytoin [Mass] of Dose",mg,1.0,false,Phenytoin:Mass:Pt:Dose:Qn:
+4371-1,Oxymesterone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Oxymesterone [Mass] of Dose",mg,1.0,false,Oxymesterone:Mass:Pt:Dose:Qn:
+4375-2,"Para hydroxyamphetamine",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Para hydroxyamphetamine [Mass] of Dose",mg,1.0,false,"Para hydroxyamphetamine:Mass:Pt:Dose:Qn:"
+4376-0,Paraldehyde,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Paraldehyde [Mass] of Dose",mg,1.0,false,Paraldehyde:Mass:Pt:Dose:Qn:
+4403-2,Piperacillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Piperacillin [Mass] of Dose",mg,1.0,false,Piperacillin:Mass:Pt:Dose:Qn:
+115769-2,Piperacillin^trough,MCnc,Pt,Ser,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg/L,"Piperacillin --trough [Mass/volume] of Serum",mg/L,2.83,false,Piperacillin^trough:MCnc:Pt:Ser:Qn:
+4404-0,Pipradrol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Pipradrol [Mass] of Dose",mg,1.0,false,Pipradrol:Mass:Pt:Dose:Qn:
+4438-8,Tetrahydrocannabinol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tetrahydrocannabinol [Mass] of Dose",mg,1.0,false,Tetrahydrocannabinol:Mass:Pt:Dose:Qn:
+4439-6,Tetrahydrocortisone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tetrahydrocortisone [Mass] of Dose",mg,1.0,false,Tetrahydrocortisone:Mass:Pt:Dose:Qn:
+4425-5,Sotalol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Sotalol [Mass] of Dose",mg,1.0,false,Sotalol:Mass:Pt:Dose:Qn:
+4440-4,Theophylline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Theophylline [Mass] of Dose",mg,1.0,false,Theophylline:Mass:Pt:Dose:Qn:
+4426-3,Spironolactone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Spironolactone [Mass] of Dose",mg,1.0,false,Spironolactone:Mass:Pt:Dose:Qn:
+48700-9,"Thyrotropin releasing hormone",Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Thyrotropin releasing hormone [Mass] of Dose",mg,2.21,false,"Thyrotropin releasing hormone:Mass:Pt:Dose:Qn:"
+4427-1,Stanozolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Stanozolol [Mass] of Dose",mg,1.0,false,Stanozolol:Mass:Pt:Dose:Qn:
+29637-6,"Time last dose",TmStp,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,h,"Time last dose of Dose",h,2.03,false,"Time last dose:TmStp:Pt:Dose:Qn:"
+43742-6,"Time next dose",TmStp,Pt,^Patient,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Time next dose",,2.17,false,"Time next dose:TmStp:Pt:^Patient:Qn:"
+4444-6,Timolol,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Timolol [Mass] of Dose",mg,1.0,false,Timolol:Mass:Pt:Dose:Qn:
+4447-9,TOLBUTamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"TOLBUTamide [Mass] of Dose",mg,1.0,false,TOLBUTamide:Mass:Pt:Dose:Qn:
+4448-7,TOLBUTamide.IV,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"TOLBUTamide.IV [Mass] of Dose",mg,1.0,false,TOLBUTamide.IV:Mass:Pt:Dose:Qn:
+4461-0,Warfarin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,mg,"Warfarin [Mass] of Dose",mg,1.0,false,Warfarin:Mass:Pt:Dose:Qn:
+4428-9,Streptomycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Streptomycin [Mass] of Dose",mg,1.0,false,Streptomycin:Mass:Pt:Dose:Qn:
+4452-9,Triazolam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Triazolam [Mass] of Dose",mg,1.0,false,Triazolam:Mass:Pt:Dose:Qn:
+50016-5,Sugar,Type,Pt,Dose,Nom,,DRUGDOSE,2.22,ACTIVE,1,Observation,,,"Sugar [Type] of Dose",,2.22,false,Sugar:Type:Pt:Dose:Nom:
+4432-1,sulfiSOXAZOLE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"sulfiSOXAZOLE [Mass] of Dose",mg,1.0,false,sulfiSOXAZOLE:Mass:Pt:Dose:Qn:
+4433-9,Sulfonamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Sulfonamide [Mass] of Dose",mg,1.0,false,Sulfonamide:Mass:Pt:Dose:Qn:
+4434-7,Sulfonamide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,DEPRECATED,1,,,,"Deprecated Sulfonamide [Mass] of Dose",mg,1.0,false,Sulfonamide:Mass:Pt:Dose:Qn:
+4436-2,Tetracaine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tetracaine [Mass] of Dose",mg,1.0,false,Tetracaine:Mass:Pt:Dose:Qn:
+4437-0,Tetracycline,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tetracycline [Mass] of Dose",mg,1.0,false,Tetracycline:Mass:Pt:Dose:Qn:
+4458-6,Valproate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Valproate [Mass] of Dose",mg,1.0,false,Valproate:Mass:Pt:Dose:Qn:
+4459-4,Vancomycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Vancomycin [Mass] of Dose",mg,1.0,false,Vancomycin:Mass:Pt:Dose:Qn:
+4441-2,Thiopental,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Thiopental [Mass] of Dose",mg,1.0,false,Thiopental:Mass:Pt:Dose:Qn:
+4442-0,Thioridazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Thioridazine [Mass] of Dose",mg,1.0,false,Thioridazine:Mass:Pt:Dose:Qn:
+4443-8,Ticarcillin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Ticarcillin [Mass] of Dose",mg,1.0,false,Ticarcillin:Mass:Pt:Dose:Qn:
+46097-2,"Time corticotropin given",TmStp,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Time corticotropin given",,2.17,false,"Time corticotropin given:TmStp:Pt:Dose:Qn:"
+4445-3,Tobramycin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,,"Tobramycin [Mass] of Dose",mg,1.0,false,Tobramycin:Mass:Pt:Dose:Qn:
+4446-1,Tocainide,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tocainide [Mass] of Dose",mg,1.0,false,Tocainide:Mass:Pt:Dose:Qn:
+32595-1,Topiramate,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,mg,"Topiramate [Mass] of Dose",mg,2.08,false,Topiramate:Mass:Pt:Dose:Qn:
+115765-0,Voriconazole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.83,ACTIVE,1,Both,,mg,"Voriconazole [Mass] of Dose",mg,2.83,false,Voriconazole:Mass:Pt:Dose:Qn:
+4449-5,Tranylcypromine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tranylcypromine [Mass] of Dose",mg,1.0,false,Tranylcypromine:Mass:Pt:Dose:Qn:
+4450-3,traZODone,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"traZODone [Mass] of Dose",mg,1.0,false,traZODone:Mass:Pt:Dose:Qn:
+32596-9,Trifluoperazine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.70,ACTIVE,1,Observation,,mg,"Trifluoperazine [Mass] of Dose",mg,2.08,false,Trifluoperazine:Mass:Pt:Dose:Qn:
+4430-5,sulfADIAZINE,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"sulfADIAZINE [Mass] of Dose",mg,1.0,false,sulfADIAZINE:Mass:Pt:Dose:Qn:
+4431-3,Sulfamethoxazole,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Sulfamethoxazole [Mass] of Dose",mg,1.0,false,Sulfamethoxazole:Mass:Pt:Dose:Qn:
+4453-7,Trimeperidine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Trimeperidine [Mass] of Dose",mg,1.0,false,Trimeperidine:Mass:Pt:Dose:Qn:
+4454-5,Trimethadione,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Trimethadione [Mass] of Dose",mg,1.0,false,Trimethadione:Mass:Pt:Dose:Qn:
+4457-8,Tripelennamine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Tripelennamine [Mass] of Dose",mg,1.0,false,Tripelennamine:Mass:Pt:Dose:Qn:
+4451-1,Triamterene,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Triamterene [Mass] of Dose",mg,1.0,false,Triamterene:Mass:Pt:Dose:Qn:
+4429-7,Sulbactam,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Sulbactam [Mass] of Dose",mg,1.0,false,Sulbactam:Mass:Pt:Dose:Qn:
+4455-2,Trimethoprim,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Trimethoprim [Mass] of Dose",mg,1.0,false,Trimethoprim:Mass:Pt:Dose:Qn:
+4456-0,Trimipramine,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Trimipramine [Mass] of Dose",mg,1.0,false,Trimipramine:Mass:Pt:Dose:Qn:
+4462-8,Xylose.PO,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,g,"Xylose.PO [Mass] of Dose",g,1.0,false,Xylose.PO:Mass:Pt:Dose:Qn:
+32594-4,Tacrolimus,Mass,Pt,Dose,Qn,,DRUGDOSE,2.73,ACTIVE,1,Observation,,mg,"Tacrolimus [Mass] of Dose",mg,2.08,false,Tacrolimus:Mass:Pt:Dose:Qn:
+4435-4,Teicoplanin,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Teicoplanin [Mass] of Dose",mg,1.0,false,Teicoplanin:Mass:Pt:Dose:Qn:
+4460-2,Verapamil,Mass,Pt,Dose,Qn,,DRUGDOSE,2.69,ACTIVE,1,Observation,,,"Verapamil [Mass] of Dose",mg,1.0,false,Verapamil:Mass:Pt:Dose:Qn:

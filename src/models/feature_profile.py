@@ -265,7 +265,8 @@ class FeatureProfile:
         return self.data_type.lower() in [
             "object",
             "category",
-            "string"
+            "string",
+            "str"
         ]
 
     def is_boolean(self) -> bool:
