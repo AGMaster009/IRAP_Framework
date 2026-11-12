@@ -145,28 +145,27 @@ On real-world Complete Blood Count (\ac{CBC}) laboratory data, \ac{IRAP} improve
 \addcontentsline{toc}{chapter}{List of Symbols}
 \begin{doublespace}
 \begin{tabbing}
-xxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
-\textbf{$X$}   \> Input tabular feature matrix, $\mathbb{R}^{N \times D}$ \\
-\textbf{$Y$}   \> Ground-truth supervised target response vector \\
-\textbf{$N$}   \> Total number of sample instances (patients/observations) \\
-\textbf{$D$}   \> Total number of feature dimensions (variables/attributes) \\
-\textbf{$M$}   \> Missingness binary indicator mask matrix, $\{0, 1\}^{N \times D}$ \\
-\textbf{$\phi_i$} \> Marginal Shapley contribution of feature $i$ \\
-\textbf{$\bar{\phi}_{i \to j}$} \> Mean absolute SHAP interaction weight of feature $i$ predicting feature $j$ \\
-\textbf{$G$}   \> Directed Context Knowledge Graph, $G = (V, E, W)$ \\
-\textbf{$V$}   \> Set of feature vertices/nodes in Knowledge Graph \\
-\textbf{$E$}   \> Set of directed dependency edges in Knowledge Graph \\
-\textbf{$W$}   \> Set of normalized SHAP dependency edge weights, $w_{ij} \in [0, 1]$ \\
-\textbf{$\tau$} \> Topological dependency significance threshold ($\tau = 0.10$) \\
-\textbf{$H(X)$} \> Empirical Shannon Entropy (bits) \\
-\textbf{$K^2$} \> D'Agostino's normality test statistic \\
-\textbf{$S$}   \> Sample skewness coefficient (third standardized moment) \\
-\textbf{$K$}   \> Sample kurtosis coefficient (fourth standardized moment) \\
-\textbf{$Q_1, Q_3$} \> First (25th percentile) and third (75th percentile) distribution quartiles \\
-\textbf{$\text{IQR}$} \> Interquartile range ($Q_3 - Q_1$) \\
-\textbf{$\mathcal{S}_j$} \> Topological predictor subspace/neighborhood for feature $j$ \\
-\textbf{$\hat{x}_{ij}$} \> Mathematically imputed value for observation $i$ and feature $j$ \\
-\textbf{$\tilde{x}_{ij}$} \> Biologically guarded and clamped imputed value \\
+xxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+\textbf{$X$}            \> Input tabular feature matrix, $\mathbb{R}^{N \times D}$ \\
+\textbf{$Y$}            \> Supervised target response vector \\
+\textbf{$N$}            \> Total number of sample instances \\
+\textbf{$D$}            \> Total number of feature dimensions \\
+\textbf{$M$}            \> Missingness binary indicator mask matrix \\
+\textbf{$\phi_i$}       \> Marginal Shapley contribution of feature $i$ \\
+\textbf{$\bar{\phi}_{i \to j}$} \> Mean absolute SHAP interaction ($X_i \to X_j$) \\
+\textbf{$G$}            \> Directed Context Knowledge Graph, $G = (V, E, W)$ \\
+\textbf{$V$}            \> Set of feature vertices in Knowledge Graph \\
+\textbf{$E$}            \> Set of directed dependency edges in Knowledge Graph \\
+\textbf{$W$}            \> Set of normalized SHAP dependency edge weights \\
+\textbf{$\tau$}         \> Dependency threshold ($\tau = 0.10$) \\
+\textbf{$H(X)$}         \> Empirical Shannon Entropy (bits) \\
+\textbf{$K^2$}          \> D'Agostino's normality test statistic \\
+\textbf{$S, K$}         \> Sample skewness and kurtosis coefficients \\
+\textbf{$Q_1, Q_3$}     \> First (25th) and third (75th) quartiles \\
+\textbf{$\text{IQR}$}   \> Interquartile range ($Q_3 - Q_1$) \\
+\textbf{$\mathcal{S}_j$}\> Topological predictor subspace for feature $j$ \\
+\textbf{$\hat{x}_{ij}$} \> Imputed value for instance $i$ and feature $j$ \\
+\textbf{$\tilde{x}_{ij}$}\> Guarded and clamped imputed value \\
 \end{tabbing}
 \end{doublespace}
 \pagebreak
@@ -322,7 +321,8 @@ Table \ref{tab:lit_comparison} presents a systematic comparison of state-of-the-
 \renewcommand{\arraystretch}{1.3}
 \caption{Systematic comparison of state-of-the-art preprocessing frameworks against IRAP.}
 \label{tab:lit_comparison}
-\begin{tabular}{|p{2.6cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.5cm}|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \textbf{Dimension} & \textbf{Scikit-Learn} & \textbf{MICE} & \textbf{GAIN} & \textbf{CMI} & \textbf{IRAP (This Work)} \\ \hline
 Mathematical Method & Univariate Mean & Chained Regr. & Deep GAN & Cluster Mean & \textbf{TreeSHAP Graph} \\ \hline
@@ -333,7 +333,8 @@ Clinical Guardrails & None & None & None & None & \textbf{40,778 LOINC Rules} \\
 Adaptive Scaling & None & None & None & None & \textbf{Robust / Gaussian} \\ \hline
 Memory Protection & None & None & None & None & \textbf{Target Encoding} \\ \hline
 Clinical Auditability & Trivial & Moderate & Zero (Opaque) & Moderate & \textbf{Deterministic Cards} \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 %------------------------------------------------------------------------------------------------%
@@ -345,13 +346,18 @@ Clinical Auditability & Trivial & Moderate & Zero (Opaque) & Moderate & \textbf{
 \section{Algorithm and Architectural Design}
 The \ac{IRAP} Framework establishes a unified cognitive workflow:
 \begin{equation}
-    \text{Observe} \longrightarrow \text{Understand} \longrightarrow \text{Learn Relationships} \longrightarrow \text{Reason} \longrightarrow \text{Preprocess} \longrightarrow \text{Validate} \longrightarrow \text{Explain}
+\begin{aligned}
+    \text{Observe} &\longrightarrow \text{Understand} \longrightarrow \text{Learn Relationships} \\
+    &\longrightarrow \text{Reason} \longrightarrow \text{Preprocess} \\
+    &\longrightarrow \text{Validate} \longrightarrow \text{Explain}
+\end{aligned}
 \end{equation}
 
 Figure \ref{fig:irap_arch} presents the comprehensive structural block diagram of the \ac{IRAP} Framework, illustrating the flow from raw data ingestion to final explainability and reporting.
 
 \begin{figure}[htpb]
 \centering
+\resizebox{0.92\linewidth}{!}{%
 \begin{tikzpicture}[
     node distance=1.1cm and 1.5cm,
     block/.style={rectangle, draw=blue!80, fill=blue!5, rounded corners, line width=0.8pt, text width=42mm, text centered, minimum height=9mm},
@@ -376,7 +382,8 @@ Figure \ref{fig:irap_arch} presents the comprehensive structural block diagram o
     \path [line] (p5) -- (p6);
     \path [line] (p6) -- (p7);
     \path [line] (p7) -- (p8);
-\end{tikzpicture}
+\end{tikzpicture}%
+}
 \caption{Comprehensive architectural workflow of the IRAP Framework.}
 \label{fig:irap_arch}
 \end{figure}
@@ -428,7 +435,11 @@ Conventional \ac{KNN} imputer calculates distances across all $D$ features, intr
 \end{equation}
 The missing value is estimated as the distance-weighted average of the $K$ nearest neighbors:
 \begin{equation}
-    \hat{x}_{ij} = \frac{\sum_{n \in \mathcal{N}_K(i)} w_n x_{nj}}{\sum_{n \in \mathcal{N}_K(i)} w_n}, \quad w_n = \frac{1}{d_{\mathcal{S}_j}(x_i, x_n) + \epsilon}
+    \hat{x}_{ij} = \frac{\sum_{n \in \mathcal{N}_K(i)} w_n x_{nj}}{\sum_{n \in \mathcal{N}_K(i)} w_n}
+\end{equation}
+where the topological neighbor weight $w_n$ is computed as:
+\begin{equation}
+    w_n = \frac{1}{d_{\mathcal{S}_j}(x_i, x_n) + \epsilon}
 \end{equation}
 
 Next, the LOINC Biological Guardrails engine checks the imputed value against physical constraints:
@@ -473,14 +484,16 @@ Table \ref{tab:results_classification} reports the comparative downstream classi
 \renewcommand{\arraystretch}{1.3}
 \caption{Downstream classification accuracy and F1-score comparison (Baseline vs. IRAP).}
 \label{tab:results_classification}
-\begin{tabular}{|p{3.2cm}|c|c|c|c|c|c|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
 \textbf{Dataset Cohort} & \textbf{Rows} & \textbf{Edges} & \textbf{Base Acc.} & \textbf{IRAP Acc.} & \textbf{Gain ($\Delta$)} & \textbf{F1 Gain} \\ \hline
 \textbf{Mendeley CBC Dataset} & 374 & 116 & 0.6703 & \textbf{0.9780} & \textbf{+30.77\%} & \textbf{+32.28\%} \\ \hline
 \textbf{Realistic Synthetic} & 200 & 49 & 0.7800 & \textbf{0.7800} & +0.00\% & +0.00\% \\ \hline
 \textbf{Hospital Diabetes} & 5,132 & 59 & 0.9992 & \textbf{0.9992} & +0.00\% & +0.00\% \\ \hline
 \textbf{Breast Cancer Wis.} & 569 & 82 & 0.9561 & \textbf{0.9561} & +0.00\% & +0.00\% \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \section{Imputation Fidelity and Ground-Truth Reconstruction}
@@ -495,12 +508,14 @@ To measure imputation accuracy, an artificial mask of 15\% was applied to known 
 \renewcommand{\arraystretch}{1.3}
 \caption{Imputation fidelity evaluation measuring ground-truth reconstruction RMSE.}
 \label{tab:results_imputation}
-\begin{tabular}{|p{3.8cm}|p{2.5cm}|c|c|c|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|l|c|c|c|}
 \hline
 \textbf{Dataset Cohort} & \textbf{Evaluated Feature} & \textbf{Base RMSE} & \textbf{IRAP RMSE} & \textbf{Error Reduction} \\ \hline
 \textbf{Realistic Synthetic} & Patient Age & 18.4869 & \textbf{10.3409} & \textbf{44.06\% Reduction} \\ \hline
 \textbf{Hospital Diabetes} & Body Mass Index & 8.2140 & \textbf{6.7865} & \textbf{17.38\% Reduction} \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \section{Stratified 5-Fold Cross-Validation and Statistical Significance}
@@ -512,14 +527,16 @@ To prove that performance gains were not artifacts of a single split, Table \ref
 \renewcommand{\arraystretch}{1.3}
 \caption{Stratified 5-Fold Cross-Validation and Paired t-Test Significance ($N_{splits}=5$).}
 \label{tab:results_cv}
-\begin{tabular}{|p{3.5cm}|c|c|c|c|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|}
 \hline
 \textbf{Dataset Name} & \textbf{Baseline (Mean $\pm$ Std)} & \textbf{IRAP (Mean $\pm$ Std)} & \textbf{Gain ($\Delta$)} & \textbf{p-value} \\ \hline
 \textbf{Mendeley CBC Dataset} & $0.6513 \pm 0.0381$ & \textbf{$0.9698 \pm 0.0159$} & \textbf{+31.86\%} & \textbf{6.89e-05} ($p < 0.001$) \\ \hline
 \textbf{Realistic Synthetic} & $0.7900 \pm 0.0624$ & \textbf{$0.8100 \pm 0.0490$} & \textbf{+2.00\%} & 0.4557 (Consistent) \\ \hline
 \textbf{Breast Cancer Wis.} & $0.9561 \pm 0.0123$ & \textbf{$0.9561 \pm 0.0123$} & +0.00\% & 1.0000 (Stable) \\ \hline
 \textbf{Diabetes Progression} & $0.4299 \pm 0.0817$ & \textbf{$0.4297 \pm 0.0825$} & -0.02\% & 0.8967 (Stable) \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \section{Multi-Model Generalization Benchmark}
@@ -531,7 +548,8 @@ To verify that \ac{IRAP} is model-agnostic, Table \ref{tab:multi_model} reports 
 \renewcommand{\arraystretch}{1.3}
 \caption{Multi-model generalization benchmark on the Mendeley CBC Hematology dataset.}
 \label{tab:multi_model}
-\begin{tabular}{|p{4.2cm}|c|c|c|c|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|}
 \hline
 \textbf{Classifier Architecture} & \textbf{Base Acc.} & \textbf{IRAP Acc.} & \textbf{Accuracy Gain} & \textbf{F1 Gain} \\ \hline
 \textbf{Random Forest (Bagging)} & 0.6374 & \textbf{0.9890} & \textbf{+35.16\%} & \textbf{+39.84\%} \\ \hline
@@ -539,7 +557,8 @@ To verify that \ac{IRAP} is model-agnostic, Table \ref{tab:multi_model} reports 
 \textbf{Logistic Regression (Linear)} & 0.6374 & \textbf{0.9341} & \textbf{+29.67\%} & \textbf{+30.45\%} \\ \hline
 \textbf{Decision Tree (Single Tree)} & 0.6154 & \textbf{0.9231} & \textbf{+30.77\%} & \textbf{+31.40\%} \\ \hline
 \textbf{K-Nearest Neighbors (Instance)}& 0.5714 & \textbf{0.8022} & \textbf{+23.08\%} & \textbf{+23.44\%} \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \section{Stepwise Component Ablation Study}
@@ -551,7 +570,8 @@ Table \ref{tab:ablation} isolates the contribution of each architectural innovat
 \renewcommand{\arraystretch}{1.3}
 \caption{Stepwise component ablation study on the Mendeley CBC Hematology cohort.}
 \label{tab:ablation}
-\begin{tabular}{|p{5.5cm}|c|c|c|}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Configuration} & \textbf{5-Fold Accuracy} & \textbf{5-Fold F1} & \textbf{Marginal Gain} \\ \hline
 Config 1: Standard Baseline & $0.6513 \pm 0.0381$ & $0.6256 \pm 0.0365$ & +0.00\% (Ref.) \\ \hline
@@ -559,7 +579,8 @@ Config 2: Baseline + Guardrails & $0.6513 \pm 0.0381$ & $0.6256 \pm 0.0365$ & +0
 Config 3: Context Imputation Only & $0.6513 \pm 0.0381$ & $0.6256 \pm 0.0365$ & +0.00\% \\ \hline
 Config 4: Adaptive Scaling Only & $0.6073 \pm 0.0398$ & $0.5994 \pm 0.0402$ & -4.39\% (Degraded) \\ \hline
 \textbf{Config 5: Full IRAP Framework} & \textbf{$0.9698 \pm 0.0159$} & \textbf{$0.9698 \pm 0.0159$} & \textbf{+31.86\% (Synergistic)} \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \section{Inferences and Discussion}
@@ -623,21 +644,34 @@ Despite its notable performance, several avenues remain for future exploration:
 \begin{appendices}
 \chapter{System Verification and Execution Logs}
 This appendix provides the master verification log excerpt demonstrating 100\% test suite passing across all modules of the IRAP Framework:
+
+\begin{singlespace}
+{\footnotesize
 \begin{verbatim}
-********************************************************************************
-        IRAP FRAMEWORK: FULL SYSTEM TEST AND VERIFICATION REPORT                
-Execution Date: 2026-11-05 03:28:01 | Operating System: win32 | Python: 3.13.5
-********************************************************************************
-[SUCCESS] Unit & Integration Test Suite (tests/test_pipeline.py) -> OK (1.86s)
-[SUCCESS] Realistic Clinical Cohort Execution (N=200, Edges=49) -> OK (6.46s)
-[SUCCESS] Mendeley CBC Dataset Execution (N=374, Edges=116) -> OK (7.92s)
-[SUCCESS] Hospital Diabetes Cohort Execution (N=5,132, Edges=59) -> OK (8.84s)
-[SUCCESS] Cross-Dataset Benchmark & Ablation Suite -> OK (15.39s)
-[SUCCESS] Artifact Audit: 11/11 Verified (biological_guardrails.json: 8.36 MB)
-================================================================================
-FINAL VERDICT: ALL TESTS, PIPELINES & BENCHMARKS PASSED (100% SUCCESS)
-================================================================================
+============================================================
+       IRAP FRAMEWORK: SYSTEM VERIFICATION REPORT          
+Date: 2026-11-05 03:28:01 | OS: Win32 | Python: 3.13.5     
+============================================================
+[PASS] Unit & Integration Tests (tests/test_pipeline.py)
+       Duration: 1.86s | Status: All assertions passed     
+[PASS] Realistic Clinical Cohort Execution (N=200)         
+       Discovered Edges: 49 | Duration: 6.46s              
+[PASS] Mendeley CBC Dataset Execution (N=374)              
+       Discovered Edges: 116 | Duration: 7.92s             
+[PASS] Hospital Diabetes Cohort Execution (N=5,132)        
+       Discovered Edges: 59 | Duration: 8.84s              
+[PASS] Cross-Dataset Benchmark & Ablation Suite            
+       Evaluated Cohorts: 5 | Duration: 15.39s             
+[PASS] Artifact & Guardrails Integrity Audit               
+       Verified: 11/11 (LOINC Rules: 40,778, 8.36 MB)      
+============================================================
+FINAL VERDICT: ALL 11 TESTS, PIPELINES & BENCHMARKS PASSED 
+               SYSTEM HEALTH: 100% VERIFIED                
+============================================================
 \end{verbatim}
+}
+\end{singlespace}
 \end{appendices}
 
 \end{document}
+
