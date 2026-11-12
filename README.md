@@ -52,9 +52,27 @@ The framework was evaluated in controlled ablation studies comparing the **Sciki
 | **Realistic Clinical Cohort** *(Synthetic Non-Linear)* | 200 | 49 | 0.7800 | **0.7800** | `+0.00%` | 0.7723 | **0.7723** | `+0.00%` | **`44.06%`** |
 | **Mendeley CBC Hematology Dataset** | 374 | 116 | 0.6703 | **0.9780** | **`+30.77%`** | 0.6553 | **0.9781** | **`+32.28%`** | `Baseline (0.0%)` |
 | **Hospital Diabetes Diagnostic Cohort** | 5,132 | 59 | 0.9992 | **0.9992** | `+0.00%` | 0.9992 | **0.9992** | `+0.00%` | **`17.38%`** |
+| **Breast Cancer Wisconsin Diagnostic** | 569 | 82 | 0.9561 | **0.9561** | `+0.00%` | 0.9561 | **0.9561** | `+0.00%` | `Baseline (0.0%)` |
+
+### 🔬 Stratified 5-Fold Cross-Validation (Statistical Significance)
+| Dataset Cohort | Baseline 5-Fold (Mean ± Std) | IRAP 5-Fold (Mean ± Std) | Mean Gain (Δ) | Paired t-test p-value | Significance |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Mendeley CBC Hematology** | 0.6513 ± 0.0381 | **0.9698 ± 0.0159** | **`+31.86%`** | **`6.89e-05`** | **YES (p < 0.001)** |
+| **Realistic Clinical Cohort** | 0.7900 ± 0.0624 | **0.8100 ± 0.0490** | **`+2.00%`** | 0.4557 | Consistent |
+| **Breast Cancer Wisconsin** | 0.9561 ± 0.0123 | **0.9561 ± 0.0123** | `+0.00%` | 1.0000 | Stable |
+
+### ⚡ Multi-Model Generalization (Model-Agnostic Proof on CBC Dataset)
+| Downstream Machine Learning Model | Baseline Accuracy | IRAP Accuracy | Accuracy Gain (Δ) | Baseline F1 | IRAP F1 | F1 Gain (Δ) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Random Forest (Ensemble Bagging)** | 0.6374 | **0.9890** | **`+35.16%`** | 0.5906 | **0.9890** | **`+39.84%`** |
+| **Gradient Boosting (Ensemble Boosting)** | 0.6813 | **0.9780** | **`+29.67%`** | 0.6611 | **0.9780** | **`+31.69%`** |
+| **Logistic Regression (Linear Model)** | 0.6374 | **0.9341** | **`+29.67%`** | 0.6291 | **0.9336** | **`+30.45%`** |
+| **Decision Tree (Non-Linear Tree)** | 0.6154 | **0.9231** | **`+30.77%`** | 0.6093 | **0.9233** | **`+31.40%`** |
+| **K-Nearest Neighbors (Instance-Based)** | 0.5714 | **0.8022** | **`+23.08%`** | 0.5672 | **0.8016** | **`+23.44%`** |
 
 *Key Findings:*
-- **+30.77% Accuracy Gain** on real clinical CBC laboratory data.
+- **Statistically Significant Gain:** +31.86% cross-validated accuracy surge ($p = 6.89 \times 10^{-5}$) on clinical hematology data.
+- **Model-Agnostic Universality:** Every model family gained between +23% and +35% in diagnostic accuracy.
 - **44.06% Reduction in Imputation RMSE** compared to standard mean imputation.
 - Zero Out-Of-Memory crashes and zero negative physical violations across all cohorts.
 

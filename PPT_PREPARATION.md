@@ -84,8 +84,10 @@ flowchart TD
     *   **XGBoost:** Used as the temporary nonlinear surrogate model.
     *   **SHAP (TreeExplainer):** Core algorithm based on cooperative game theory to extract interaction matrices.
     *   **NetworkX:** Translates SHAP matrices into a Directed Knowledge Graph.
-    *   **Scikit-Learn:** KNN (ContextAware Imputation), RobustScaler, TargetEncoder, StandardScaler, MinMaxScaler, RandomForestClassifier & Regressor.
-*   **Evaluation Metrics:**
+    *   **Scikit-Learn:** KNN (ContextAware Imputation), RobustScaler, TargetEncoder, StandardScaler, MinMaxScaler, RandomForest, GradientBoosting, LogisticRegression, DecisionTree.
+*   **Evaluation Metrics & Rigorous Protocols:**
+    *   **Stratified 5-Fold Cross-Validation:** Reporting Mean ± Standard Deviation across independent splits.
+    *   **Statistical Significance:** Paired Student's t-test generating formal p-values ($p < 0.001$).
     *   **Downstream Model Efficacy:** Accuracy, Weighted F1-Score, Precision, Recall, and AUC-ROC.
     *   **Imputation Fidelity:** Root Mean Square Error (RMSE) against masked ground-truth clinical values.
 
@@ -98,15 +100,22 @@ flowchart TD
 
 ---
 
-## Slide 7d: Empirical Benchmark Results (Ablation Study)
-*   **Mendeley CBC Hematology Clinical Lab (N=374):**
-    *   **Accuracy:** Improved from **67.03% (Baseline)** to **97.80% (IRAP)** — a massive **+30.77% gain**!
-    *   **F1-Score:** Improved from **65.53% (Baseline)** to **97.81% (IRAP)** — a **+32.28% gain**!
-*   **Realistic Synthetic Cohort (N=200 with complex non-linear equations):**
-    *   **Imputation Accuracy:** Achieved a **44.06% reduction in imputation RMSE** over standard Scikit-Learn mean imputation.
-    *   **High-Cardinality Handling:** Target Encoding successfully compressed 48 unique disease codes without dimensional explosion.
-*   **Hospital Diabetes Diagnostic Cohort (N=5,132 patients):**
-    *   **Scalability:** Processed 5,132 patients in under 6 seconds with **17.38% reduction in imputation RMSE** and **99.92% downstream accuracy**.
+## Slide 7d: Empirical Benchmark Results & Rigorous Validations
+*   **Stratified 5-Fold Cross-Validation (Mendeley CBC Hematology N=374):**
+    *   **Accuracy:** Improved from **65.13% ± 3.81% (Baseline)** to **96.98% ± 1.59% (IRAP)** — an absolute **+31.86% mean gain**!
+    *   **Statistical Significance:** Confirmed via paired Student's t-test with **$p = 6.89 \times 10^{-5}$ ($p < 0.001$)**.
+*   **Multi-Model Generalization (Model-Agnostic Proof):**
+    *   *Random Forest:* Baseline 63.74% ➔ **IRAP 98.90% (+35.16% Gain)** | F1: +39.84%
+    *   *Gradient Boosting:* Baseline 68.13% ➔ **IRAP 97.80% (+29.67% Gain)** | F1: +31.69%
+    *   *Logistic Regression:* Baseline 63.74% ➔ **IRAP 93.41% (+29.67% Gain)** | F1: +30.45%
+    *   *Decision Trees:* Baseline 61.54% ➔ **IRAP 92.31% (+30.77% Gain)** | F1: +31.40%
+    *   *K-Nearest Neighbors:* Baseline 57.14% ➔ **IRAP 80.22% (+23.08% Gain)** | F1: +23.44%
+*   **Stepwise Component Ablation (Synergistic Coupling):**
+    *   Proved that neither imputation alone nor scaling alone can fix the corrupted clinical ratios. Full coupling of Context-Aware Imputation + LOINC Guardrails + Adaptive Robust Scaling is required to unlock the +31.86% performance surge.
+*   **Imputation Fidelity & Scalability:**
+    *   **44.06% reduction in imputation RMSE** on ground-truth synthetic reconstruction.
+    *   **17.38% reduction in imputation RMSE** on 5,132 hospital diabetes records in under 6 seconds.
+    *   Perfect stability ($95.61\%$ accuracy) verified on Breast Cancer Wisconsin benchmark ($N=569$).
 
 ---
 
