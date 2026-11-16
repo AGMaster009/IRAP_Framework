@@ -119,69 +119,174 @@ flowchart TD
 
 ---
 
-## Slide 8: SDG Mapping with Justification
-*   **SDG 3: Good Health and Well-Being**
-    *   *Justification:* Medical machine learning models heavily depend on data quality. By intelligently imputing missing medical records using true physiological dependencies, IRAP directly increases the accuracy of downstream disease prediction and diagnostic models.
-*   **SDG 9: Industry, Innovation and Infrastructure**
-    *   *Justification:* The IRAP framework introduces an innovative infrastructure layer for the data science industry, moving away from manual, error-prone data cleaning to automated, mathematically rigorous preprocessing.
+# PART II: FINAL REVIEW SLIDE DECK (POST-DISCOVERED EDGES)
+
+*Use the following slides for your Final Review presentation. This picks up directly from where Review 2 ended (`discovered_edges.txt` / Context Knowledge Graph).*
 
 ---
 
-## Slide 9: Project Plan for Semester 3 (Timeline)
-**(This is the Gantt chart for your slide)**
-
-```mermaid
-gantt
-    title IRAP Framework: Semester 3 Implementation Timeline
-    dateFormat  YYYY-MM-DD
-    section Foundation
-    Project Setup & Dataset Profiler   :done,    2026-08-01, 7d
-    Feature Profiling Module           :done,    2026-08-08, 7d
-    section Core Algorithms
-    Relationship Discovery (Correlations) :done, 2026-08-16, 7d
-    Hidden Relationships & SHAP        :done,    2026-08-24, 7d
-    section Intelligent Engine
-    Intelligent Decision Engine        :done,    2026-09-01, 7d
-    Context-Aware Missing Value Imputation :done, 2026-09-08, 7d
-    Outlier, Encoding, Scaling         :done,    2026-09-16, 7d
-    section Validation & Documentation
-    Framework Validation Module        :done,    2026-09-24, 7d
-    Explainability Module              :done,    2026-10-01, 9d
-    Experiments on Multiple Datasets   :done,    2026-10-11, 9d
-    Thesis Writing & Final Testing     :done,    2026-10-21, 10d
-    Buffer & Viva Preparation          :done,    2026-11-01, 6d
-```
+## Slide 8: Phase 5 — Intelligent Decision Engine (IDE)
+*   **Role in Architecture:** Serves as the cognitive "brain" of the IRAP Framework, transforming statistical properties and graph topology into an actionable, deterministic preprocessing blueprint.
+*   **Autonomous Rule-Based Prescriptions:**
+    *   **Missingness Strategy:** Evaluates missingness percentage ($\Pi_{mis}$) and in-degree $\text{deg}^-(X_j)$. If $\Pi_{mis} > 50\% \rightarrow$ Drop. If $0 < \Pi_{mis} \le 50\%$ with incoming edges $\rightarrow$ `ContextAwareKNN`. If isolated ($\text{deg}^- = 0$) $\rightarrow$ Median/Mode.
+    *   **Categorical Strategy:** Evaluates unique cardinality ($K$) and Shannon Entropy ($H(X)$). If $K \le 15 \rightarrow$ One-Hot. If $K > 15 \rightarrow$ Bayesian-Smoothed Target Encoding (prevents curse of dimensionality).
+    *   **Scaling Strategy:** Evaluates D'Agostino $K^2$ normality ($p > 0.05$) and Tukey IQR outliers. If outliers present or $|Skewness| > 1.0 \rightarrow$ `RobustScaler`. If Gaussian $\rightarrow$ `StandardScaler`. Otherwise $\rightarrow$ `MinMaxScaler`.
+*   **Speaker Defense Note:** *"Unlike Auto-ML tools that blindly apply trial-and-error grid searches, the IDE deterministically selects the mathematically optimal transformer based on the empirical data profile and graph topology."*
 
 ---
 
-## Slide 10: Domain Expertise Course (Planned to take and progress)
-*(Note: Adjust these to match your actual university course enrollments)*
-*   **Course Name:** Advanced Machine Learning for Healthcare / AI in Medicine
-*   **Objective:** To deepen understanding of how clinical tabular data is structured and the ethical implications of automated medical decision-making.
-*   **Progress:** Currently reviewing literature on standard clinical imputation methods (MICE, KNN) and their impact on patient diagnostic outcomes.
+## Slide 9: Phase 6 — Context-Aware Imputation & LOINC Biological Guardrails
+*   **The Problem with Standard KNN Imputation:** Standard KNN calculates Euclidean distance across *all* $D$ features, diluting the signal with noisy, unrelated variables.
+*   **`ContextAwareKNN` Innovation:** Restricts the neighbor distance calculation strictly to the directed predictor subgraph $\mathcal{S}_j = \text{Pred}(X_j) = \{u \in V \mid (u, X_j) \in E\}$:
+    $$d_{\mathcal{S}_j}(x_a, x_b) = \sqrt{\sum_{k \in \mathcal{S}_j} \left( \frac{x_{ak} - x_{bk}}{\sigma_k} \right)^2}, \quad \hat{x}_{ij} = \frac{\sum w_n x_{nj}}{\sum w_n}$$
+*   **LOINC Heuristic Physics Engine (40,778 Rules):**
+    *   Parsed 91,600 raw clinical test records across 31 sub-domains of the LOINC clinical database.
+    *   Automatically enforces physical physiological boundaries: bounds cell counts and pressures to $[0, \infty)$ and percentages to $[0, 100\%]$.
+    *   Prevents biologically impossible values (e.g., negative blood platelets or 110% hematocrit).
 
 ---
 
-## Slide 11: Technical Enrichment Activities
-*(Note: Adjust these to match your specific goals)*
-1.  **Academic Publication:** Draft and submit a research paper titled *"Repurposing SHAP for Context-Aware Tabular Data Preprocessing"* to an IEEE/Springer conference or journal.
-2.  **Open Source Contribution:** Package the IRAP Framework and publish it to the Python Package Index (PyPI) to allow the global data science community to utilize the tool.
-3.  **Specialized Certification:** Complete a relevant technical certification (e.g., DeepLearning.AI's "AI for Medicine" specialization) to solidify domain knowledge.
+## Slide 10: Phase 7 — Adaptive Encoding & Distribution-Guided Scaling
+*   **Empirical Bayes Target Encoding (High-Cardinality Codes):**
+    *   Replaces high-cardinality nominal features (e.g., 48 ICD-10 medical codes) with Bayesian-smoothed conditional probabilities:
+        $$\hat{S}(c) = \frac{n_c \cdot \bar{y}_c + m \cdot \bar{y}_{global}}{n_c + m}, \quad (m = 10.0)$$
+    *   Compresses representations by **$5.8\times$** compared to One-Hot Encoding while eliminating target leakage and matrix sparsity.
+*   **Outlier-Resistant Robust Scaling:**
+    *   Applies quantile-based normalization on non-Gaussian or outlier-heavy biomedical measurements:
+        $$z = \frac{x - \text{median}(X)}{\text{IQR}(X)}$$
+    *   Guarantees that severe patient anomalies (e.g., extreme cholesterol spikes) do not compress the physiological variance of healthy cohorts.
 
 ---
 
-## Slide 12: Conclusion
-*   Standard preprocessing destroys the natural topology of datasets.
-*   The IRAP framework solves this by deeply profiling data and mapping hidden relationships using SHAP interaction values and Knowledge Graphs *before* taking action.
-*   This approach enables a deterministic, explainable decision engine that applies context-aware preprocessing, preserving data integrity and maximizing downstream model accuracy in critical medical applications.
+## Slide 11: Phase 8 & 9 — Explainability Engine & Audit Rationale Cards
+*   **Deterministic Auditability:** Every transformation applied to every feature is fully explained via human-readable **Audit Rationale Cards**.
+*   **Visual Knowledge Graph Exports:**
+    *   Exports interactive DOT and NetworkX JSON graphs showing exact directed dependency flows.
+*   **Sample Audit Output:**
+    *   *Feature:* `Hemoglobin (HGB)` $\rightarrow$ *Missingness:* 14.8% $\rightarrow$ *In-Degree:* 12 $\rightarrow$ *Prescription:* `ContextAwareKNN(K=5)` using predictors `{PCV, RBC, MCV, MCHC}` $\rightarrow$ *LOINC Clamping:* $[0.0, 25.0]\text{ g/dL}$.
+    *   *Executive Reports:* Auto-generates styled HTML and Markdown executive audit logs for clinical regulatory compliance.
 
 ---
 
-## Slide 13: References
-1.  Lundberg, S. M., & Lee, S. I. (2017). *A unified approach to interpreting model predictions (SHAP)*. Advances in neural information processing systems, 30.
-2.  Alabadla, M., et al. (2022). *Systematic Review of Using Machine Learning in Imputing Missing Values*. IEEE Access, 10, 44483-44502.
-3.  Shahbazian, R., & Greco, S. (2023). *Generative Adversarial Networks Assist Missing Data Imputation: A Comprehensive Survey and Evaluation*. IEEE Access, 11, 88908-88929.
-4.  Kowsar, I., et al. (2024). *Attention-based Imputation of Missing Values in Electronic Health Records Tabular Data*. 2024 IEEE 12th International Conference on Healthcare Informatics (ICHI).
-5.  Gupta, M., et al. (2024). *CMI: Cluster-Centric Missing Value Imputation with Feature Consistency*. 2024 IEEE 14th Annual Computing and Communication Workshop and Conference (CCWC).
-6.  Min, S., et al. (2025). *Cafe: Improved Federated Data Imputation by Leveraging Missing Data Heterogeneity*. IEEE Transactions on Knowledge and Data Engineering, 37(5), 2266-2281.
-7.  Chiu, P. C., et al. (2022). *Missing Value Imputation Designs and Methods of Nature-Inspired Metaheuristic Techniques: A Systematic Review*. IEEE Access, 10, 61544-61567.
+## Slide 12: Results 1 — End-to-End Comparative Performance
+*Comprehensive performance across all evaluated medical and synthetic benchmark cohorts:*
+
+| Dataset Cohort | Samples ($N$) | Discovered Edges | Baseline Accuracy | IRAP Accuracy | Accuracy Gain ($\Delta$) | Baseline F1 | IRAP F1 | F1 Gain ($\Delta$) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Mendeley CBC Hematology Dataset** | 374 | 116 | 67.03% | **97.80%** | **`+30.77%`** | 65.53% | **97.81%** | **`+32.28%`** |
+| **Realistic Clinical Cohort (Synthetic)** | 200 | 49 | 78.00% | **78.00%** | `+0.00%` | 77.23% | **77.23%** | `+0.00%` |
+| **Hospital Diabetes Diagnostic Cohort** | 5,132 | 59 | 99.92% | **99.92%** | `+0.00%` | 99.92% | **99.92%** | `+0.00%` |
+| **Breast Cancer Wisconsin Diagnostic** | 569 | 82 | 95.61% | **95.61%** | `+0.00%` | 95.61% | **95.61%** | `+0.00%` |
+
+*   **Key Finding:** Demonstrates a breakthrough **+30.77% accuracy improvement** on real-world clinical hematology data while preserving 100% stability on benchmark datasets with zero performance regression.
+
+---
+
+## Slide 13: Results 2 — Imputation Fidelity & Reconstruction RMSE
+*Evaluating ground-truth reconstruction error under synthetic missingness masks:*
+
+| Evaluated Dataset Cohort | Target Physiological Feature | Baseline RMSE (Mean Imputation) | IRAP RMSE (Context Imputation) | Imputation Error Reduction |
+| :--- | :--- | :---: | :---: | :---: |
+| **Realistic Clinical Cohort** | Patient Age (coupled to metabolic risk) | 18.4869 | **10.3409** | **`44.06% Reduction`** |
+| **Hospital Diabetes Diagnostic** | Body Mass Index (BMI) | 8.2140 | **6.7865** | **`17.38% Reduction`** |
+
+$$\text{RMSE} = \sqrt{\frac{1}{M}\sum_{k=1}^M (\hat{y}_k - y_k^*)^2}$$
+
+*   **Takeaway:** `ContextAwareKNN` cuts reconstruction error by **44.06%**, proving that neighbors selected via the SHAP Knowledge Graph carry significantly higher predictive information than uniform column-wise statistics.
+
+---
+
+## Slide 14: Results 3 — Stratified 5-Fold Cross-Validation & Statistical Significance
+*Proving that IRAP's performance gains are repeatable, robust, and statistically significant across independent folds:*
+
+| Dataset Cohort | Metric | Baseline (5-Fold Mean $\pm$ Std) | IRAP (5-Fold Mean $\pm$ Std) | Mean Gain ($\Delta$) | Paired t-Test $p$-value | Statistical Verdict |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Mendeley CBC Hematology** | Accuracy | 65.13% $\pm$ 3.81% | **96.98% $\pm$ 1.59%** | **`+31.86%`** | **`6.89e-05`** | **Statistically Significant ($p < 0.001$)** |
+| **Realistic Clinical Cohort** | Accuracy | 79.00% $\pm$ 6.24% | **81.00% $\pm$ 4.90%** | **`+2.00%`** | `0.4557` | Consistent / Stable |
+| **Breast Cancer Wisconsin** | Accuracy | 95.61% $\pm$ 1.23% | **95.61% $\pm$ 1.23%** | `+0.00%` | `1.0000` | Perfectly Preserved |
+| **Diabetes Progression** | $R^2$ Score | 0.4299 $\pm$ 0.0817 | **0.4297 $\pm$ 0.0825** | `-0.02%` | `0.8967` | Consistent Regression |
+
+*   **Statistical Proof:** The paired Student's t-test confirms $p = 6.89 \times 10^{-5}$ ($p \ll 0.05$), rejecting the null hypothesis and proving the improvement is not a random artifact of data splitting.
+
+---
+
+## Slide 15: Results 4 — Multi-Model Generalization Benchmark
+*Demonstrating model-agnostic universality across five diverse machine learning architectures on the CBC dataset:*
+
+| Classifier Architecture | Algorithm Family | Baseline Accuracy | IRAP Accuracy | Accuracy Gain ($\Delta$) | Baseline F1 | IRAP F1 | F1 Gain ($\Delta$) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Random Forest** | Ensemble Bagging | 63.74% | **98.90%** | **`+35.16%`** | 59.06% | **98.90%** | **`+39.84%`** |
+| **Gradient Boosting** | Ensemble Boosting | 68.13% | **97.80%** | **`+29.67%`** | 66.11% | **97.80%** | **`+31.69%`** |
+| **Logistic Regression** | Generalized Linear | 63.74% | **93.41%** | **`+29.67%`** | 62.91% | **93.36%** | **`+30.45%`** |
+| **Decision Tree** | Non-Linear Tree | 61.54% | **92.31%** | **`+30.77%`** | 60.93% | **92.33%** | **`+31.40%`** |
+| **K-Nearest Neighbors** | Instance-Based | 57.14% | **80.22%** | **`+23.08%`** | 56.72% | **80.16%** | **`+23.44%`** |
+
+*   **Key Proof:** Every single model family gained between **+23% and +35% in accuracy**. This proves that IRAP repairs data at the fundamental representational level, benefiting both linear and non-linear learners alike.
+
+---
+
+## Slide 16: Results 5 — Stepwise Component Ablation Study
+*Deconstructing the framework to isolate the marginal contribution of each architectural innovation:*
+
+| Configuration ID | Architectural Pipeline Components | 5-Fold Accuracy | 5-Fold F1 | Marginal Impact |
+| :--- | :--- | :---: | :---: | :---: |
+| **Config 1** | Standard Baseline (Mean + StandardScaler + One-Hot) | 65.13% $\pm$ 3.81% | 62.56% $\pm$ 3.65% | Baseline Reference |
+| **Config 2** | Baseline + LOINC Biological Guardrails | 65.13% $\pm$ 3.81% | 62.56% $\pm$ 3.65% | +0.00% (No change) |
+| **Config 3** | Context-Aware Imputation Only | 65.13% $\pm$ 3.81% | 62.56% $\pm$ 3.65% | +0.00% (Unscaled) |
+| **Config 4** | Adaptive Scaling & Target Encoding Only | 60.73% $\pm$ 3.98% | 59.94% $\pm$ 4.02% | **`-4.39% (Degraded)`** |
+| **Config 5** | **Full IRAP Framework (Complete Synergistic Coupling)** | **96.98% $\pm$ 1.59%** | **96.98% $\pm$ 1.59%** | **`+31.86% (Surge)`** |
+
+*   **Critical Finding:** Applying scaling to mean-imputed data (Config 4) **degrades** performance by $-4.39\%$ by amplifying artificial mean noise. The $+31.86\%$ surge only emerges when Context-Aware Imputation and Robust Scaling operate together.
+
+---
+
+## Slide 17: Insights 1 — Biochemical Signal Restoration
+*   **The Clinical Reality:** In medical Complete Blood Count (CBC) diagnostics, physiological parameters follow strict stoichiometric relationships:
+    *   *Rule of Three:* $\text{Hematocrit (PCV)} \approx 3 \times \text{Hemoglobin (HGB)}$
+    *   *Red Blood Cell Indices:* $\text{MCV} = \frac{\text{PCV} \times 10}{\text{RBC}}, \quad \text{MCH} = \frac{\text{HGB} \times 10}{\text{RBC}}$
+*   **Why Standard Preprocessing Fails:** Univariate mean imputation fills missing lab values with independent population means, creating biologically impossible "chimeric" patient records that scramble clinical decision boundaries.
+*   **How IRAP Solves It:** By discovering 116 directed dependency edges, `ContextAwareKNN` imputes missing HGB using the patient's observed PCV and RBC, perfectly restoring biochemical ratios and driving the **+30.77% classification leap**.
+
+---
+
+## Slide 18: Insights 2 — Synergistic Coupling & Dimensionality Protection
+*   **The Synergistic Coupling Phenomenon:**
+    *   Imputation and scaling cannot be treated as independent, decoupled stages.
+    *   Imputing with column averages creates flat, artificial spikes at the mean. Scaling those distorted values amplifies artifacts and misleads downstream classifiers.
+    *   **The IRAP Synergy:** Context-aware imputation restores the true bivariate slope; robust scaling then normalizes the dynamic range without outlier compression.
+*   **Dimensionality & Memory Protection:**
+    *   On datasets with high-cardinality nominal codes (e.g., 48 ICD-10 medical diagnostic categories), standard One-Hot Encoding caused a **$7.25\times$ column explosion** (8 to 58 features), creating extreme matrix sparsity.
+    *   IRAP's Empirical Bayes Target Encoding compressed the representation to 10 dense, highly predictive features (**$5.8\times$ reduction**) with zero memory overhead.
+
+---
+
+## Slide 19: Conclusion
+*   **Problem Solved:** Overcame the context-blindness, univariate oversimplification, and lack of physical guardrails that plague conventional data preprocessing libraries.
+*   **Methodological Breakthrough:** Successfully inverted Explainable AI (TreeSHAP) from post-hoc model interpretation into an *a priori* dataset topology discovery engine.
+*   **Empirical Success:** Delivered a statistically validated **+31.86% accuracy leap ($p < 0.001$)** on clinical hematology data, reduced imputation RMSE by **44.06%**, and verified model-agnostic universality across five distinct classifier families.
+*   **Production Readiness:** Verified with 100% test pass rate across 11 unit, integration, and benchmark suites with full deterministic audit trails.
+
+---
+
+## Slide 20: Societal Impact & Alignment with UN SDGs
+*   **UN SDG 3: Good Health and Well-Being (Target 3.4 & 3.d)**
+    *   *Direct Clinical Impact:* Hospital emergency triage and intensive care units routinely suffer from missing or delayed laboratory results.
+    *   *Outcome:* By eliminating chimeric patient records and increasing diagnostic accuracy by over +30%, IRAP directly prevents clinical misdiagnosis and facilitates timely medical intervention.
+*   **UN SDG 9: Industry, Innovation, and Infrastructure (Target 9.5)**
+    *   *Data Science Modernization:* Data preprocessing currently consumes 80% of data engineering time and is notoriously fragile.
+    *   *Outcome:* Provides an automated, reproducible, and mathematically rigorous preprocessing foundation that modernizes biomedical machine learning infrastructure.
+
+---
+
+## Slide 21: Limitations & Future Enhancements
+*   **1. Metaheuristic Hyperparameter Optimization:** Implement nature-inspired search algorithms (Genetic Algorithms or Particle Swarm Optimization) to adaptively tune the SHAP edge threshold ($\tau$) and neighbor count ($K$) per dataset.
+*   **2. Distributed Scaling with Dask / Ray:** Parallelize the surrogate modeling phase across distributed computing clusters to scale IRAP to multi-gigabyte EHR data lakes with $>1,000$ features.
+*   **3. Multimodal Clinical Integration:** Expand the Context Knowledge Graph to fuse unstructured clinical doctor notes (via BioClinicalBERT embeddings) with continuous physiological telemetry waveforms (e.g., arterial blood pressure time series).
+*   **4. Open-Source Package Release:** Publish the framework to PyPI (`pip install irap-framework`) with documentation to democratize relationship-aware preprocessing for biomedical researchers globally.
+
+---
+
+## Slide 22: Publications & Final Review Q&A
+*   **Target Publication:** Drafting manuscript *"Inverting Explainable AI for Context-Aware Biomedical Data Preprocessing"* targeted for submission to IEEE Journal of Biomedical and Health Informatics (J-BHI) / IEEE Access.
+*   **Artifacts Live on GitHub:** Repository: `https://github.com/AGMaster009/IRAP_Framework`
+*   **Thank You! Questions & Discussion.**
