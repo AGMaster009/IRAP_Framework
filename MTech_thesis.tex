@@ -16,17 +16,19 @@
 \usepackage{lscape}
 \usepackage{fancyhdr}
 \usepackage{natbib}
-\usepackage[hidelinks]{hyperref} % hyperlinks for references (hidelinks removes red outline boxes)
+\usepackage{microtype} % Prevents overfull hboxes and text margin bleeding
+\usepackage[hidelinks]{hyperref}
 \hypersetup{
     hidelinks,
     pdfborder={0 0 0}
-}
+} % hyperlinks for references without colored outline boxes.
 \usepackage{amsmath} % easier math formulae, align, subequations \ldots
 \usepackage{amssymb}
 \usepackage{wasysym}
 \usepackage{titlesec}
 \usepackage{textcomp}
 \usepackage{pifont}
+\usepackage{booktabs}
 \usepackage[toc,page]{appendix} 
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{shapes,arrows,shadows,patterns,positioning}
@@ -38,11 +40,15 @@
 \renewcommand{\appendixpagename}{APPENDIX} % Changes the title page
 \renewcommand{\appendixtocname}{APPENDIX}  % Changes name in TOC
 
+% Widow and orphan penalties to prevent awkward single-line page splits
+\widowpenalty=10000
+\clubpenalty=10000
+
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Title page
+% Title page metadata
 
-\title{Intelligent Relationship Aware Data Pre-processing Framework - IRAP} % Project Title
+\title{Intelligent Relationship Aware Data Pre-processing Framework} % Project Title
 \firstauthor{PERI ADITYA GOUTAM} % Student name
 \firstauthorregno{[CB.SC.P2CSE25029]}
 \guide{Dr. Dhanya M. Dhanalakshmy} % Guide's name
@@ -53,9 +59,53 @@
 \date{NOVEMBER 2026} % Month and year of submission
 
 \maketitle
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Certificate & Acknowledgments
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Robust 1-Page Bonafide Certificate Override (Solves 2-Page Spillage)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\certificate}{
+    \clearpage
+    \thispagestyle{empty}
+    \begin{center}
+        {\fontsize{13pt}{15pt}\selectfont \textbf{AMRITA VISHWA VIDYAPEETHAM}}\\[2pt]
+        {\fontsize{11pt}{13pt}\selectfont \textbf{AMRITA SCHOOL OF COMPUTING, COIMBATORE}}\\[2pt]
+        {\fontsize{11pt}{13pt}\selectfont \textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}}\\[6pt]
+        \includegraphics[height=1.65cm]{cert_logo.png}\\[8pt]
+        {\fontsize{13pt}{15pt}\selectfont \textbf{BONAFIDE CERTIFICATE}}\\[10pt]
+    \end{center}
+    
+    \noindent
+    \begin{spacing}{1.2}
+    This is to certify that the thesis entitled \textbf{INTELLIGENT RELATIONSHIP AWARE DATA PRE-PROCESSING FRAMEWORK}, submitted by \textbf{PERI ADITYA GOUTAM [CB.SC.P2CSE25029]}, in partial fulfillment of the requirements for the award of degree of \textbf{Master of Technology in Computer Science and Engineering}, is a bonafide record of the work carried out under my guidance and supervision at the Department of Computer Science and Engineering, Amrita School of Computing, Coimbatore.
+    \end{spacing}
+    
+    \vspace{1.1cm}
+    \noindent
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{7.2cm}p{7.2cm}@{}}
+        \textbf{Dr. Dhanya M. Dhanalakshmy} & \textbf{Dr. P. Bagavathi Sivakumar} \\
+        Thesis Advisor & Chairperson \\
+        Assistant Professor & Department of Computer Science and \\
+        Department of Computer Science and & Engineering \\
+        Engineering & 
+    \end{tabular*}
+    
+    \vfill
+    \noindent \textbf{Evaluated on:} \rule{4.5cm}{0.4pt}\\[1.4cm]
+    \noindent
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{6.5cm}p{6.5cm}@{}}
+        \rule{5.8cm}{0.6pt} & \rule{5.8cm}{0.6pt} \\
+        \textbf{Internal Examiner} & \textbf{External Examiner}
+    \end{tabular*}
+    \clearpage
+}
+\makeatother
+
 \certificate
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \acknowledgements
 \normalfont
 I would like to express my deep gratitude to our beloved Chancellor Satguru Sri Mata Amritanandamayi Devi for providing a bright academic climate in this university, which has made this entire task appreciable. I would like to thank the management of Amrita Vishwa Vidyapeetham and the entire fraternity of the Department of Computer Science and Engineering, Amrita School of Computing, for providing me with the necessary infrastructure required for the completion of the project. 
@@ -66,15 +116,18 @@ I extend my sincere thanks and gratitude to \textbf{Dr. P. Bagavathi Sivakumar},
 
 I would like to extend my sincere thanks to my family and friends for helping and motivating me throughout the course of this project. Finally, I would like to thank all those who have helped, guided, and encouraged me directly or indirectly during the project work. Above all, I extend my heartfelt salutations to my beloved parents and Almighty, for their blessings and grace, for the successful completion of this thesis.
 
-\vskip 25pt
+\vskip 20pt
 \noindent
-Name: PERI ADITYA GOUTAM\\ 
-Roll No: CB.SC.P2CSE25029\\
-Signature:
+\begin{tabular}{@{}ll}
+\textbf{Name:} & PERI ADITYA GOUTAM \\ 
+\textbf{Roll No:} & CB.SC.P2CSE25029 \\
+\textbf{Signature:} & \rule{5cm}{0.4pt}
+\end{tabular}
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \abstract
 \begin{doublespacing}
 \normalfont
@@ -84,14 +137,13 @@ To resolve these systemic deficiencies, this thesis introduces the \textbf{\ac{I
 
 Our core methodological contributions are fourfold: (i) Inverting Explainable AI (\ac{XAI}) by utilizing Tree\ac{SHAP} surrogate modeling \textit{a priori} to extract exact game-theoretic interaction matrices; (ii) Translating interactions into a directed Context Knowledge Graph to programmatically isolate the predictor subgraphs influencing each dependent feature; (iii) Mining 91,600 raw clinical terminology records from 31 distinct sub-domains of the \ac{LOINC} database into a 40,778-rule Heuristic Physics Engine to enforce physical bounds (non-negative pressures, bounded percentages); and (iv) Dynamically executing \ac{KNN} imputation restricted to graph dependencies, Bayesian-smoothed Target Encoding, and distribution-guided Robust Scaling.
 
-Extensive empirical evaluations across multiple medical cohorts demonstrate the transformative superiority of \ac{IRAP}:
-On real-world Complete Blood Count (\ac{CBC}) laboratory data, \ac{IRAP} improved downstream diagnostic accuracy from \textbf{67.03\% to 97.80\% (+30.77\% gain)} and F1-score from \textbf{65.53\% to 97.81\% (+32.28\% gain)}, with stratified 5-fold cross-validation confirming statistical significance ($p = 6.89 \times 10^{-5}$). In ground-truth reconstruction ablation experiments, \ac{IRAP} reduced \ac{RMSE} by \textbf{44.06\%} over standard mean imputation. Multi-model benchmarks across five diverse classifier architectures (Random Forests, Gradient Boosting, Logistic Regression, Decision Trees, \ac{KNN}) showed universal accuracy gains between +23\% and +35\%, proving that \ac{IRAP} repairs data topology in a completely model-agnostic manner.
+Extensive empirical evaluations across multiple medical cohorts demonstrate the transformative superiority of \ac{IRAP}: On real-world Complete Blood Count (\ac{CBC}) laboratory data, \ac{IRAP} improved downstream diagnostic accuracy from \textbf{67.03\% to 97.80\% (+30.77\% gain)} and F1-score from \textbf{65.53\% to 97.81\% (+32.28\% gain)}, with stratified 5-fold cross-validation confirming statistical significance ($p = 6.89 \times 10^{-5}$). In ground-truth reconstruction ablation experiments, \ac{IRAP} reduced \ac{RMSE} by \textbf{44.06\%} over standard mean imputation. Multi-model benchmarks across five diverse classifier architectures (Random Forests, Gradient Boosting, Logistic Regression, Decision Trees, \ac{KNN}) showed universal accuracy gains between +23\% and +35\%, proving that \ac{IRAP} repairs data topology in a completely model-agnostic manner.
 \end{doublespacing}
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Table of contents etc.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{singlespace}
 \tableofcontents
 \thispagestyle{empty}
@@ -104,8 +156,9 @@ On real-world Complete Blood Count (\ac{CBC}) laboratory data, \ac{IRAP} improve
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Abbreviations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \abbreviations
-\begin{acronym}[LOINC/FHIR]
+\begin{acronym}[AUC-ROC]
 \acro{IRAP}{Intelligent Relationship-Aware Preprocessing}
 \acro{XAI}{Explainable Artificial Intelligence}
 \acro{SHAP}{SHapley Additive exPlanations}
@@ -144,34 +197,36 @@ On real-world Complete Blood Count (\ac{CBC}) laboratory data, \ac{IRAP} improve
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% List of Symbols
+% List of Symbols (Aligned Two-Column Layout)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{\centerline{List of Symbols}}
 \addcontentsline{toc}{chapter}{List of Symbols}
 \begin{doublespace}
-\begin{tabbing}
-xxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
-\textbf{$X$}            \> Input tabular feature matrix, $\mathbb{R}^{N \times D}$ \\
-\textbf{$Y$}            \> Supervised target response vector \\
-\textbf{$N$}            \> Total number of sample instances \\
-\textbf{$D$}            \> Total number of feature dimensions \\
-\textbf{$M$}            \> Missingness binary indicator mask matrix \\
-\textbf{$\phi_i$}       \> Marginal Shapley contribution of feature $i$ \\
-\textbf{$\bar{\phi}_{i \to j}$} \> Mean absolute SHAP interaction ($X_i \to X_j$) \\
-\textbf{$G$}            \> Directed Context Knowledge Graph, $G = (V, E, W)$ \\
-\textbf{$V$}            \> Set of feature vertices in Knowledge Graph \\
-\textbf{$E$}            \> Set of directed dependency edges in Knowledge Graph \\
-\textbf{$W$}            \> Set of normalized SHAP dependency edge weights \\
-\textbf{$\tau$}         \> Dependency threshold ($\tau = 0.10$) \\
-\textbf{$H(X)$}         \> Empirical Shannon Entropy (bits) \\
-\textbf{$K^2$}          \> D'Agostino's normality test statistic \\
-\textbf{$S, K$}         \> Sample skewness and kurtosis coefficients \\
-\textbf{$Q_1, Q_3$}     \> First (25th) and third (75th) quartiles \\
-\textbf{$\text{IQR}$}   \> Interquartile range ($Q_3 - Q_1$) \\
-\textbf{$\mathcal{S}_j$}\> Topological predictor subspace for feature $j$ \\
-\textbf{$\hat{x}_{ij}$} \> Imputed value for instance $i$ and feature $j$ \\
-\textbf{$\tilde{x}_{ij}$}\> Guarded and clamped imputed value \\
-\end{tabbing}
+\noindent
+\begin{tabular}{p{2.2cm}p{11.8cm}}
+\textbf{$X$}            & Input tabular feature matrix, $\mathbb{R}^{N \times D}$ \\
+\textbf{$Y$}            & Supervised target response vector \\
+\textbf{$N$}            & Total number of sample instances (patients/observations) \\
+\textbf{$D$}            & Total number of feature dimensions (variables/attributes) \\
+\textbf{$M$}            & Missingness binary indicator mask matrix, $\{0, 1\}^{N \times D}$ \\
+\textbf{$\phi_i$}       & Marginal Shapley contribution of feature $i$ \\
+\textbf{$\bar{\phi}_{i \to j}$} & Mean absolute SHAP interaction weight ($X_i \to X_j$) \\
+\textbf{$G$}            & Directed Context Knowledge Graph, $G = (V, E, W)$ \\
+\textbf{$V$}            & Set of feature vertices/nodes in Knowledge Graph \\
+\textbf{$E$}            & Set of directed dependency edges in Knowledge Graph \\
+\textbf{$W$}            & Set of normalized SHAP dependency edge weights, $w_{ij} \in [0, 1]$ \\
+\textbf{$\tau$}         & Topological dependency significance threshold ($\tau = 0.10$) \\
+\textbf{$H(X)$}         & Empirical Shannon Entropy (bits) \\
+\textbf{$K^2$}          & D'Agostino's normality omnibus test statistic \\
+\textbf{$S, K$}         & Sample skewness and kurtosis coefficients \\
+\textbf{$Q_1, Q_3$}     & First (25th percentile) and third (75th percentile) quartiles \\
+\textbf{$\text{IQR}$}   & Interquartile range ($Q_3 - Q_1$) \\
+\textbf{$\mathcal{S}_j$}& Topological predictor subspace/neighborhood for feature $j$ \\
+\textbf{$\hat{x}_{ij}$} & Mathematically imputed value for instance $i$ and feature $j$ \\
+\textbf{$\tilde{x}_{ij}$}& Biologically guarded and clamped imputed value \\
+\end{tabular}
 \end{doublespace}
+
 \pagebreak
 \clearpage
 
@@ -205,32 +260,34 @@ Figure \ref{fig:paradigm_comparison} illustrates the fundamental contrast betwee
 
 \begin{figure}[htpb]
 \centering
+\resizebox{0.95\linewidth}{!}{%
 \begin{tikzpicture}[
-    node distance=1.2cm,
-    block_trad/.style={rectangle, draw=red!70, fill=red!10, rounded corners, line width=0.8pt, text width=30mm, text centered, minimum height=10mm},
-    block_irap/.style={rectangle, draw=blue!70, fill=blue!10, rounded corners, line width=0.8pt, text width=30mm, text centered, minimum height=10mm},
+    node distance=0.8cm,
+    block_trad/.style={rectangle, draw=red!70, fill=red!10, rounded corners, line width=0.8pt, text width=28mm, text centered, minimum height=10mm},
+    block_irap/.style={rectangle, draw=blue!70, fill=blue!10, rounded corners, line width=0.8pt, text width=28mm, text centered, minimum height=10mm},
     line/.style={draw, line width=1pt, -latex'}
 ]
     % Traditional Track
-    \node [block_trad] (raw1) {\textbf{\footnotesize Raw Dataset (Corrupted)}};
-    \node [block_trad, right=1.2cm of raw1] (blind_imp) {\textbf{\footnotesize Blind Imputation (Column Mean)}};
-    \node [block_trad, right=1.2cm of blind_imp] (blind_scale) {\textbf{\footnotesize Blanket Scaling (Standard Z-score)}};
-    \node [block_trad, right=1.2cm of blind_scale] (distorted_model) {\textbf{\footnotesize Model Training (Corrupted Topology)}};
+    \node [block_trad] (raw1) {\textbf{\footnotesize Raw Dataset}\\\scriptsize (Corrupted)};
+    \node [block_trad, right=0.8cm of raw1] (blind_imp) {\textbf{\footnotesize Blind Imputation}\\\scriptsize (Column Mean)};
+    \node [block_trad, right=0.8cm of blind_imp] (blind_scale) {\textbf{\footnotesize Blanket Scaling}\\\scriptsize (Standard Z-score)};
+    \node [block_trad, right=0.8cm of blind_scale] (distorted_model) {\textbf{\footnotesize Model Training}\\\scriptsize (Distorted Topology)};
     
     \path [line, red!70] (raw1) -- (blind_imp);
     \path [line, red!70] (blind_imp) -- (blind_scale);
     \path [line, red!70] (blind_scale) -- (distorted_model);
     
     % IRAP Track
-    \node [block_irap, below=1.8cm of raw1] (raw2) {\textbf{\footnotesize Raw Dataset (Corrupted)}};
-    \node [block_irap, right=1.2cm of raw2] (discover) {\textbf{\footnotesize Learn Topology (TreeSHAP Graph)}};
-    \node [block_irap, right=1.2cm of discover] (aware_prep) {\textbf{\footnotesize Context Imputer + Guardrails}};
-    \node [block_irap, right=1.2cm of aware_prep] (optimal_model) {\textbf{\footnotesize Model Training (Topology Preserved)}};
+    \node [block_irap, below=1.5cm of raw1] (raw2) {\textbf{\footnotesize Raw Dataset}\\\scriptsize (Corrupted)};
+    \node [block_irap, right=0.8cm of raw2] (discover) {\textbf{\footnotesize Learn Topology}\\\scriptsize (TreeSHAP Graph)};
+    \node [block_irap, right=0.8cm of discover] (aware_prep) {\textbf{\footnotesize Context Imputer}\\\scriptsize (+ Biological Guardrails)};
+    \node [block_irap, right=0.8cm of aware_prep] (optimal_model) {\textbf{\footnotesize Model Training}\\\scriptsize (Topology Preserved)};
     
     \path [line, blue!70] (raw2) -- (discover);
     \path [line, blue!70] (discover) -- (aware_prep);
     \path [line, blue!70] (aware_prep) -- (optimal_model);
-\end{tikzpicture}
+\end{tikzpicture}%
+}
 \caption{Comparison between conventional blind preprocessing and relationship-aware preprocessing.}
 \label{fig:paradigm_comparison}
 \end{figure}
@@ -263,7 +320,7 @@ This thesis delivers the following fundamental contributions:
 \end{itemize}
 
 \section{Thesis Organization}
-The remainder of this thesis is organized as follows: Chapter \ref{chap:lit} provides an in-depth literature survey of missing data mechanisms, imputation algorithms, \ac{XAI} foundations, and clinical nomenclatures. Chapter \ref{chap:proposed} describes the comprehensive methodology, mathematical formulation, and architecture of the \ac{IRAP} Framework. Chapter \ref{chap:results} details the implementation, experimental evaluation, multi-model benchmarks, ablation studies, and in-depth scientific inferences across five distinct medical cohorts. Chapter \ref{chap:conclusion} concludes the thesis with societal impacts, alignment with United Nations Sustainable Development Goals (\ac{SDG}), limitations, and directions for future research.
+The remainder of this thesis is organized as follows: Chapter \ref{chap:lit} provides an in-depth literature survey of missing data mechanisms, imputation algorithms, \ac{XAI} foundations, and clinical ontologies. Chapter \ref{chap:proposed} describes the comprehensive methodology, mathematical formulation, and architecture of the \ac{IRAP} Framework. Chapter \ref{chap:results} details the implementation, experimental evaluation, multi-model benchmarks, ablation studies, and in-depth scientific inferences across five distinct medical cohorts. Chapter \ref{chap:conclusion} concludes the thesis with societal impacts, alignment with United Nations Sustainable Development Goals (\ac{SDG}), limitations, and directions for future research.
 
 %------------------------------------------------------------------------------------------------%
 % CHAPTER 2: LITERATURE SURVEY
@@ -678,4 +735,3 @@ FINAL VERDICT: ALL 11 TESTS, PIPELINES & BENCHMARKS PASSED
 \end{appendices}
 
 \end{document}
-
